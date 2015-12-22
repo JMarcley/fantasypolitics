@@ -5,7 +5,7 @@ module.exports.pullData = function(callback) {
 
   var pollData = [];
 
-  var pageToVisit = 'http://hannahspuzzles.com/polls/polls.html';
+  var pageToVisit = 'http://www.realclearpolitics.com/epolls/latest_polls/';
   console.log("Visiting page " + pageToVisit);
   request(pageToVisit, function(error, response, body) {
      if(error) {

@@ -6,6 +6,7 @@ var cookieParser = require('cookie-parser');
 var bodyParser = require('body-parser');
 var mongo = require('mongodb');
 var db = require('monk')('localhost:27017/test');
+var CronJob = require('cron').CronJob;
 var crawler = require('./controllers/crawler');
 var storePolls = require("./controllers/storePolls.js");
 
@@ -43,12 +44,16 @@ app.use('/', routes);
 app.use('/users', users);
 app.use('/polls', polls);
 
-//call setInterval to grab polling data
-setInterval(function() {
-  crawler.pullData(function(data) {
-    storePolls.store(data, db);
-  });
-}, 84600000);
+var job = new CronJob({
+  cronTime: '00 12 04 * * *',
+  onTick: function() {
+    crawler.pullData(function(data) {
+      storePolls.store(data,db);
+    });
+  },
+  start: true,
+  timeZone: 'America/Los_Angeles'
+});
 
 app.get('/', function(req, res){
   console.log("going to slash");
