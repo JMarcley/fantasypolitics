@@ -1,0 +1,13 @@
+extends layout
+
+block content
+  h1.
+    Polls
+  ul
+    each poll, i in polldata
+      li
+        |#{poll.date} <br />
+        |#{poll.race}
+        ul
+          each result, i in poll.results
+            li #{result[0]}: #{result[1]}

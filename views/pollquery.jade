@@ -1,0 +1,21 @@
+extends layout
+
+block content
+  h1.
+    Polls
+
+  h2 Filter
+  #filterBy
+      form(action='/polls/query', method='post')
+          input(type='text', name='query', placeholder='filter by')
+          br
+          button(type='submit') Find
+
+  ul
+    each poll, i in polldata
+      li
+        |#{poll.date} <br />
+        |#{poll.race}
+        ul
+          each result, i in poll.results
+            li #{result[0]}: #{result[1]}
