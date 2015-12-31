@@ -5,7 +5,9 @@ module.exports.pullData = function(callback) {
 
   var pollData = [];
 
-  var pageToVisit = 'http://www.realclearpolitics.com/epolls/latest_polls/';
+  // var pageToVisit = 'http://www.realclearpolitics.com/epolls/latest_polls/';
+  var pageToVisit = 'http://www.hannahspuzzles.com/polls/polls.html';
+  // var pageToVisit = 'file:/Users/joshuamarcley/developer/fantasypolitics/polls.html'
   console.log("Visiting page " + pageToVisit);
   request(pageToVisit, function(error, response, body) {
      if(error) {

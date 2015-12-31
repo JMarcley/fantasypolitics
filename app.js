@@ -45,7 +45,8 @@ app.use('/users', users);
 app.use('/polls', polls);
 
 var job = new CronJob({
-  cronTime: '00 12 04 * * *',
+  // cronTime: '00 12 04 * * *',
+  cronTime: '00 59 21 * * *',
   onTick: function() {
     crawler.pullData(function(data) {
       storePolls.store(data,db);

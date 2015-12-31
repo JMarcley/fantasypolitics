@@ -1,0 +1,2341 @@
+<!doctype html>
+<html>
+<head prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb#">
+<meta name="fragment" content="!">
+<!-- <script id="interior" type="text/javascript" src="/include/rc-meta.js"></script> -->
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+<!-- <link type="images/x-icon" href="/favicon.ico" rel="shortcut icon" />
+
+<link type="text/css" href="http://fonts.googleapis.com/css?family=Roboto:400,700" rel="stylesheet">
+<link type="text/css" href="http://fonts.googleapis.com/css?family=Domine:400,700" rel="stylesheet">
+<link type="text/css" href="/asset/top/master.css" rel="stylesheet" />
+<link type="text/css" href="/asset/vertical/rcp/rcp.css" rel="stylesheet" />
+<link type="text/css" href="/asset/top/facebox-comments.css" media="screen" rel="stylesheet" /> -->
+
+
+<!-- <script type="text/javascript" src="/3rd_party/jquery/1.11.3.min.js"></script>
+<script type="text/javascript" src="/3rd_party/viewportSize/viewportSize-min.js"></script>
+<script type="text/javascript" src="http://c.amazon-adsystem.com/aax2/amzn_ads.js"></script>
+<script type="text/javascript">
+	try {
+		amznads.getAds('3148');
+	} catch(e) { /*ignore*/}
+</script>
+<script type="text/javascript">
+	var key = 'amznslots';
+	var values = amznads.getTokens(); //comma separated tokens
+</script>
+
+<script src="/asset/top/StoryStream.js?v=1.0" type="text/javascript"></script>
+<script type="text/javascript" src="/asset/top/master.js?v=1.0" id="jsSite" data-site="politics" data-gaTag="" data-site-page="polls"></script>
+<script type="text/javascript" src="/asset/vertical/rcp/rcp.js?v=1.0"></script>
+
+<script src="/3rd_party/waypoints/lib/jquery.waypoints.min.js"></script>
+<script src="/3rd_party/waypoints/lib/shortcuts/inview.min.js"></script> -->
+
+			<meta name="title" content="RealClearPolitics - 2016 Latest Polls" />
+			<meta name="description" content="2016 Latest Polls" />
+			<meta name="keywords" content="politics" />
+			<meta property="og:title" content="RealClearPolitics - 2016 Latest Polls" />
+			<meta property="og:type" content="website" />
+			<meta property="og:url" content="http://www.realclearpolitics.com/epolls/latest_polls/index.html" />
+			<meta property="og:description" content="2016 Latest Polls" />
+			<meta property="fb:app_id" content="1415921935346245" />
+			<meta property="og:image" content="http://www.realclearpolitics.com/images/realclearpolitics_social_logo.png" />
+			<meta name="twitter:card" content="summary" />
+			<meta name="twitter:site" content="@@RealClearNews" />
+			<meta name="tweetmeme-title" content="RealClearPolitics - 2016 Latest Polls" />
+
+			<meta name="format-detection" content="telephone=no"><title>RealClearPolitics - 2016 Latest Polls</title>
+				<!-- <script type="text/javascript" src="/asset/section/polls.js"></script> -->
+				<!-- <link type="text/css" rel="stylesheet" href="/asset/section/polls.css" /> -->
+				<!-- <script type="text/javascript" src="/3rd_party/sorttable/sorttable.js"></script>
+				<script type="text/javascript" src="/3rd_party/typeahead/0.11.1/typeahead.bundle.js"></script> -->
+				<!-- <script type="text/javascript">
+
+					$(function()
+					{
+						showHideRaces();
+						fgetAllDataTables();
+					});
+
+					function fgetAllDataTables()
+					{
+						if (!document.getElementsByTagName) return false;
+						var eleTables = document.getElementsByTagName("table");
+						for (var i=0; i < eleTables.length; i++)
+						{
+							if (eleTables[i].className == "sortable")
+							{
+								fStripes(eleTables[i]);
+							}
+						}
+					}
+
+					function fStripes(eleTable)
+					{
+						var eleTableRows = eleTable.getElementsByTagName("tr");
+						for (var i=0; i < eleTableRows.length; i++)
+						{
+							eleTableRows[i].className = "alt";
+						}
+						for (var i=1; i < eleTableRows.length; i++)
+						{
+							eleTableRows[i].className = "";
+							i++;
+						}
+					}
+
+					var lp_els;
+					var lp_tables;
+					function showHideRaces()
+					{
+						var lp_els = $("#my-nav a.my-links");
+						var nextLink=document.getElementById("next");
+						var prevLink=document.getElementById("previous");
+						var myCounter=document.getElementById("counter");
+						var lp_tables=$(".table-races");
+						for(i=0;i<lp_els.length;i++){
+							lp_els[i].onclick=function(){
+								var vars=this.id.split("-");
+								var table=document.getElementById("table-"+vars[1]);
+								myCounter.value=parseInt(vars[1])-1;
+
+								for(p=0;p<lp_tables.length;p++){
+									lp_tables[p].className="table-races hide";
+									lp_els.eq(p).removeClass("on");
+								}
+								if(vars[1]==lp_els.length){
+									nextLink.className="hide";
+								}else{
+									nextLink.className="";
+								}
+								if(vars[1]==1){
+									prevLink.className="hide";
+								}else{
+									prevLink.className="";
+								}
+								this.className="on";
+								table.className="table-races";
+							}
+						}
+						nextLink.onclick=function(){
+							for(p=0;p<lp_tables.length;p++){
+								lp_tables[p].className="table-races hide";
+								lp_els.eq(p).removeClass("on");
+							}
+							var currentEl=(parseInt(myCounter.value)+1);
+
+							myCounter.value=currentEl
+							lp_els.eq(currentEl).addClass("on");
+							lp_tables[currentEl].className="table-races";
+							if((parseInt(currentEl)+1)==lp_els.length){
+								nextLink.className="hide";
+							}else{
+								nextLink.className="";
+							}
+							if((parseInt(currentEl)+1)==1){
+								prevLink.className="hide";
+							}else{
+								prevLink.className="";
+							}
+						}
+						prevLink.onclick=function(){
+							for(p=0;p<lp_tables.length;p++){
+								lp_tables[p].className="table-races hide";
+								lp_els.eq(p).removeClass("on");
+							}
+							var currentEl=(parseInt(myCounter.value)-1);
+							myCounter.value=currentEl
+							lp_els.eq(currentEl).addClass("on");
+							lp_tables[currentEl].className="table-races";
+							if((parseInt(currentEl)+1)==lp_els.length){
+								nextLink.className="hide";
+							}else{
+								nextLink.className="";
+							}
+							if((parseInt(currentEl)+1)==1){
+								prevLink.className="hide";
+							}else{
+								prevLink.className="";
+							}
+						}
+					}
+				</script> -->
+			</head>
+			<body class="polls">
+
+				<div id="container" class="dos-col">
+			<div id="masthead-wrapper" class="nav-down">
+    <div id="masthead">
+        <div class="top-bar"></div>
+        <div class="alpha-wrapper">
+            <div class="site-logo">
+                <a href="/"><img class="ss" src="/asset/img/rcp-logo-ss-red-250.gif"></a>
+                        <span class="verticals-menu">
+                            <div class="verticals-wrapper">
+                                <img class="full-site-arrow" src="/asset/img/rcp-site-arrow.png" />
+                                <img class="mobile-site-arrow" src="/asset/img/mobile-site-arrow.png" />
+                                <span class="verticals-tab"></span>
+                                <div class="verticals-site-list">
+                                    <!-- <script src="/include/rcp_sites_nav.js" type="text/javascript"></script> -->
+                                </div>
+                            </div>
+                        </span>
+            </div>
+        </div>
+        <div class="beta-wrapper">
+            <div class="site-nav">
+                <!-- <script src="/include/masthead_nav.js" type="text/javascript"></script> -->
+            </div>
+            <div class="site-search mobile">
+                <form><input type="text" id="searchBox" name="q" /></form>
+            </div>
+            <div class="site-search-mobile"></div>
+        </div>
+    </div><!-- end inner masthead -->
+
+</div><!-- end masthead wrapper -->
+<div class="alpha-container">
+	<div class="alpha">
+
+		<div class="RC-AD RC-AD-TOP-BANNER"></div>
+		<div class="RC-AD RC-AD-MOBILE-BANNER"></div>
+
+		<div class="polls-header"><h1>Polls</h1></div>
+
+		<div class="polls_header_dropdown">
+	<div class="quick_links_content">
+		<!-- <script type="text/javascript" src="/quick_links/23.js"></script> -->
+	</div>
+	<div class="filter_content">
+
+		<div class="filter_section">
+			<h4>Year</h4>
+			<select class="multi_select" id="af_year" name="af_year[]" multiple="multiple">
+
+			</select>
+		</div>
+
+		<div class="filter_section">
+			<h4>State <button class="select_all_button">&larr; Select All</button></h4>
+			<select class="multi_select" id="af_state" name="af_state[]" multiple="multiple">
+
+			</select>
+		</div>
+
+		<div class="filter_section">
+			<h4>Type</h4>
+			<select class="multi_select" id="af_type" name="af_type[]" multiple="multiple">
+
+			</select>
+		</div>
+
+		<div class="filter_section">
+			<button class="filter_button">Apply Filter</button>
+			<button class="clear_filter_button">Clear Filter</button>
+		</div>
+
+		<div class="results">
+			<h4>Results</h4>
+			<div class="race_results">
+				Select one or more years, states and race types, then click "Apply Filter" to see results.
+			</div>
+		</div>
+
+	</div>
+	<div class="open">
+		<div class="arrow"><img src="/asset/img/grey-bg-chev.png" alt="Arrow" /></div>
+		<div class="quick_links_title">Quick <span>Poll/Map</span> Links</div>
+		<div class="filter_title">Advanced Search</div>
+		<div class="find_a_poll_title"><span>Find Any Poll</span> <input type="text" id="find_a_poll" name="find_a_poll" placeholder="Try 'Iowa,' or 'Obama'" /></div>
+		<!-- <div class="polls_dropdown"><script src="/epolls/2014/widget/2016_presidential_polls.js" type="text/javascript"></script></div> -->
+	</div>
+</div>
+
+		<h2 class="page_title"><div>Latest Polls</div></h2>
+
+		<div class="polls-social">
+	<div class="socialBar" data-print="1" data-style="short" data-dialog="share">
+		<div class="left toolset"></div>
+	</div>
+
+	<div class="socialBar-clicks"></div>
+	<div class="socialBar-divide"> | </div>
+	<div class="socialBar-shares"></div>
+</div>
+
+		<div class="polls-under-title-module">
+			<a  href="http://www.realclearpolitics.com/epolls/latest_polls/elections/">All Election Polls</a>&nbsp;| <a  href="http://www.realclearpolitics.com/epolls/latest_polls/president/">President 2016</a> | <a  href="http://www.realclearpolitics.com/epolls/latest_polls/senate/">Senate 2016</a>&nbsp;|&nbsp;<a  href="http://www.realclearpolitics.com/epolls/latest_polls/governor/">Governor 2016</a><span>&nbsp;|&nbsp;</span><a class="selected" href="http://www.realclearpolitics.com/epolls/latest_polls/">All Latest Polls</a>		</div>
+
+		<div class="clearfix"></div>
+
+		<div id="table-1" class="table-races">
+				<table cellpadding="2" cellspacing="0">
+					<tr>
+						<td colspan="6" class="date"><b>Saturday, December 5</b></td>
+					</tr>
+				</table>
+				<table cellpadding="2" cellspacing="0" class="sortable">
+					<tr>
+						<th class="clickable lp-race"><strong>Race/Topic</strong> &nbsp;&nbsp;<span class="click-sort">(Click to Sort)</span></th>
+						<th class="sorttable_nosort lp-poll"><strong>Poll</strong></th>
+						<th class="sorttable_nosort lp-resluts"><strong>Results</strong></th>
+						<th class="sorttable_nosort lp-spread"><strong>Spread</strong></th>
+					</tr>
+			<tr class="">
+				<td class="lp-race"><a href="/epolls/2016/president/us/general_election_trump_vs_clinton-5491.html">General Election: Trump vs. Clinton</a></td>
+				<td class="lp-poll"><a href="http://www.cnn.com/2015/12/04/politics/hillary-clinton-republicans-head-to-head-poll/index.html">CNN/ORC</a></td>
+				<td class="lp-results"><a href="/epolls/2016/president/us/general_election_trump_vs_clinton-5491.html">Clinton 49, Trump 46</a></td>
+				<td class="lp-spread"><font color="black"><span class="dem">Clinton +3</span></font></td>
+			</tr>
+			<tr class="alt">
+				<td class="lp-race"><a href="/epolls/2016/president/us/general_election_cruz_vs_clinton-4034.html">General Election: Cruz vs. Clinton</a></td>
+				<td class="lp-poll"><a href="http://www.cnn.com/2015/12/04/politics/hillary-clinton-republicans-head-to-head-poll/index.html">CNN/ORC</a></td>
+				<td class="lp-results"><a href="/epolls/2016/president/us/general_election_cruz_vs_clinton-4034.html">Clinton 50, Cruz 47</a></td>
+				<td class="lp-spread"><font color="black"><span class="dem">Clinton +3</span></font></td>
+			</tr>
+			<tr class="">
+				<td class="lp-race"><a href="/epolls/2016/president/us/general_election_rubio_vs_clinton-3767.html">General Election: Rubio vs. Clinton</a></td>
+				<td class="lp-poll"><a href="http://www.cnn.com/2015/12/04/politics/hillary-clinton-republicans-head-to-head-poll/index.html">CNN/ORC</a></td>
+				<td class="lp-results"><a href="/epolls/2016/president/us/general_election_rubio_vs_clinton-3767.html">Rubio 49, Clinton 48</a></td>
+				<td class="lp-spread"><font color="black"><span class="rep">Rubio +1</span></font></td>
+			</tr>
+			<tr class="alt">
+				<td class="lp-race"><a href="/epolls/2016/president/us/general_election_carson_vs_clinton-5119.html">General Election: Carson vs. Clinton</a></td>
+				<td class="lp-poll"><a href="http://www.cnn.com/2015/12/04/politics/hillary-clinton-republicans-head-to-head-poll/index.html">CNN/ORC</a></td>
+				<td class="lp-results"><a href="/epolls/2016/president/us/general_election_carson_vs_clinton-5119.html">Carson 50, Clinton 47</a></td>
+				<td class="lp-spread"><font color="black"><span class="rep">Carson +3</span></font></td>
+			</tr>
+			<tr class="">
+				<td class="lp-race"><a href="/epolls/2016/president/us/general_election_bush_vs_clinton-3827.html">General Election: Bush vs. Clinton</a></td>
+				<td class="lp-poll"><a href="http://www.cnn.com/2015/12/04/politics/hillary-clinton-republicans-head-to-head-poll/index.html">CNN/ORC</a></td>
+				<td class="lp-results"><a href="/epolls/2016/president/us/general_election_bush_vs_clinton-3827.html">Clinton 49, Bush 47</a></td>
+				<td class="lp-spread"><font color="black"><span class="dem">Clinton +2</span></font></td>
+			</tr>
+			<tr class="alt">
+				<td class="lp-race"><a href="/epolls/other/president_obama_job_approval-1044.html">President Obama Job Approval</a></td>
+				<td class="lp-poll"><a href="http://www.gallup.com/poll/113980/Gallup-Daily-Obama-Job-Approval.aspx">Gallup</a></td>
+				<td class="lp-results"><a href="/epolls/other/president_obama_job_approval-1044.html">Approve 48, Disapprove 47</a></td>
+				<td class="lp-spread"><font color="black"><span class="">Approve +1</span></font></td>
+			</tr></table><div class="RC-AD RC-AD-BOX-TOP"></div>
+				<table cellpadding="2" cellspacing="0">
+					<tr>
+						<td colspan="6" class="date"><b>Friday, December 4</b></td>
+					</tr>
+				</table>
+				<table cellpadding="2" cellspacing="0" class="sortable">
+					<tr>
+						<th class="clickable lp-race"><strong>Race/Topic</strong> &nbsp;&nbsp;<span class="click-sort">(Click to Sort)</span></th>
+						<th class="sorttable_nosort lp-poll"><strong>Poll</strong></th>
+						<th class="sorttable_nosort lp-resluts"><strong>Results</strong></th>
+						<th class="sorttable_nosort lp-spread"><strong>Spread</strong></th>
+					</tr>
+			<tr class="">
+				<td class="lp-race"><a href="/epolls/2016/president/us/2016_republican_presidential_nomination-3823.html">2016 Republican Presidential Nomination</a></td>
+				<td class="lp-poll"><a href="http://i2.cdn.turner.com/cnn/2015/images/12/04/cnnorc12042015gopprimarypoll.pdf">CNN/ORC</a></td>
+				<td class="lp-results"><a href="/epolls/2016/president/us/2016_republican_presidential_nomination-3823.html">Trump 36, Carson 14, Cruz 16, Rubio 12, Bush 3, Fiorina 3, Christie 4, Kasich 2, Huckabee 2, Paul 1, Graham 0, Pataki 0, Santorum 0</a></td>
+				<td class="lp-spread"><font color="black"><span class="">Trump +20</span></font></td>
+			</tr>
+			<tr class="alt">
+				<td class="lp-race"><a href="/epolls/2016/president/us/2016_democratic_presidential_nomination-3824.html">2016 Democratic Presidential Nomination</a></td>
+				<td class="lp-poll"><a href="http://www.cnn.com/2015/12/04/politics/full-results-poll-democrats-2016/index.html">CNN/ORC</a></td>
+				<td class="lp-results"><a href="/epolls/2016/president/us/2016_democratic_presidential_nomination-3824.html">Clinton 58, Sanders 30, O'Malley 2</a></td>
+				<td class="lp-spread"><font color="black"><span class="">Clinton +28</span></font></td>
+			</tr>
+			<tr class="">
+				<td class="lp-race"><a href="/epolls/other/president_obama_job_approval-1044.html">President Obama Job Approval</a></td>
+				<td class="lp-poll"><a href="http://www.rasmussenreports.com/public_content/politics/obama_administration/obama_approval_index_history">Rasmussen Reports</a></td>
+				<td class="lp-results"><a href="/epolls/other/president_obama_job_approval-1044.html">Approve 45, Disapprove 54</a></td>
+				<td class="lp-spread"><font color="black"><span class="">Disapprove +9</span></font></td>
+			</tr></table><div class="RC-AD RC-AD-BOX-MIDDLE mobile_only"></div>
+				<table cellpadding="2" cellspacing="0">
+					<tr>
+						<td colspan="6" class="date"><b>Thursday, December 3</b></td>
+					</tr>
+				</table>
+				<table cellpadding="2" cellspacing="0" class="sortable">
+					<tr>
+						<th class="clickable lp-race"><strong>Race/Topic</strong> &nbsp;&nbsp;<span class="click-sort">(Click to Sort)</span></th>
+						<th class="sorttable_nosort lp-poll"><strong>Poll</strong></th>
+						<th class="sorttable_nosort lp-resluts"><strong>Results</strong></th>
+						<th class="sorttable_nosort lp-spread"><strong>Spread</strong></th>
+					</tr>
+			<tr class="">
+				<td class="lp-race"><a href="/epolls/2016/president/nh/new_hampshire_republican_presidential_primary-3350.html">New Hampshire Republican Presidential Primary</a></td>
+				<td class="lp-poll"><a href="http://www.publicpolicypolling.com/pdf/2015/PPP_Release_NH_120315.pdf">PPP (D)</a></td>
+				<td class="lp-results"><a href="/epolls/2016/president/nh/new_hampshire_republican_presidential_primary-3350.html">Trump 27, Rubio 11, Cruz 13, Carson 9, Kasich 8, Bush 5, Christie 10, Fiorina 6, Paul 4, Huckabee 1, Santorum 1, Graham 0, Pataki 1</a></td>
+				<td class="lp-spread"><font color="black"><span class="">Trump +14</span></font></td>
+			</tr>
+			<tr class="alt">
+				<td class="lp-race"><a href="/epolls/2016/president/nh/new_hampshire_democratic_presidential_primary-3351.html">New Hampshire 2016 Democratic Primary</a></td>
+				<td class="lp-poll"><a href="http://www.publicpolicypolling.com/pdf/2015/PPP_Release_NH_120315.pdf">PPP (D)</a></td>
+				<td class="lp-results"><a href="/epolls/2016/president/nh/new_hampshire_democratic_presidential_primary-3351.html">Sanders 42, Clinton 44, O'Malley 8</a></td>
+				<td class="lp-spread"><font color="black"><span class="">Clinton +2</span></font></td>
+			</tr>
+			<tr class="">
+				<td class="lp-race"><a href="/epolls/other/president_obama_job_approval-1044.html">President Obama Job Approval</a></td>
+				<td class="lp-poll"><a href="http://www.quinnipiac.edu/images/polling/us/us12032015_Ure64rn.pdf">Quinnipiac</a></td>
+				<td class="lp-results"><a href="/epolls/other/president_obama_job_approval-1044.html">Approve 44, Disapprove 51</a></td>
+				<td class="lp-spread"><font color="black"><span class="">Disapprove +7</span></font></td>
+			</tr>
+			<tr class="alt">
+				<td class="lp-race"><a href="/epolls/other/president_obama_job_approval-1044.html">President Obama Job Approval</a></td>
+				<td class="lp-poll"><a href="http://www.ipsos-na.com/download/pr.aspx?id=15124">Reuters/Ipsos</a></td>
+				<td class="lp-results"><a href="/epolls/other/president_obama_job_approval-1044.html">Approve 44, Disapprove 50</a></td>
+				<td class="lp-spread"><font color="black"><span class="">Disapprove +6</span></font></td>
+			</tr>
+			<tr class="">
+				<td class="lp-race"><a href="/epolls/other/direction_of_country-902.html">Direction of Country</a></td>
+				<td class="lp-poll"><a href="http://www.ipsos-na.com/download/pr.aspx?id=15124">Reuters/Ipsos</a></td>
+				<td class="lp-results"><a href="/epolls/other/direction_of_country-902.html">Right Direction 27, Wrong Track 58</a></td>
+				<td class="lp-spread"><font color="black"><span class="">Wrong Track +31</span></font></td>
+			</tr></table>
+				<table cellpadding="2" cellspacing="0">
+					<tr>
+						<td colspan="6" class="date"><b>Wednesday, December 2</b></td>
+					</tr>
+				</table>
+				<table cellpadding="2" cellspacing="0" class="sortable">
+					<tr>
+						<th class="clickable lp-race"><strong>Race/Topic</strong> &nbsp;&nbsp;<span class="click-sort">(Click to Sort)</span></th>
+						<th class="sorttable_nosort lp-poll"><strong>Poll</strong></th>
+						<th class="sorttable_nosort lp-resluts"><strong>Results</strong></th>
+						<th class="sorttable_nosort lp-spread"><strong>Spread</strong></th>
+					</tr>
+			<tr class="">
+				<td class="lp-race"><a href="/epolls/2016/president/us/2016_republican_presidential_nomination-3823.html">2016 Republican Presidential Nomination</a></td>
+				<td class="lp-poll"><a href="http://www.quinnipiac.edu/images/polling/us/us12022015_U45hkpp.pdf">Quinnipiac</a></td>
+				<td class="lp-results"><a href="/epolls/2016/president/us/2016_republican_presidential_nomination-3823.html">Trump 27, Carson 16, Cruz 16, Rubio 17, Bush 5, Fiorina 3, Christie 2, Kasich 2, Huckabee 1, Paul 2, Graham 0, Pataki 0, Santorum 0</a></td>
+				<td class="lp-spread"><font color="black"><span class="">Trump +10</span></font></td>
+			</tr>
+			<tr class="alt">
+				<td class="lp-race"><a href="/epolls/2016/president/us/2016_democratic_presidential_nomination-3824.html">2016 Democratic Presidential Nomination</a></td>
+				<td class="lp-poll"><a href="http://www.quinnipiac.edu/images/polling/us/us12022015_U45hkpp.pdf">Quinnipiac</a></td>
+				<td class="lp-results"><a href="/epolls/2016/president/us/2016_democratic_presidential_nomination-3824.html">Clinton 60, Sanders 30, O'Malley 2</a></td>
+				<td class="lp-spread"><font color="black"><span class="">Clinton +30</span></font></td>
+			</tr>
+			<tr class="">
+				<td class="lp-race"><a href="/epolls/2016/president/us/general_election_trump_vs_clinton-5491.html">General Election: Trump vs. Clinton</a></td>
+				<td class="lp-poll"><a href="http://www.quinnipiac.edu/images/polling/us/us12022015_U45hkpp.pdf">Quinnipiac</a></td>
+				<td class="lp-results"><a href="/epolls/2016/president/us/general_election_trump_vs_clinton-5491.html">Clinton 47, Trump 41</a></td>
+				<td class="lp-spread"><font color="black"><span class="dem">Clinton +6</span></font></td>
+			</tr>
+			<tr class="alt">
+				<td class="lp-race"><a href="/epolls/2016/president/us/general_election_cruz_vs_clinton-4034.html">General Election: Cruz vs. Clinton</a></td>
+				<td class="lp-poll"><a href="http://www.quinnipiac.edu/images/polling/us/us12022015_U45hkpp.pdf">Quinnipiac</a></td>
+				<td class="lp-results"><a href="/epolls/2016/president/us/general_election_cruz_vs_clinton-4034.html">Clinton 47, Cruz 42</a></td>
+				<td class="lp-spread"><font color="black"><span class="dem">Clinton +5</span></font></td>
+			</tr>
+			<tr class="">
+				<td class="lp-race"><a href="/epolls/2016/president/us/general_election_rubio_vs_clinton-3767.html">General Election: Rubio vs. Clinton</a></td>
+				<td class="lp-poll"><a href="http://www.quinnipiac.edu/images/polling/us/us12022015_U45hkpp.pdf">Quinnipiac</a></td>
+				<td class="lp-results"><a href="/epolls/2016/president/us/general_election_rubio_vs_clinton-3767.html">Rubio 44, Clinton 45</a></td>
+				<td class="lp-spread"><font color="black"><span class="dem">Clinton +1</span></font></td>
+			</tr>
+			<tr class="alt">
+				<td class="lp-race"><a href="/epolls/2016/president/us/general_election_carson_vs_clinton-5119.html">General Election: Carson vs. Clinton</a></td>
+				<td class="lp-poll"><a href="http://www.quinnipiac.edu/images/polling/us/us12022015_U45hkpp.pdf">Quinnipiac</a></td>
+				<td class="lp-results"><a href="/epolls/2016/president/us/general_election_carson_vs_clinton-5119.html">Carson 43, Clinton 46</a></td>
+				<td class="lp-spread"><font color="black"><span class="dem">Clinton +3</span></font></td>
+			</tr>
+			<tr class="">
+				<td class="lp-race"><a href="/epolls/2016/president/us/general_election_trump_vs_sanders-5565.html">General Election: Trump vs. Sanders</a></td>
+				<td class="lp-poll"><a href="http://www.quinnipiac.edu/images/polling/us/us12022015_U45hkpp.pdf">Quinnipiac</a></td>
+				<td class="lp-results"><a href="/epolls/2016/president/us/general_election_trump_vs_sanders-5565.html">Sanders 49, Trump 41</a></td>
+				<td class="lp-spread"><font color="black"><span class="dem">Sanders +8</span></font></td>
+			</tr>
+			<tr class="alt">
+				<td class="lp-race"><a href="/epolls/2016/president/us/general_election_cruz_vs_sanders-5742.html">General Election: Cruz vs. Sanders</a></td>
+				<td class="lp-poll"><a href="http://www.quinnipiac.edu/images/polling/us/us12022015_U45hkpp.pdf">Quinnipiac</a></td>
+				<td class="lp-results"><a href="/epolls/2016/president/us/general_election_cruz_vs_sanders-5742.html">Sanders 49, Cruz 39</a></td>
+				<td class="lp-spread"><font color="black"><span class="dem">Sanders +10</span></font></td>
+			</tr>
+			<tr class="">
+				<td class="lp-race"><a href="/epolls/2016/president/us/general_election_rubio_vs_sanders-5564.html">General Election: Rubio vs. Sanders</a></td>
+				<td class="lp-poll"><a href="http://www.quinnipiac.edu/images/polling/us/us12022015_U45hkpp.pdf">Quinnipiac</a></td>
+				<td class="lp-results"><a href="/epolls/2016/president/us/general_election_rubio_vs_sanders-5564.html">Sanders 44, Rubio 43</a></td>
+				<td class="lp-spread"><font color="black"><span class="dem">Sanders +1</span></font></td>
+			</tr>
+			<tr class="alt">
+				<td class="lp-race"><a href="/epolls/2016/president/us/general_election_carson_vs_sanders-5677.html">General Election: Carson vs. Sanders</a></td>
+				<td class="lp-poll"><a href="http://www.quinnipiac.edu/images/polling/us/us12022015_U45hkpp.pdf">Quinnipiac</a></td>
+				<td class="lp-results"><a href="/epolls/2016/president/us/general_election_carson_vs_sanders-5677.html">Carson 41, Sanders 47</a></td>
+				<td class="lp-spread"><font color="black"><span class="dem">Sanders +6</span></font></td>
+			</tr></table>
+				<table cellpadding="2" cellspacing="0">
+					<tr>
+						<td colspan="6" class="date"><b>Tuesday, December 1</b></td>
+					</tr>
+				</table>
+				<table cellpadding="2" cellspacing="0" class="sortable">
+					<tr>
+						<th class="clickable lp-race"><strong>Race/Topic</strong> &nbsp;&nbsp;<span class="click-sort">(Click to Sort)</span></th>
+						<th class="sorttable_nosort lp-poll"><strong>Poll</strong></th>
+						<th class="sorttable_nosort lp-resluts"><strong>Results</strong></th>
+						<th class="sorttable_nosort lp-spread"><strong>Spread</strong></th>
+					</tr>
+			<tr class="">
+				<td class="lp-race"><a href="/epolls/other/obama_and_democrats_health_care_plan-1130.html">Public Approval of Health Care Law</a></td>
+				<td class="lp-poll"><a href="http://www.rasmussenreports.com/public_content/politics/current_events/healthcare/health_care_law">Rasmussen Reports</a></td>
+				<td class="lp-results"><a href="/epolls/other/obama_and_democrats_health_care_plan-1130.html">For/Favor 45, Against/Oppose 51</a></td>
+				<td class="lp-spread"><font color="black"><span class="red">Against/Oppose +6</span></font></td>
+			</tr></table>
+				<table cellpadding="2" cellspacing="0">
+					<tr>
+						<td colspan="6" class="date"><b>Monday, November 30</b></td>
+					</tr>
+				</table>
+				<table cellpadding="2" cellspacing="0" class="sortable">
+					<tr>
+						<th class="clickable lp-race"><strong>Race/Topic</strong> &nbsp;&nbsp;<span class="click-sort">(Click to Sort)</span></th>
+						<th class="sorttable_nosort lp-poll"><strong>Poll</strong></th>
+						<th class="sorttable_nosort lp-resluts"><strong>Results</strong></th>
+						<th class="sorttable_nosort lp-spread"><strong>Spread</strong></th>
+					</tr>
+			<tr class="">
+				<td class="lp-race"><a href="/epolls/other/direction_of_country-902.html">Direction of Country</a></td>
+				<td class="lp-poll"><a href="http://www.rasmussenreports.com/public_content/politics/mood_of_america/right_direction_or_wrong_track">Rasmussen Reports</a></td>
+				<td class="lp-results"><a href="/epolls/other/direction_of_country-902.html">Right Direction 28, Wrong Track 63</a></td>
+				<td class="lp-spread"><font color="black"><span class="">Wrong Track +35</span></font></td>
+			</tr></table>
+				<table cellpadding="2" cellspacing="0">
+					<tr>
+						<td colspan="6" class="date"><b>Wednesday, November 25</b></td>
+					</tr>
+				</table>
+				<table cellpadding="2" cellspacing="0" class="sortable">
+					<tr>
+						<th class="clickable lp-race"><strong>Race/Topic</strong> &nbsp;&nbsp;<span class="click-sort">(Click to Sort)</span></th>
+						<th class="sorttable_nosort lp-poll"><strong>Poll</strong></th>
+						<th class="sorttable_nosort lp-resluts"><strong>Results</strong></th>
+						<th class="sorttable_nosort lp-spread"><strong>Spread</strong></th>
+					</tr>
+			<tr class="">
+				<td class="lp-race"><a href="/epolls/2016/president/ia/iowa_democratic_presidential_caucus-3195.html">Iowa Democratic Presidential Caucus</a></td>
+				<td class="lp-poll"><a href="http://www.quinnipiac.edu/images/polling/ia/ia11252015_I76ptrnw.pdf">Quinnipiac</a></td>
+				<td class="lp-results"><a href="/epolls/2016/president/ia/iowa_democratic_presidential_caucus-3195.html">Clinton 51, Sanders 42, O'Malley 4</a></td>
+				<td class="lp-spread"><font color="black"><span class="">Clinton +9</span></font></td>
+			</tr>
+			<tr class="alt">
+				<td class="lp-race"><a href="/epolls/other/president_obama_job_approval-1044.html">President Obama Job Approval</a></td>
+				<td class="lp-poll"><a href="http://www.ipsos-na.com/news-polls/reuters-polls/">Reuters/Ipsos</a></td>
+				<td class="lp-results"><a href="/epolls/other/president_obama_job_approval-1044.html">Approve 42, Disapprove 53</a></td>
+				<td class="lp-spread"><font color="black"><span class="">Disapprove +11</span></font></td>
+			</tr>
+			<tr class="">
+				<td class="lp-race"><a href="/epolls/other/direction_of_country-902.html">Direction of Country</a></td>
+				<td class="lp-poll"><a href="http://www.ipsos-na.com/news-polls/reuters-polls/">Reuters/Ipsos</a></td>
+				<td class="lp-results"><a href="/epolls/other/direction_of_country-902.html">Right Direction 24, Wrong Track 64</a></td>
+				<td class="lp-spread"><font color="black"><span class="">Wrong Track +40</span></font></td>
+			</tr></table>
+				<table cellpadding="2" cellspacing="0">
+					<tr>
+						<td colspan="6" class="date"><b>Tuesday, November 24</b></td>
+					</tr>
+				</table>
+				<table cellpadding="2" cellspacing="0" class="sortable">
+					<tr>
+						<th class="clickable lp-race"><strong>Race/Topic</strong> &nbsp;&nbsp;<span class="click-sort">(Click to Sort)</span></th>
+						<th class="sorttable_nosort lp-poll"><strong>Poll</strong></th>
+						<th class="sorttable_nosort lp-resluts"><strong>Results</strong></th>
+						<th class="sorttable_nosort lp-spread"><strong>Spread</strong></th>
+					</tr>
+			<tr class="">
+				<td class="lp-race"><a href="/epolls/2016/president/ia/iowa_republican_presidential_caucus-3194.html">Iowa Republican Presidential Caucus</a></td>
+				<td class="lp-poll"><a href="http://www.quinnipiac.edu/images/polling/ia/ia11242015_Ic344mgh.pdf">Quinnipiac</a></td>
+				<td class="lp-results"><a href="/epolls/2016/president/ia/iowa_republican_presidential_caucus-3194.html">Trump 25, Carson 18, Cruz 23, Rubio 13, Bush 4, Fiorina 3, Paul 5, Jindal, Christie 2, Huckabee 2, Santorum 2, Kasich 1, Graham 0, Pataki 0</a></td>
+				<td class="lp-spread"><font color="black"><span class="">Trump +2</span></font></td>
+			</tr>
+			<tr class="alt">
+				<td class="lp-race"><a href="/epolls/2016/president/ma/massachusetts_republican_presidential_primary-5205.html">Massachusetts Republican Presidential Primary</a></td>
+				<td class="lp-poll"><a href="https://www.bostonglobe.com/metro/2015/11/24/mass-poll-shows-voters-split-baker-refugee-stance/sbUwD3b1gyaaf6m6xXq7rL/story.html">Boston Globe/Suffolk</a></td>
+				<td class="lp-results"><a href="/epolls/2016/president/ma/massachusetts_republican_presidential_primary-5205.html">Trump 32, Rubio 18, Carson 5, Cruz 10, Bush 7, Fiorina 4, Christie 4, Kasich 2, Paul 1, Graham 0, Huckabee 0</a></td>
+				<td class="lp-spread"><font color="black"><span class="">Trump +14</span></font></td>
+			</tr>
+			<tr class="">
+				<td class="lp-race"><a href="/epolls/2016/president/ma/massachusetts_democratic_presidential_primary-3891.html">Massachusetts Democratic Presidential Primary</a></td>
+				<td class="lp-poll"><a href="https://www.bostonglobe.com/metro/2015/11/24/mass-poll-shows-voters-split-baker-refugee-stance/sbUwD3b1gyaaf6m6xXq7rL/story.html">Boston Globe/Suffolk</a></td>
+				<td class="lp-results"><a href="/epolls/2016/president/ma/massachusetts_democratic_presidential_primary-3891.html">Clinton 54, Sanders 29, O'Malley 3</a></td>
+				<td class="lp-spread"><font color="black"><span class="">Clinton +25</span></font></td>
+			</tr>
+			<tr class="alt">
+				<td class="lp-race"><a href="/epolls/other/president_obama_job_approval-1044.html">President Obama Job Approval</a></td>
+				<td class="lp-poll"><a href="http://www.cbsnews.com/news/poll-concerns-about-terrorist-attack-in-u-s-rise/">CBS News</a></td>
+				<td class="lp-results"><a href="/epolls/other/president_obama_job_approval-1044.html">Approve 42, Disapprove 47</a></td>
+				<td class="lp-spread"><font color="black"><span class="">Disapprove +5</span></font></td>
+			</tr>
+			<tr class="">
+				<td class="lp-race"><a href="/epolls/other/president_obama_job_approval-1044.html">President Obama Job Approval</a></td>
+				<td class="lp-poll"><a href="http://apps.washingtonpost.com/g/page/politics/washington-post-abc-news-poll-nov-15-19-2015/1880/">ABC News/Wash Post</a></td>
+				<td class="lp-results"><a href="/epolls/other/president_obama_job_approval-1044.html">Approve 46, Disapprove 50</a></td>
+				<td class="lp-spread"><font color="black"><span class="">Disapprove +4</span></font></td>
+			</tr>
+			<tr class="alt">
+				<td class="lp-race"><a href="/epolls/other/president_obama_job_approval-1044.html">President Obama Job Approval</a></td>
+				<td class="lp-poll"><a href="https://d25d2506sfb94s.cloudfront.net/cumulus_uploads/document/ilg7fspccq/trackingreport.pdf">The Economist/YouGov</a></td>
+				<td class="lp-results"><a href="/epolls/other/president_obama_job_approval-1044.html">Approve 44, Disapprove 53</a></td>
+				<td class="lp-spread"><font color="black"><span class="">Disapprove +9</span></font></td>
+			</tr>
+			<tr class="">
+				<td class="lp-race"><a href="/epolls/other/congressional_job_approval-903.html">Congressional Job Approval</a></td>
+				<td class="lp-poll"><a href="https://d25d2506sfb94s.cloudfront.net/cumulus_uploads/document/ilg7fspccq/trackingreport.pdf">The Economist/YouGov</a></td>
+				<td class="lp-results"><a href="/epolls/other/congressional_job_approval-903.html">Approve 13, Disapprove 65</a></td>
+				<td class="lp-spread"><font color="black"><span class="">Disapprove +52</span></font></td>
+			</tr>
+			<tr class="alt">
+				<td class="lp-race"><a href="/epolls/other/direction_of_country-902.html">Direction of Country</a></td>
+				<td class="lp-poll"><a href="https://d25d2506sfb94s.cloudfront.net/cumulus_uploads/document/ilg7fspccq/trackingreport.pdf">The Economist/YouGov</a></td>
+				<td class="lp-results"><a href="/epolls/other/direction_of_country-902.html">Right Direction 26, Wrong Track 65</a></td>
+				<td class="lp-spread"><font color="black"><span class="">Wrong Track +39</span></font></td>
+			</tr></table>
+				<table cellpadding="2" cellspacing="0">
+					<tr>
+						<td colspan="6" class="date"><b>Monday, November 23</b></td>
+					</tr>
+				</table>
+				<table cellpadding="2" cellspacing="0" class="sortable">
+					<tr>
+						<th class="clickable lp-race"><strong>Race/Topic</strong> &nbsp;&nbsp;<span class="click-sort">(Click to Sort)</span></th>
+						<th class="sorttable_nosort lp-poll"><strong>Poll</strong></th>
+						<th class="sorttable_nosort lp-resluts"><strong>Results</strong></th>
+						<th class="sorttable_nosort lp-spread"><strong>Spread</strong></th>
+					</tr>
+			<tr class="">
+				<td class="lp-race"><a href="/epolls/2016/president/ia/iowa_democratic_presidential_caucus-3195.html">Iowa Democratic Presidential Caucus</a></td>
+				<td class="lp-poll"><a href="http://www.cbsnews.com/news/clinton-extends-iowa-lead-amid-strong-ratings-on-commander-in-chief/">CBS News/YouGov</a></td>
+				<td class="lp-results"><a href="/epolls/2016/president/ia/iowa_democratic_presidential_caucus-3195.html">Clinton 50, Sanders 44, O'Malley 5</a></td>
+				<td class="lp-spread"><font color="black"><span class="">Clinton +6</span></font></td>
+			</tr>
+			<tr class="alt">
+				<td class="lp-race"><a href="/epolls/2016/president/nh/new_hampshire_democratic_presidential_primary-3351.html">New Hampshire 2016 Democratic Primary</a></td>
+				<td class="lp-poll"><a href="http://www.cbsnews.com/news/clinton-extends-iowa-lead-amid-strong-ratings-on-commander-in-chief/">CBS News/YouGov</a></td>
+				<td class="lp-results"><a href="/epolls/2016/president/nh/new_hampshire_democratic_presidential_primary-3351.html">Sanders 52, Clinton 45, O'Malley 3</a></td>
+				<td class="lp-spread"><font color="black"><span class="">Sanders +7</span></font></td>
+			</tr>
+			<tr class="">
+				<td class="lp-race"><a href="/epolls/2016/president/sc/south_carolina_democratic_presidential_primary-4167.html">South Carolina Democratic Presidential Primary</a></td>
+				<td class="lp-poll"><a href="http://www.cbsnews.com/news/clinton-extends-iowa-lead-amid-strong-ratings-on-commander-in-chief/">CBS News/YouGov</a></td>
+				<td class="lp-results"><a href="/epolls/2016/president/sc/south_carolina_democratic_presidential_primary-4167.html">Clinton 72, Sanders 25, O'Malley 2</a></td>
+				<td class="lp-spread"><font color="black"><span class="">Clinton +47</span></font></td>
+			</tr>
+			<tr class="alt">
+				<td class="lp-race"><a href="/epolls/other/direction_of_country-902.html">Direction of Country</a></td>
+				<td class="lp-poll"><a href="http://www.rasmussenreports.com/public_content/politics/mood_of_america/right_direction_or_wrong_track">Rasmussen Reports</a></td>
+				<td class="lp-results"><a href="/epolls/other/direction_of_country-902.html">Right Direction 25, Wrong Track 67</a></td>
+				<td class="lp-spread"><font color="black"><span class="">Wrong Track +42</span></font></td>
+			</tr></table>
+				<table cellpadding="2" cellspacing="0">
+					<tr>
+						<td colspan="6" class="date"><b>Sunday, November 22</b></td>
+					</tr>
+				</table>
+				<table cellpadding="2" cellspacing="0" class="sortable">
+					<tr>
+						<th class="clickable lp-race"><strong>Race/Topic</strong> &nbsp;&nbsp;<span class="click-sort">(Click to Sort)</span></th>
+						<th class="sorttable_nosort lp-poll"><strong>Poll</strong></th>
+						<th class="sorttable_nosort lp-resluts"><strong>Results</strong></th>
+						<th class="sorttable_nosort lp-spread"><strong>Spread</strong></th>
+					</tr>
+			<tr class="">
+				<td class="lp-race"><a href="/epolls/2016/president/us/2016_republican_presidential_nomination-3823.html">2016 Republican Presidential Nomination</a></td>
+				<td class="lp-poll"><a href="http://www.langerresearch.com/wp-content/uploads/1173a22016Election.pdf">ABC/Wash Post</a></td>
+				<td class="lp-results"><a href="/epolls/2016/president/us/2016_republican_presidential_nomination-3823.html">Trump 32, Carson 22, Cruz 8, Rubio 11, Bush 6, Fiorina 4, Christie 2, Kasich 3, Huckabee 3, Paul 3, Graham 1, Pataki 0, Santorum 1</a></td>
+				<td class="lp-spread"><font color="black"><span class="">Trump +10</span></font></td>
+			</tr>
+			<tr class="alt">
+				<td class="lp-race"><a href="/epolls/2016/president/us/2016_democratic_presidential_nomination-3824.html">2016 Democratic Presidential Nomination</a></td>
+				<td class="lp-poll"><a href="http://www.langerresearch.com/wp-content/uploads/1173a22016Election.pdf">ABC/Wash Post</a></td>
+				<td class="lp-results"><a href="/epolls/2016/president/us/2016_democratic_presidential_nomination-3824.html">Clinton 60, Sanders 34, O'Malley 3</a></td>
+				<td class="lp-spread"><font color="black"><span class="">Clinton +26</span></font></td>
+			</tr>
+			<tr class="">
+				<td class="lp-race"><a href="/epolls/2016/president/us/2016_republican_presidential_nomination-3823.html">2016 Republican Presidential Nomination</a></td>
+				<td class="lp-poll"><a href="http://www.foxnews.com/politics/interactive/2015/11/20/fox-news-poll-2016-matchups-syrian-refugees/">FOX News</a></td>
+				<td class="lp-results"><a href="/epolls/2016/president/us/2016_republican_presidential_nomination-3823.html">Trump 28, Carson 18, Cruz 14, Rubio 14, Bush 5, Fiorina 3, Christie 3, Kasich 2, Huckabee 3, Paul 2, Graham 0, Pataki 1, Santorum 0</a></td>
+				<td class="lp-spread"><font color="black"><span class="">Trump +10</span></font></td>
+			</tr>
+			<tr class="alt">
+				<td class="lp-race"><a href="/epolls/2016/president/us/2016_democratic_presidential_nomination-3824.html">2016 Democratic Presidential Nomination</a></td>
+				<td class="lp-poll"><a href="http://www.foxnews.com/politics/interactive/2015/11/20/fox-news-poll-2016-matchups-syrian-refugees/">FOX News</a></td>
+				<td class="lp-results"><a href="/epolls/2016/president/us/2016_democratic_presidential_nomination-3824.html">Clinton 55, Sanders 32, O'Malley 3</a></td>
+				<td class="lp-spread"><font color="black"><span class="">Clinton +23</span></font></td>
+			</tr>
+			<tr class="">
+				<td class="lp-race"><a href="/epolls/2016/president/nh/new_hampshire_republican_presidential_primary-3350.html">New Hampshire Republican Presidential Primary</a></td>
+				<td class="lp-poll"><a href="http://www.bostonglobe.com/news/politics/2015/11/21/full-results-poll/G6q8zRhCVAWHPQUjXo1tjK/story.html?p1=Article_Related_Box_Article_More">Boston Globe/Suffolk</a></td>
+				<td class="lp-results"><a href="/epolls/2016/president/nh/new_hampshire_republican_presidential_primary-3350.html">Trump 22, Rubio 11, Cruz 9, Carson 10, Kasich 9, Bush 8, Christie 4, Fiorina 4, Paul 3, Huckabee 1, Santorum 0, Graham 0, Pataki 0</a></td>
+				<td class="lp-spread"><font color="black"><span class="">Trump +11</span></font></td>
+			</tr>
+			<tr class="alt">
+				<td class="lp-race"><a href="/epolls/2016/president/ia/iowa_republican_presidential_caucus-3194.html">Iowa Republican Presidential Caucus</a></td>
+				<td class="lp-poll"><a href="http://www.cbsnews.com/news/poll-trump-retakes-lead-cruz-surges-in-ia-rubio-second-in-nh/">CBS/YouGov</a></td>
+				<td class="lp-results"><a href="/epolls/2016/president/ia/iowa_republican_presidential_caucus-3194.html">Trump 30, Carson 19, Cruz 21, Rubio 11, Bush 5, Fiorina 4, Paul 2, Jindal 2, Christie 2, Huckabee 1, Santorum 2, Kasich 1, Graham 0, Pataki 0</a></td>
+				<td class="lp-spread"><font color="black"><span class="">Trump +9</span></font></td>
+			</tr>
+			<tr class="">
+				<td class="lp-race"><a href="/epolls/2016/president/nh/new_hampshire_republican_presidential_primary-3350.html">New Hampshire Republican Presidential Primary</a></td>
+				<td class="lp-poll"><a href="http://www.cbsnews.com/news/poll-trump-retakes-lead-cruz-surges-in-ia-rubio-second-in-nh/">CBS/YouGov</a></td>
+				<td class="lp-results"><a href="/epolls/2016/president/nh/new_hampshire_republican_presidential_primary-3350.html">Trump 32, Rubio 13, Cruz 10, Carson 10, Kasich 8, Bush 6, Christie 5, Fiorina 6, Paul 6, Huckabee 1, Santorum 1, Graham 1, Pataki 0</a></td>
+				<td class="lp-spread"><font color="black"><span class="">Trump +19</span></font></td>
+			</tr>
+			<tr class="alt">
+				<td class="lp-race"><a href="/epolls/2016/president/sc/south_carolina_republican_presidential_primary-4151.html">South Carolina Republican Presidential Primary</a></td>
+				<td class="lp-poll"><a href="http://www.cbsnews.com/news/poll-trump-retakes-lead-cruz-surges-in-ia-rubio-second-in-nh/">CBS/YouGov</a></td>
+				<td class="lp-results"><a href="/epolls/2016/president/sc/south_carolina_republican_presidential_primary-4151.html">Trump 35, Carson 19, Rubio 16, Cruz 13, Bush 5, Fiorina 2, Kasich 2, Huckabee 2, Graham 3, Paul 1, Christie 1, Santorum 1, Jindal 0, Pataki</a></td>
+				<td class="lp-spread"><font color="black"><span class="">Trump +16</span></font></td>
+			</tr>
+			<tr class="">
+				<td class="lp-race"><a href="/epolls/2016/president/us/general_election_trump_vs_clinton-5491.html">General Election: Trump vs. Clinton</a></td>
+				<td class="lp-poll"><a href="http://www.foxnews.com/politics/interactive/2015/11/20/fox-news-poll-2016-matchups-syrian-refugees/">FOX News</a></td>
+				<td class="lp-results"><a href="/epolls/2016/president/us/general_election_trump_vs_clinton-5491.html">Clinton 41, Trump 46</a></td>
+				<td class="lp-spread"><font color="black"><span class="rep">Trump +5</span></font></td>
+			</tr>
+			<tr class="alt">
+				<td class="lp-race"><a href="/epolls/2016/president/us/general_election_carson_vs_clinton-5119.html">General Election: Carson vs. Clinton</a></td>
+				<td class="lp-poll"><a href="http://www.foxnews.com/politics/interactive/2015/11/20/fox-news-poll-2016-matchups-syrian-refugees/">FOX News</a></td>
+				<td class="lp-results"><a href="/epolls/2016/president/us/general_election_carson_vs_clinton-5119.html">Carson 47, Clinton 42</a></td>
+				<td class="lp-spread"><font color="black"><span class="rep">Carson +5</span></font></td>
+			</tr>
+			<tr class="">
+				<td class="lp-race"><a href="/epolls/2016/president/us/general_election_rubio_vs_clinton-3767.html">General Election: Rubio vs. Clinton</a></td>
+				<td class="lp-poll"><a href="http://www.foxnews.com/politics/interactive/2015/11/20/fox-news-poll-2016-matchups-syrian-refugees/">FOX News</a></td>
+				<td class="lp-results"><a href="/epolls/2016/president/us/general_election_rubio_vs_clinton-3767.html">Rubio 50, Clinton 42</a></td>
+				<td class="lp-spread"><font color="black"><span class="rep">Rubio +8</span></font></td>
+			</tr>
+			<tr class="alt">
+				<td class="lp-race"><a href="/epolls/2016/president/us/general_election_bush_vs_clinton-3827.html">General Election: Bush vs. Clinton</a></td>
+				<td class="lp-poll"><a href="http://www.foxnews.com/politics/interactive/2015/11/20/fox-news-poll-2016-matchups-syrian-refugees/">FOX News</a></td>
+				<td class="lp-results"><a href="/epolls/2016/president/us/general_election_bush_vs_clinton-3827.html">Clinton 39, Bush 45</a></td>
+				<td class="lp-spread"><font color="black"><span class="rep">Bush +6</span></font></td>
+			</tr>
+			<tr class="">
+				<td class="lp-race"><a href="/epolls/2016/president/us/general_election_cruz_vs_clinton-4034.html">General Election: Cruz vs. Clinton</a></td>
+				<td class="lp-poll"><a href="http://www.foxnews.com/politics/interactive/2015/11/20/fox-news-poll-2016-matchups-syrian-refugees/">FOX News</a></td>
+				<td class="lp-results"><a href="/epolls/2016/president/us/general_election_cruz_vs_clinton-4034.html">Clinton 41, Cruz 45</a></td>
+				<td class="lp-spread"><font color="black"><span class="rep">Cruz +4</span></font></td>
+			</tr>
+			<tr class="alt">
+				<td class="lp-race"><a href="/epolls/2016/president/us/general_election_fiorina_vs_clinton-5470.html">General Election: Fiorina vs. Clinton</a></td>
+				<td class="lp-poll"><a href="http://www.foxnews.com/politics/interactive/2015/11/20/fox-news-poll-2016-matchups-syrian-refugees/">FOX News</a></td>
+				<td class="lp-results"><a href="/epolls/2016/president/us/general_election_fiorina_vs_clinton-5470.html">Clinton 42, Fiorina 42</a></td>
+				<td class="lp-spread"><font color="black"><span class="">Tie</span></font></td>
+			</tr>
+			<tr class="">
+				<td class="lp-race"><a href="/epolls/2016/president/us/general_election_christie_vs_clinton-3766.html">General Election: Christie vs. Clinton</a></td>
+				<td class="lp-poll"><a href="http://www.foxnews.com/politics/interactive/2015/11/20/fox-news-poll-2016-matchups-syrian-refugees/">FOX News</a></td>
+				<td class="lp-results"><a href="/epolls/2016/president/us/general_election_christie_vs_clinton-3766.html">Clinton 43, Christie 46</a></td>
+				<td class="lp-spread"><font color="black"><span class="rep">Christie +3</span></font></td>
+			</tr>
+			<tr class="alt">
+				<td class="lp-race"><a href="/epolls/2016/president/us/general_election_trump_vs_sanders-5565.html">General Election: Trump vs. Sanders</a></td>
+				<td class="lp-poll"><a href="http://www.foxnews.com/politics/interactive/2015/11/20/fox-news-poll-2016-matchups-syrian-refugees/">FOX News</a></td>
+				<td class="lp-results"><a href="/epolls/2016/president/us/general_election_trump_vs_sanders-5565.html">Sanders 41, Trump 46</a></td>
+				<td class="lp-spread"><font color="black"><span class="rep">Trump +5</span></font></td>
+			</tr>
+			<tr class="">
+				<td class="lp-race"><a href="/epolls/other/president_obama_job_approval-1044.html">President Obama Job Approval</a></td>
+				<td class="lp-poll"><a href="http://www.foxnews.com/politics/interactive/2015/11/20/fox-news-poll-2016-matchups-syrian-refugees/">FOX News</a></td>
+				<td class="lp-results"><a href="/epolls/other/president_obama_job_approval-1044.html">Approve 40, Disapprove 54</a></td>
+				<td class="lp-spread"><font color="black"><span class="">Disapprove +14</span></font></td>
+			</tr>
+			<tr class="alt">
+				<td class="lp-race"><a href="/epolls/2016/senate/md/maryland_senate_democratic_primary_van_hollen_vs_edwards-5757.html">Maryland Senate - Democratic Primary (Van Hollen vs. Edwards)</a></td>
+				<td class="lp-poll"><a href="http://www.baltimoresun.com/news/maryland/politics/2016-senate-race/bs-md-sun-poll-senate-20151122-story.html">Baltimore Sun/Univ. of Baltimore</a></td>
+				<td class="lp-results"><a href="/epolls/2016/senate/md/maryland_senate_democratic_primary_van_hollen_vs_edwards-5757.html">Van Hollen 45, Edwards 31</a></td>
+				<td class="lp-spread"><font color="black"><span class="">Van Hollen +14</span></font></td>
+			</tr>
+			<tr class="">
+				<td class="lp-race"><a href="/epolls/2016/senate/md/maryland_senate_democratic_primary-5756.html">Maryland Senate - Democratic Primary</a></td>
+				<td class="lp-poll"><a href="http://www.baltimoresun.com/news/maryland/politics/2016-senate-race/bs-md-sun-poll-senate-20151122-story.html">Baltimore Sun/Univ. of Baltimore</a></td>
+				<td class="lp-results"><a href="/epolls/2016/senate/md/maryland_senate_democratic_primary-5756.html">Cummings 40, Van Hollen 28, Edwards 19</a></td>
+				<td class="lp-spread"><font color="black"><span class="">Cummings +12</span></font></td>
+			</tr></table></div><div id="table-2" class="table-races hide">
+				<table cellpadding="2" cellspacing="0">
+					<tr>
+						<td colspan="6" class="date"><b>Saturday, November 21</b></td>
+					</tr>
+				</table>
+				<table cellpadding="2" cellspacing="0" class="sortable">
+					<tr>
+						<th class="clickable lp-race"><strong>Race/Topic</strong> &nbsp;&nbsp;<span class="click-sort">(Click to Sort)</span></th>
+						<th class="sorttable_nosort lp-poll"><strong>Poll</strong></th>
+						<th class="sorttable_nosort lp-resluts"><strong>Results</strong></th>
+						<th class="sorttable_nosort lp-spread"><strong>Spread</strong></th>
+					</tr>
+			<tr class="">
+				<td class="lp-race"><a href="/epolls/2016/president/wi/wisconsin_republican_presidential_primary-3763.html">Wisconsin Republican Presidential Primary</a></td>
+				<td class="lp-poll"><a href="https://law.marquette.edu/poll/wp-content/uploads/2015/11/MLSP31ToplinesFinal.pdf">Marquette</a></td>
+				<td class="lp-results"><a href="/epolls/2016/president/wi/wisconsin_republican_presidential_primary-3763.html">Carson 22, Trump 19, Rubio 19, Cruz 9, Fiorina 5, Bush 6, Christie 4, Huckabee 1, Kasich 1, Paul 1, Santorum 0, Jindal 0, Graham, Walker</a></td>
+				<td class="lp-spread"><font color="black"><span class="">Carson +3</span></font></td>
+			</tr>
+			<tr class="alt">
+				<td class="lp-race"><a href="/epolls/2016/president/wi/wisconsin_democratic_presidential_primary-3764.html">Wisconsin Democratic Presidential Primary</a></td>
+				<td class="lp-poll"><a href="https://law.marquette.edu/poll/wp-content/uploads/2015/11/MLSP31ToplinesFinal.pdf">Marquette</a></td>
+				<td class="lp-results"><a href="/epolls/2016/president/wi/wisconsin_democratic_presidential_primary-3764.html">Clinton 50, Sanders 41, O'Malley 2</a></td>
+				<td class="lp-spread"><font color="black"><span class="">Clinton +9</span></font></td>
+			</tr>
+			<tr class="">
+				<td class="lp-race"><a href="/epolls/2016/president/wi/wisconsin_trump_vs_clinton-5659.html">Wisconsin: Trump vs. Clinton</a></td>
+				<td class="lp-poll"><a href="https://law.marquette.edu/poll/wp-content/uploads/2015/11/MLSP31ToplinesFinal.pdf">Marquette</a></td>
+				<td class="lp-results"><a href="/epolls/2016/president/wi/wisconsin_trump_vs_clinton-5659.html">Clinton 48, Trump 38</a></td>
+				<td class="lp-spread"><font color="black"><span class="dem">Clinton +10</span></font></td>
+			</tr>
+			<tr class="alt">
+				<td class="lp-race"><a href="/epolls/2016/president/wi/wisconsin_carson_vs_clinton-5345.html">Wisconsin: Carson vs. Clinton</a></td>
+				<td class="lp-poll"><a href="https://law.marquette.edu/poll/wp-content/uploads/2015/11/MLSP31ToplinesFinal.pdf">Marquette</a></td>
+				<td class="lp-results"><a href="/epolls/2016/president/wi/wisconsin_carson_vs_clinton-5345.html">Clinton 44, Carson 45</a></td>
+				<td class="lp-spread"><font color="black"><span class="rep">Carson +1</span></font></td>
+			</tr>
+			<tr class="">
+				<td class="lp-race"><a href="/epolls/2016/president/wi/wisconsin_rubio_vs_clinton-3760.html">Wisconsin: Rubio vs. Clinton</a></td>
+				<td class="lp-poll"><a href="https://law.marquette.edu/poll/wp-content/uploads/2015/11/MLSP31ToplinesFinal.pdf">Marquette</a></td>
+				<td class="lp-results"><a href="/epolls/2016/president/wi/wisconsin_rubio_vs_clinton-3760.html">Clinton 44, Rubio 45</a></td>
+				<td class="lp-spread"><font color="black"><span class="rep">Rubio +1</span></font></td>
+			</tr>
+			<tr class="alt">
+				<td class="lp-race"><a href="/epolls/2016/president/wi/wisconsin_trump_vs_sanders-5735.html">Wisconsin: Trump vs. Sanders</a></td>
+				<td class="lp-poll"><a href="https://law.marquette.edu/poll/wp-content/uploads/2015/11/MLSP31ToplinesFinal.pdf">Marquette</a></td>
+				<td class="lp-results"><a href="/epolls/2016/president/wi/wisconsin_trump_vs_sanders-5735.html">Sanders 52, Trump 35</a></td>
+				<td class="lp-spread"><font color="black"><span class="dem">Sanders +17</span></font></td>
+			</tr>
+			<tr class="">
+				<td class="lp-race"><a href="/epolls/2016/president/wi/wisconsin_carson_vs_sanders-5737.html">Wisconsin: Carson vs. Sanders</a></td>
+				<td class="lp-poll"><a href="https://law.marquette.edu/poll/wp-content/uploads/2015/11/MLSP31ToplinesFinal.pdf">Marquette</a></td>
+				<td class="lp-results"><a href="/epolls/2016/president/wi/wisconsin_carson_vs_sanders-5737.html">Sanders 47, Carson 41</a></td>
+				<td class="lp-spread"><font color="black"><span class="dem">Sanders +6</span></font></td>
+			</tr>
+			<tr class="alt">
+				<td class="lp-race"><a href="/epolls/2016/president/wi/wisconsin_rubio_vs_sanders-5758.html">Wisconsin: Rubio vs. Sanders</a></td>
+				<td class="lp-poll"><a href="https://law.marquette.edu/poll/wp-content/uploads/2015/11/MLSP31ToplinesFinal.pdf">Marquette</a></td>
+				<td class="lp-results"><a href="/epolls/2016/president/wi/wisconsin_rubio_vs_sanders-5758.html">Sanders 46, Rubio 42</a></td>
+				<td class="lp-spread"><font color="black"><span class="dem">Sanders +4</span></font></td>
+			</tr>
+			<tr class="">
+				<td class="lp-race"><a href="/epolls/2016/senate/wi/wisconsin_senate_johnson_vs_feingold-3740.html">Wisconsin Senate - Johnson vs. Feingold</a></td>
+				<td class="lp-poll"><a href="https://law.marquette.edu/poll/wp-content/uploads/2015/11/MLSP31ToplinesFinal.pdf">Marquette</a></td>
+				<td class="lp-results"><a href="/epolls/2016/senate/wi/wisconsin_senate_johnson_vs_feingold-3740.html">Feingold 49, Johnson 38</a></td>
+				<td class="lp-spread"><font color="black"><span class="dem">Feingold +11</span></font></td>
+			</tr></table>
+				<table cellpadding="2" cellspacing="0">
+					<tr>
+						<td colspan="6" class="date"><b>Friday, November 20</b></td>
+					</tr>
+				</table>
+				<table cellpadding="2" cellspacing="0" class="sortable">
+					<tr>
+						<th class="clickable lp-race"><strong>Race/Topic</strong> &nbsp;&nbsp;<span class="click-sort">(Click to Sort)</span></th>
+						<th class="sorttable_nosort lp-poll"><strong>Poll</strong></th>
+						<th class="sorttable_nosort lp-resluts"><strong>Results</strong></th>
+						<th class="sorttable_nosort lp-spread"><strong>Spread</strong></th>
+					</tr>
+			<tr class="">
+				<td class="lp-race"><a href="/epolls/2016/president/us/2016_democratic_presidential_nomination-3824.html">2016 Democratic Presidential Nomination</a></td>
+				<td class="lp-poll"><a href="https://www.scribd.com/doc/290424533/Bloomberg-Politics-national-poll-Nov-20-2015">Bloomberg</a></td>
+				<td class="lp-results"><a href="/epolls/2016/president/us/2016_democratic_presidential_nomination-3824.html">Clinton 55, Sanders 30, O'Malley 3</a></td>
+				<td class="lp-spread"><font color="black"><span class="">Clinton +25</span></font></td>
+			</tr>
+			<tr class="alt">
+				<td class="lp-race"><a href="/epolls/2016/president/ok/oklahoma_republican_presidential_primary-4288.html">Oklahoma Republican Presidential Primary</a></td>
+				<td class="lp-poll"><a href="http://www.news9.com/story/30551106/exclusive-poll-trump-clinton-remain-front-runners-in-oklahoma?utm_source=twitter&utm_medium=twitter">Sooner Poll/News 9/News on 6</a></td>
+				<td class="lp-results"><a href="/epolls/2016/president/ok/oklahoma_republican_presidential_primary-4288.html">Trump 27, Carson 18, Rubio 16, Cruz 18, Huckabee 4, Bush 2, Fiorina 2, Paul 2, Kasich 1, Christie, Graham, Santorum, Pataki</a></td>
+				<td class="lp-spread"><font color="black"><span class="">Trump +9</span></font></td>
+			</tr>
+			<tr class="">
+				<td class="lp-race"><a href="/epolls/2016/president/ok/oklahoma_democratic_presidential_primary-5739.html">Oklahoma Democratic Presidential Primary</a></td>
+				<td class="lp-poll"><a href="http://www.news9.com/story/30551106/exclusive-poll-trump-clinton-remain-front-runners-in-oklahoma?utm_source=twitter&utm_medium=twitter">Sooner Poll/News 9/News on 6</a></td>
+				<td class="lp-results"><a href="/epolls/2016/president/ok/oklahoma_democratic_presidential_primary-5739.html">Clinton 47, Sanders 12, O'Malley 2</a></td>
+				<td class="lp-spread"><font color="black"><span class="">Clinton +35</span></font></td>
+			</tr>
+			<tr class="alt">
+				<td class="lp-race"><a href="/epolls/other/congressional_job_approval-903.html">Congressional Job Approval</a></td>
+				<td class="lp-poll"><a href="http://www.publicpolicypolling.com/pdf/2015/PPP_Release_National_112015.pdf">PPP (D)</a></td>
+				<td class="lp-results"><a href="/epolls/other/congressional_job_approval-903.html">Approve 12, Disapprove 76</a></td>
+				<td class="lp-spread"><font color="black"><span class="">Disapprove +64</span></font></td>
+			</tr></table>
+				<table cellpadding="2" cellspacing="0">
+					<tr>
+						<td colspan="6" class="date"><b>Thursday, November 19</b></td>
+					</tr>
+				</table>
+				<table cellpadding="2" cellspacing="0" class="sortable">
+					<tr>
+						<th class="clickable lp-race"><strong>Race/Topic</strong> &nbsp;&nbsp;<span class="click-sort">(Click to Sort)</span></th>
+						<th class="sorttable_nosort lp-poll"><strong>Poll</strong></th>
+						<th class="sorttable_nosort lp-resluts"><strong>Results</strong></th>
+						<th class="sorttable_nosort lp-spread"><strong>Spread</strong></th>
+					</tr>
+			<tr class="">
+				<td class="lp-race"><a href="/epolls/2016/president/us/2016_republican_presidential_nomination-3823.html">2016 Republican Presidential Nomination</a></td>
+				<td class="lp-poll"><a href="https://www.scribd.com/doc/290373723/Bloomberg-Politics-National-Poll-GOP-Nov-19-2015">Bloomberg</a></td>
+				<td class="lp-results"><a href="/epolls/2016/president/us/2016_republican_presidential_nomination-3823.html">Trump 24, Carson 20, Cruz 9, Rubio 12, Bush 6, Fiorina 3, Christie 4, Kasich 3, Huckabee 3, Paul 3, Graham 1, Pataki 1, Santorum 1</a></td>
+				<td class="lp-spread"><font color="black"><span class="">Trump +4</span></font></td>
+			</tr>
+			<tr class="alt">
+				<td class="lp-race"><a href="/epolls/2016/president/nh/new_hampshire_republican_presidential_primary-3350.html">New Hampshire Republican Presidential Primary</a></td>
+				<td class="lp-poll"><a href="http://www.foxnews.com/politics/interactive/2015/11/18/fox-news-poll-trump-sanders-lead-respective-primaries-in-new-hampshire/">FOX News</a></td>
+				<td class="lp-results"><a href="/epolls/2016/president/nh/new_hampshire_republican_presidential_primary-3350.html">Trump 27, Rubio 13, Cruz 11, Carson 9, Kasich 7, Bush 9, Christie 6, Fiorina 3, Paul 3, Huckabee 1, Santorum 1, Graham 1, Pataki 0</a></td>
+				<td class="lp-spread"><font color="black"><span class="">Trump +14</span></font></td>
+			</tr>
+			<tr class="">
+				<td class="lp-race"><a href="/epolls/2016/president/nh/new_hampshire_democratic_presidential_primary-3351.html">New Hampshire 2016 Democratic Primary</a></td>
+				<td class="lp-poll"><a href="http://www.foxnews.com/politics/interactive/2015/11/18/fox-news-poll-trump-sanders-lead-respective-primaries-in-new-hampshire/">FOX News</a></td>
+				<td class="lp-results"><a href="/epolls/2016/president/nh/new_hampshire_democratic_presidential_primary-3351.html">Sanders 45, Clinton 44, O'Malley 5</a></td>
+				<td class="lp-spread"><font color="black"><span class="">Sanders +1</span></font></td>
+			</tr>
+			<tr class="alt">
+				<td class="lp-race"><a href="/epolls/2016/president/us/2016_republican_presidential_nomination-3823.html">2016 Republican Presidential Nomination</a></td>
+				<td class="lp-poll"><a href="http://www.publicpolicypolling.com/pdf/2015/PPP_Release_National_111915.pdf">PPP (D)</a></td>
+				<td class="lp-results"><a href="/epolls/2016/president/us/2016_republican_presidential_nomination-3823.html">Trump 26, Carson 19, Cruz 14, Rubio 13, Bush 5, Fiorina 4, Christie 3, Kasich 3, Huckabee 4, Paul 2, Graham 1, Pataki 1, Santorum 0</a></td>
+				<td class="lp-spread"><font color="black"><span class="">Trump +7</span></font></td>
+			</tr>
+			<tr class="">
+				<td class="lp-race"><a href="/epolls/2016/president/us/2016_democratic_presidential_nomination-3824.html">2016 Democratic Presidential Nomination</a></td>
+				<td class="lp-poll"><a href="http://www.publicpolicypolling.com/pdf/2015/PPP_Release_National_111915.pdf">PPP (D)</a></td>
+				<td class="lp-results"><a href="/epolls/2016/president/us/2016_democratic_presidential_nomination-3824.html">Clinton 59, Sanders 26, O'Malley 7</a></td>
+				<td class="lp-spread"><font color="black"><span class="">Clinton +33</span></font></td>
+			</tr>
+			<tr class="alt">
+				<td class="lp-race"><a href="/epolls/2016/president/az/arizona_democratic_presidential_primary-5466.html">Arizona Democratic Presidential Primary</a></td>
+				<td class="lp-poll"><a href="http://www.realclearpolitics.com/docs/2016/BRC_AZ_Dem_Nov_2015.pdf">Behavior Research Center</a></td>
+				<td class="lp-results"><a href="/epolls/2016/president/az/arizona_democratic_presidential_primary-5466.html">Clinton 47, Sanders 19, O'Malley 2</a></td>
+				<td class="lp-spread"><font color="black"><span class="">Clinton +28</span></font></td>
+			</tr>
+			<tr class="">
+				<td class="lp-race"><a href="/epolls/2016/president/us/general_election_trump_vs_clinton-5491.html">General Election: Trump vs. Clinton</a></td>
+				<td class="lp-poll"><a href="http://www.publicpolicypolling.com/main/2015/11/gop-has-clear-top-4-clinton-dominant-for-dems-general-election-tight.html#more">PPP (D)</a></td>
+				<td class="lp-results"><a href="/epolls/2016/president/us/general_election_trump_vs_clinton-5491.html">Clinton 45, Trump 44</a></td>
+				<td class="lp-spread"><font color="black"><span class="dem">Clinton +1</span></font></td>
+			</tr>
+			<tr class="alt">
+				<td class="lp-race"><a href="/epolls/2016/president/us/general_election_carson_vs_clinton-5119.html">General Election: Carson vs. Clinton</a></td>
+				<td class="lp-poll"><a href="http://www.publicpolicypolling.com/main/2015/11/gop-has-clear-top-4-clinton-dominant-for-dems-general-election-tight.html#more">PPP (D)</a></td>
+				<td class="lp-results"><a href="/epolls/2016/president/us/general_election_carson_vs_clinton-5119.html">Carson 45, Clinton 46</a></td>
+				<td class="lp-spread"><font color="black"><span class="dem">Clinton +1</span></font></td>
+			</tr>
+			<tr class="">
+				<td class="lp-race"><a href="/epolls/2016/president/us/general_election_rubio_vs_clinton-3767.html">General Election: Rubio vs. Clinton</a></td>
+				<td class="lp-poll"><a href="http://www.publicpolicypolling.com/main/2015/11/gop-has-clear-top-4-clinton-dominant-for-dems-general-election-tight.html#more">PPP (D)</a></td>
+				<td class="lp-results"><a href="/epolls/2016/president/us/general_election_rubio_vs_clinton-3767.html">Rubio 45, Clinton 43</a></td>
+				<td class="lp-spread"><font color="black"><span class="rep">Rubio +2</span></font></td>
+			</tr>
+			<tr class="alt">
+				<td class="lp-race"><a href="/epolls/2016/president/us/general_election_bush_vs_clinton-3827.html">General Election: Bush vs. Clinton</a></td>
+				<td class="lp-poll"><a href="http://www.publicpolicypolling.com/main/2015/11/gop-has-clear-top-4-clinton-dominant-for-dems-general-election-tight.html#more">PPP (D)</a></td>
+				<td class="lp-results"><a href="/epolls/2016/president/us/general_election_bush_vs_clinton-3827.html">Clinton 43, Bush 41</a></td>
+				<td class="lp-spread"><font color="black"><span class="dem">Clinton +2</span></font></td>
+			</tr>
+			<tr class="">
+				<td class="lp-race"><a href="/epolls/2016/president/us/general_election_cruz_vs_clinton-4034.html">General Election: Cruz vs. Clinton</a></td>
+				<td class="lp-poll"><a href="http://www.publicpolicypolling.com/main/2015/11/gop-has-clear-top-4-clinton-dominant-for-dems-general-election-tight.html#more">PPP (D)</a></td>
+				<td class="lp-results"><a href="/epolls/2016/president/us/general_election_cruz_vs_clinton-4034.html">Clinton 46, Cruz 44</a></td>
+				<td class="lp-spread"><font color="black"><span class="dem">Clinton +2</span></font></td>
+			</tr>
+			<tr class="alt">
+				<td class="lp-race"><a href="/epolls/2016/president/nh/new_hampshire_trump_vs_clinton-5596.html">New Hampshire: Trump vs. Clinton</a></td>
+				<td class="lp-poll"><a href="http://www.foxnews.com/politics/interactive/2015/11/18/fox-news-poll-trump-sanders-lead-respective-primaries-in-new-hampshire/">FOX News</a></td>
+				<td class="lp-results"><a href="/epolls/2016/president/nh/new_hampshire_trump_vs_clinton-5596.html">Clinton 47, Trump 40</a></td>
+				<td class="lp-spread"><font color="black"><span class="dem">Clinton +7</span></font></td>
+			</tr>
+			<tr class="">
+				<td class="lp-race"><a href="/epolls/2016/president/nh/new_hampshire_rubio_vs_clinton-3864.html">New Hampshire: Rubio vs. Clinton</a></td>
+				<td class="lp-poll"><a href="http://www.foxnews.com/politics/interactive/2015/11/18/fox-news-poll-trump-sanders-lead-respective-primaries-in-new-hampshire/">FOX News</a></td>
+				<td class="lp-results"><a href="/epolls/2016/president/nh/new_hampshire_rubio_vs_clinton-3864.html">Rubio 47, Clinton 40</a></td>
+				<td class="lp-spread"><font color="black"><span class="rep">Rubio +7</span></font></td>
+			</tr>
+			<tr class="alt">
+				<td class="lp-race"><a href="/epolls/2016/president/nh/new_hampshire_carson_vs_clinton-5428.html">New Hampshire: Carson vs. Clinton</a></td>
+				<td class="lp-poll"><a href="http://www.foxnews.com/politics/interactive/2015/11/18/fox-news-poll-trump-sanders-lead-respective-primaries-in-new-hampshire/">FOX News</a></td>
+				<td class="lp-results"><a href="/epolls/2016/president/nh/new_hampshire_carson_vs_clinton-5428.html">Clinton 43, Carson 45</a></td>
+				<td class="lp-spread"><font color="black"><span class="rep">Carson +2</span></font></td>
+			</tr>
+			<tr class="">
+				<td class="lp-race"><a href="/epolls/2016/president/nh/new_hampshire_bush_vs_clinton-4114.html">New Hampshire: Bush vs. Clinton</a></td>
+				<td class="lp-poll"><a href="http://www.foxnews.com/politics/interactive/2015/11/18/fox-news-poll-trump-sanders-lead-respective-primaries-in-new-hampshire/">FOX News</a></td>
+				<td class="lp-results"><a href="/epolls/2016/president/nh/new_hampshire_bush_vs_clinton-4114.html">Bush 45, Clinton 42</a></td>
+				<td class="lp-spread"><font color="black"><span class="rep">Bush +3</span></font></td>
+			</tr>
+			<tr class="alt">
+				<td class="lp-race"><a href="/epolls/2016/president/nh/new_hampshire_cruz_vs_clinton-4115.html">New Hampshire: Cruz vs. Clinton</a></td>
+				<td class="lp-poll"><a href="http://www.foxnews.com/politics/interactive/2015/11/18/fox-news-poll-trump-sanders-lead-respective-primaries-in-new-hampshire/">FOX News</a></td>
+				<td class="lp-results"><a href="/epolls/2016/president/nh/new_hampshire_cruz_vs_clinton-4115.html">Clinton 44, Cruz 41</a></td>
+				<td class="lp-spread"><font color="black"><span class="dem">Clinton +3</span></font></td>
+			</tr>
+			<tr class="">
+				<td class="lp-race"><a href="/epolls/2016/president/nh/new_hampshire_kasich_vs_clinton-5663.html">New Hampshire: Kasich vs. Clinton</a></td>
+				<td class="lp-poll"><a href="http://www.foxnews.com/politics/interactive/2015/11/18/fox-news-poll-trump-sanders-lead-respective-primaries-in-new-hampshire/">FOX News</a></td>
+				<td class="lp-results"><a href="/epolls/2016/president/nh/new_hampshire_kasich_vs_clinton-5663.html">Kasich 43, Clinton 40</a></td>
+				<td class="lp-spread"><font color="black"><span class="rep">Kasich +3</span></font></td>
+			</tr>
+			<tr class="alt">
+				<td class="lp-race"><a href="/epolls/2016/president/nh/new_hampshire_fiorina_vs_clinton-5662.html">New Hampshire: Fiorina vs. Clinton</a></td>
+				<td class="lp-poll"><a href="http://www.foxnews.com/politics/interactive/2015/11/18/fox-news-poll-trump-sanders-lead-respective-primaries-in-new-hampshire/">FOX News</a></td>
+				<td class="lp-results"><a href="/epolls/2016/president/nh/new_hampshire_fiorina_vs_clinton-5662.html">Fiorina 43, Clinton 43</a></td>
+				<td class="lp-spread"><font color="black"><span class="">Tie</span></font></td>
+			</tr>
+			<tr class="">
+				<td class="lp-race"><a href="/epolls/2016/president/nh/new_hampshire_christie_vs_clinton-3892.html">New Hampshire: Christie vs. Clinton</a></td>
+				<td class="lp-poll"><a href="http://www.foxnews.com/politics/interactive/2015/11/18/fox-news-poll-trump-sanders-lead-respective-primaries-in-new-hampshire/">FOX News</a></td>
+				<td class="lp-results"><a href="/epolls/2016/president/nh/new_hampshire_christie_vs_clinton-3892.html">Clinton 44, Christie 43</a></td>
+				<td class="lp-spread"><font color="black"><span class="dem">Clinton +1</span></font></td>
+			</tr>
+			<tr class="alt">
+				<td class="lp-race"><a href="/epolls/2016/president/va/virginia_trump_vs_clinton-5542.html">Virginia: Trump vs. Clinton</a></td>
+				<td class="lp-poll"><a href="http://www.roanoke.edu/Documents/rcpoll/Nov2015.Consumer%20Sentiment%20and%20Politics%20Topline.pdf">Roanoke College</a></td>
+				<td class="lp-results"><a href="/epolls/2016/president/va/virginia_trump_vs_clinton-5542.html">Clinton 50, Trump 36</a></td>
+				<td class="lp-spread"><font color="black"><span class="dem">Clinton +14</span></font></td>
+			</tr>
+			<tr class="">
+				<td class="lp-race"><a href="/epolls/2016/president/va/virginia_carson_vs_clinton-5543.html">Virginia: Carson vs. Clinton</a></td>
+				<td class="lp-poll"><a href="http://www.roanoke.edu/Documents/rcpoll/Nov2015.Consumer%20Sentiment%20and%20Politics%20Topline.pdf">Roanoke College</a></td>
+				<td class="lp-results"><a href="/epolls/2016/president/va/virginia_carson_vs_clinton-5543.html">Carson 44, Clinton 44</a></td>
+				<td class="lp-spread"><font color="black"><span class="">Tie</span></font></td>
+			</tr>
+			<tr class="alt">
+				<td class="lp-race"><a href="/epolls/2016/president/va/virginia_rubio_vs_clinton-3897.html">Virginia: Rubio vs. Clinton</a></td>
+				<td class="lp-poll"><a href="http://www.roanoke.edu/Documents/rcpoll/Nov2015.Consumer%20Sentiment%20and%20Politics%20Topline.pdf">Roanoke College</a></td>
+				<td class="lp-results"><a href="/epolls/2016/president/va/virginia_rubio_vs_clinton-3897.html">Clinton 45, Rubio 41</a></td>
+				<td class="lp-spread"><font color="black"><span class="dem">Clinton +4</span></font></td>
+			</tr>
+			<tr class="">
+				<td class="lp-race"><a href="/epolls/2016/president/va/virginia_cruz_vs_clinton-4075.html">Virginia: Cruz vs. Clinton</a></td>
+				<td class="lp-poll"><a href="http://www.roanoke.edu/Documents/rcpoll/Nov2015.Consumer%20Sentiment%20and%20Politics%20Topline.pdf">Roanoke College</a></td>
+				<td class="lp-results"><a href="/epolls/2016/president/va/virginia_cruz_vs_clinton-4075.html">Clinton 47, Cruz 39</a></td>
+				<td class="lp-spread"><font color="black"><span class="dem">Clinton +8</span></font></td>
+			</tr>
+			<tr class="alt">
+				<td class="lp-race"><a href="/epolls/2016/president/va/virginia_bush_vs_clinton-4003.html">Virginia: Bush vs. Clinton</a></td>
+				<td class="lp-poll"><a href="http://www.roanoke.edu/Documents/rcpoll/Nov2015.Consumer%20Sentiment%20and%20Politics%20Topline.pdf">Roanoke College</a></td>
+				<td class="lp-results"><a href="/epolls/2016/president/va/virginia_bush_vs_clinton-4003.html">Clinton 46, Bush 39</a></td>
+				<td class="lp-spread"><font color="black"><span class="dem">Clinton +7</span></font></td>
+			</tr>
+			<tr class="">
+				<td class="lp-race"><a href="/epolls/2016/president/us/general_election_trump_vs_sanders-5565.html">General Election: Trump vs. Sanders</a></td>
+				<td class="lp-poll"><a href="http://www.publicpolicypolling.com/main/2015/11/gop-has-clear-top-4-clinton-dominant-for-dems-general-election-tight.html#more">PPP (D)</a></td>
+				<td class="lp-results"><a href="/epolls/2016/president/us/general_election_trump_vs_sanders-5565.html">Sanders 41, Trump 44</a></td>
+				<td class="lp-spread"><font color="black"><span class="rep">Trump +3</span></font></td>
+			</tr>
+			<tr class="alt">
+				<td class="lp-race"><a href="/epolls/2016/president/us/general_election_carson_vs_sanders-5677.html">General Election: Carson vs. Sanders</a></td>
+				<td class="lp-poll"><a href="http://www.publicpolicypolling.com/main/2015/11/gop-has-clear-top-4-clinton-dominant-for-dems-general-election-tight.html#more">PPP (D)</a></td>
+				<td class="lp-results"><a href="/epolls/2016/president/us/general_election_carson_vs_sanders-5677.html">Carson 46, Sanders 39</a></td>
+				<td class="lp-spread"><font color="black"><span class="rep">Carson +7</span></font></td>
+			</tr>
+			<tr class="">
+				<td class="lp-race"><a href="/epolls/2016/president/us/general_election_rubio_vs_sanders-5564.html">General Election: Rubio vs. Sanders</a></td>
+				<td class="lp-poll"><a href="http://www.publicpolicypolling.com/main/2015/11/gop-has-clear-top-4-clinton-dominant-for-dems-general-election-tight.html#more">PPP (D)</a></td>
+				<td class="lp-results"><a href="/epolls/2016/president/us/general_election_rubio_vs_sanders-5564.html">Sanders 38, Rubio 44</a></td>
+				<td class="lp-spread"><font color="black"><span class="rep">Rubio +6</span></font></td>
+			</tr>
+			<tr class="alt">
+				<td class="lp-race"><a href="/epolls/2016/president/us/general_election_bush_vs_sanders-5563.html">General Election: Bush vs. Sanders</a></td>
+				<td class="lp-poll"><a href="http://www.publicpolicypolling.com/main/2015/11/gop-has-clear-top-4-clinton-dominant-for-dems-general-election-tight.html#more">PPP (D)</a></td>
+				<td class="lp-results"><a href="/epolls/2016/president/us/general_election_bush_vs_sanders-5563.html">Sanders 39, Bush 42</a></td>
+				<td class="lp-spread"><font color="black"><span class="rep">Bush +3</span></font></td>
+			</tr>
+			<tr class="">
+				<td class="lp-race"><a href="/epolls/2016/president/us/general_election_cruz_vs_sanders-5742.html">General Election: Cruz vs. Sanders</a></td>
+				<td class="lp-poll"><a href="http://www.publicpolicypolling.com/main/2015/11/gop-has-clear-top-4-clinton-dominant-for-dems-general-election-tight.html#more">PPP (D)</a></td>
+				<td class="lp-results"><a href="/epolls/2016/president/us/general_election_cruz_vs_sanders-5742.html">Sanders 39, Cruz 44</a></td>
+				<td class="lp-spread"><font color="black"><span class="rep">Cruz +5</span></font></td>
+			</tr>
+			<tr class="alt">
+				<td class="lp-race"><a href="/epolls/other/president_obama_job_approval-1044.html">President Obama Job Approval</a></td>
+				<td class="lp-poll"><a href="http://www.publicpolicypolling.com/pdf/2015/PPP_Release_National_111915.pdf">PPP (D)</a></td>
+				<td class="lp-results"><a href="/epolls/other/president_obama_job_approval-1044.html">Approve 43, Disapprove 52</a></td>
+				<td class="lp-spread"><font color="black"><span class="">Disapprove +9</span></font></td>
+			</tr>
+			<tr class="">
+				<td class="lp-race"><a href="/epolls/other/president_obama_job_approval-1044.html">President Obama Job Approval</a></td>
+				<td class="lp-poll"><a href="http://www.ipsos-na.com/download/pr.aspx?id=15090">Reuters/Ipsos</a></td>
+				<td class="lp-results"><a href="/epolls/other/president_obama_job_approval-1044.html">Approve 42, Disapprove 51</a></td>
+				<td class="lp-spread"><font color="black"><span class="">Disapprove +9</span></font></td>
+			</tr>
+			<tr class="alt">
+				<td class="lp-race"><a href="/epolls/other/obama_and_democrats_health_care_plan-1130.html">Public Approval of Health Care Law</a></td>
+				<td class="lp-poll"><a href="http://www.gallup.com/poll/186629/americans-tilt-negative-toward-affordable-care-act.aspx">Gallup</a></td>
+				<td class="lp-results"><a href="/epolls/other/obama_and_democrats_health_care_plan-1130.html">For/Favor 44, Against/Oppose 52</a></td>
+				<td class="lp-spread"><font color="black"><span class="red">Against/Oppose +8</span></font></td>
+			</tr>
+			<tr class="">
+				<td class="lp-race"><a href="/epolls/other/direction_of_country-902.html">Direction of Country</a></td>
+				<td class="lp-poll"><a href="http://www.ipsos-na.com/download/pr.aspx?id=15090">Reuters/Ipsos</a></td>
+				<td class="lp-results"><a href="/epolls/other/direction_of_country-902.html">Right Direction 24, Wrong Track 61</a></td>
+				<td class="lp-spread"><font color="black"><span class="">Wrong Track +37</span></font></td>
+			</tr></table>
+				<table cellpadding="2" cellspacing="0">
+					<tr>
+						<td colspan="6" class="date"><b>Wednesday, November 18</b></td>
+					</tr>
+				</table>
+				<table cellpadding="2" cellspacing="0" class="sortable">
+					<tr>
+						<th class="clickable lp-race"><strong>Race/Topic</strong> &nbsp;&nbsp;<span class="click-sort">(Click to Sort)</span></th>
+						<th class="sorttable_nosort lp-poll"><strong>Poll</strong></th>
+						<th class="sorttable_nosort lp-resluts"><strong>Results</strong></th>
+						<th class="sorttable_nosort lp-spread"><strong>Spread</strong></th>
+					</tr>
+			<tr class="">
+				<td class="lp-race"><a href="/epolls/2016/president/nh/new_hampshire_republican_presidential_primary-3350.html">New Hampshire Republican Presidential Primary</a></td>
+				<td class="lp-poll"><a href="http://s3.amazonaws.com/media.wbur.org/wordpress/1/files/2015/11/Topline-WBUR-NH-Primary-4-Republicans.pdf">WBUR/MassINC</a></td>
+				<td class="lp-results"><a href="/epolls/2016/president/nh/new_hampshire_republican_presidential_primary-3350.html">Trump 23, Rubio 13, Cruz 8, Carson 13, Kasich 7, Bush 7, Christie 6, Fiorina 4, Paul 5, Huckabee 1, Santorum 1, Graham 2, Pataki 1</a></td>
+				<td class="lp-spread"><font color="black"><span class="">Trump +10</span></font></td>
+			</tr>
+			<tr class="alt">
+				<td class="lp-race"><a href="/epolls/2016/president/fl/florida_republican_presidential_primary-3555.html">Florida Republican Presidential Primary</a></td>
+				<td class="lp-poll"><a href="http://business.fau.edu/departments/economics/business-economics-polling/bepi-polls/index.aspx#.VkyddlVJZhE">Florida Atlantic University</a></td>
+				<td class="lp-results"><a href="/epolls/2016/president/fl/florida_republican_presidential_primary-3555.html">Trump 36, Carson 15, Rubio 18, Cruz 10, Bush 9, Fiorina 2, Kasich 3, Paul 4, Christie 0, Huckabee 0, Graham 0, Jindal, Santorum, Pataki</a></td>
+				<td class="lp-spread"><font color="black"><span class="">Trump +18</span></font></td>
+			</tr>
+			<tr class="">
+				<td class="lp-race"><a href="/epolls/2016/president/fl/florida_democratic_presidential_primary-3556.html">Florida Democratic Presidential Primary</a></td>
+				<td class="lp-poll"><a href="http://business.fau.edu/departments/economics/business-economics-polling/bepi-polls/index.aspx#.VkyddlVJZhE">Florida Atlantic University</a></td>
+				<td class="lp-results"><a href="/epolls/2016/president/fl/florida_democratic_presidential_primary-3556.html">Clinton 66, Sanders 22, O'Malley 4</a></td>
+				<td class="lp-spread"><font color="black"><span class="">Clinton +44</span></font></td>
+			</tr>
+			<tr class="alt">
+				<td class="lp-race"><a href="/epolls/2016/president/co/colorado_republican_presidential_caucus-4257.html">Colorado Republican Presidential Caucus</a></td>
+				<td class="lp-poll"><a href="http://www.quinnipiac.edu/images/polling/co/co11182015_c23tbvm.pdf">Quinnipiac</a></td>
+				<td class="lp-results"><a href="/epolls/2016/president/co/colorado_republican_presidential_caucus-4257.html">Carson 25, Rubio 19, Trump 17, Cruz 14, Fiorina 5, Paul 3, Bush 2, Kasich 1, Huckabee 1, Christie 1, Jindal 1, Santorum 0, Pataki 0, Graham 0</a></td>
+				<td class="lp-spread"><font color="black"><span class="">Carson +6</span></font></td>
+			</tr>
+			<tr class="">
+				<td class="lp-race"><a href="/epolls/2016/president/co/colorado_democratic_presidential_caucus-5229.html">Colorado Democratic Presidential Caucus</a></td>
+				<td class="lp-poll"><a href="http://www.quinnipiac.edu/images/polling/co/co11182015_c23tbvm.pdf">Quinnipiac</a></td>
+				<td class="lp-results"><a href="/epolls/2016/president/co/colorado_democratic_presidential_caucus-5229.html">Clinton 55, Sanders 27, O'Malley 2</a></td>
+				<td class="lp-spread"><font color="black"><span class="">Clinton +28</span></font></td>
+			</tr>
+			<tr class="alt">
+				<td class="lp-race"><a href="/epolls/2016/president/ct/connecticut_republican_presidential_primary-5352.html">Connecticut Republican Presidential Primary</a></td>
+				<td class="lp-poll"><a href="http://media.wix.com/ugd/3bebb2_985dbffed8754f57a2a9638e22611ad6.pdf">Emerson College</a></td>
+				<td class="lp-results"><a href="/epolls/2016/president/ct/connecticut_republican_presidential_primary-5352.html">Trump 25, Carson 9, Rubio 14, Bush 10, Fiorina 4, Kasich 10, Cruz 6, Paul 6, Christie 2, Pataki 0, Huckabee 0, Graham 0</a></td>
+				<td class="lp-spread"><font color="black"><span class="">Trump +11</span></font></td>
+			</tr>
+			<tr class="">
+				<td class="lp-race"><a href="/epolls/2016/president/ct/connecticut_democratic_presidential_primary-5353.html">Connecticut Democratic Presidential Primary</a></td>
+				<td class="lp-poll"><a href="http://media.wix.com/ugd/3bebb2_985dbffed8754f57a2a9638e22611ad6.pdf">Emerson College</a></td>
+				<td class="lp-results"><a href="/epolls/2016/president/ct/connecticut_democratic_presidential_primary-5353.html">Clinton 50, Sanders 31, O'Malley 9</a></td>
+				<td class="lp-spread"><font color="black"><span class="">Clinton +19</span></font></td>
+			</tr>
+			<tr class="alt">
+				<td class="lp-race"><a href="/epolls/2016/president/nj/new_jersey_republican_presidential_primary-3444.html">New Jersey Republican Presidential Primary</a></td>
+				<td class="lp-poll"><a href="http://view2.fdu.edu/publicmind/2015/151117/">Fairleigh Dickinson</a></td>
+				<td class="lp-results"><a href="/epolls/2016/president/nj/new_jersey_republican_presidential_primary-3444.html">Trump 31, Rubio 18, Carson 11, Christie 9, Cruz 6, Bush 5, Fiorina 5, Kasich 2, Paul 2, Huckabee 2, Santorum 1, Graham 1, Pataki 0</a></td>
+				<td class="lp-spread"><font color="black"><span class="">Trump +13</span></font></td>
+			</tr>
+			<tr class="">
+				<td class="lp-race"><a href="/epolls/2016/president/nj/new_jersey_democratic_presidential_primary-3443.html">New Jersey Democratic Presidential Primary</a></td>
+				<td class="lp-poll"><a href="http://view2.fdu.edu/publicmind/2015/151117/">Fairleigh Dickinson</a></td>
+				<td class="lp-results"><a href="/epolls/2016/president/nj/new_jersey_democratic_presidential_primary-3443.html">Clinton 64, Sanders 27, O'Malley 2</a></td>
+				<td class="lp-spread"><font color="black"><span class="">Clinton +37</span></font></td>
+			</tr>
+			<tr class="alt">
+				<td class="lp-race"><a href="/epolls/2016/president/co/colorado_trump_vs_clinton-5751.html">Colorado: Trump vs. Clinton</a></td>
+				<td class="lp-poll"><a href="http://www.quinnipiac.edu/images/polling/co/co11182015_c23tbvm.pdf">Quinnipiac</a></td>
+				<td class="lp-results"><a href="/epolls/2016/president/co/colorado_trump_vs_clinton-5751.html">Trump 48, Clinton 37</a></td>
+				<td class="lp-spread"><font color="black"><span class="rep">Trump +11</span></font></td>
+			</tr>
+			<tr class="">
+				<td class="lp-race"><a href="/epolls/2016/president/co/colorado_carson_vs_clinton-5752.html">Colorado: Carson vs. Clinton</a></td>
+				<td class="lp-poll"><a href="http://www.quinnipiac.edu/images/polling/co/co11182015_c23tbvm.pdf">Quinnipiac</a></td>
+				<td class="lp-results"><a href="/epolls/2016/president/co/colorado_carson_vs_clinton-5752.html">Carson 52, Clinton 38</a></td>
+				<td class="lp-spread"><font color="black"><span class="rep">Carson +14</span></font></td>
+			</tr>
+			<tr class="alt">
+				<td class="lp-race"><a href="/epolls/2016/president/co/colorado_rubio_vs_clinton-3853.html">Colorado: Rubio vs. Clinton</a></td>
+				<td class="lp-poll"><a href="http://www.quinnipiac.edu/images/polling/co/co11182015_c23tbvm.pdf">Quinnipiac</a></td>
+				<td class="lp-results"><a href="/epolls/2016/president/co/colorado_rubio_vs_clinton-3853.html">Rubio 52, Clinton 36</a></td>
+				<td class="lp-spread"><font color="black"><span class="rep">Rubio +16</span></font></td>
+			</tr>
+			<tr class="">
+				<td class="lp-race"><a href="/epolls/2016/president/co/colorado_cruz_vs_clinton-4081.html">Colorado: Cruz vs. Clinton</a></td>
+				<td class="lp-poll"><a href="http://www.quinnipiac.edu/images/polling/co/co11182015_c23tbvm.pdf">Quinnipiac</a></td>
+				<td class="lp-results"><a href="/epolls/2016/president/co/colorado_cruz_vs_clinton-4081.html">Cruz 51, Clinton 38</a></td>
+				<td class="lp-spread"><font color="black"><span class="rep">Cruz +13</span></font></td>
+			</tr>
+			<tr class="alt">
+				<td class="lp-race"><a href="/epolls/2016/president/fl/florida_trump_vs_clinton-5635.html">Florida: Trump vs. Clinton</a></td>
+				<td class="lp-poll"><a href="http://business.fau.edu/departments/economics/business-economics-polling/bepi-polls/index.aspx#.VkyddlVJZhE">Florida Atlantic University</a></td>
+				<td class="lp-results"><a href="/epolls/2016/president/fl/florida_trump_vs_clinton-5635.html">Trump 49, Clinton 41</a></td>
+				<td class="lp-spread"><font color="black"><span class="rep">Trump +8</span></font></td>
+			</tr>
+			<tr class="">
+				<td class="lp-race"><a href="/epolls/2016/president/fl/florida_carson_vs_clinton-5363.html">Florida: Carson vs. Clinton</a></td>
+				<td class="lp-poll"><a href="http://business.fau.edu/departments/economics/business-economics-polling/bepi-polls/index.aspx#.VkyddlVJZhE">Florida Atlantic University</a></td>
+				<td class="lp-results"><a href="/epolls/2016/president/fl/florida_carson_vs_clinton-5363.html">Carson 50, Clinton 41</a></td>
+				<td class="lp-spread"><font color="black"><span class="rep">Carson +9</span></font></td>
+			</tr>
+			<tr class="alt">
+				<td class="lp-race"><a href="/epolls/2016/president/fl/florida_rubio_vs_clinton-3553.html">Florida: Rubio vs. Clinton</a></td>
+				<td class="lp-poll"><a href="http://business.fau.edu/departments/economics/business-economics-polling/bepi-polls/index.aspx#.VkyddlVJZhE">Florida Atlantic University</a></td>
+				<td class="lp-results"><a href="/epolls/2016/president/fl/florida_rubio_vs_clinton-3553.html">Rubio 50, Clinton 43</a></td>
+				<td class="lp-spread"><font color="black"><span class="rep">Rubio +7</span></font></td>
+			</tr>
+			<tr class="">
+				<td class="lp-race"><a href="/epolls/2016/president/fl/florida_bush_vs_clinton-3554.html">Florida: Bush vs. Clinton</a></td>
+				<td class="lp-poll"><a href="http://business.fau.edu/departments/economics/business-economics-polling/bepi-polls/index.aspx#.VkyddlVJZhE">Florida Atlantic University</a></td>
+				<td class="lp-results"><a href="/epolls/2016/president/fl/florida_bush_vs_clinton-3554.html">Bush 44, Clinton 40</a></td>
+				<td class="lp-spread"><font color="black"><span class="rep">Bush +4</span></font></td>
+			</tr>
+			<tr class="alt">
+				<td class="lp-race"><a href="/epolls/2016/president/fl/florida_cruz_vs_clinton-4214.html">Florida: Cruz vs. Clinton</a></td>
+				<td class="lp-poll"><a href="http://business.fau.edu/departments/economics/business-economics-polling/bepi-polls/index.aspx#.VkyddlVJZhE">Florida Atlantic University</a></td>
+				<td class="lp-results"><a href="/epolls/2016/president/fl/florida_cruz_vs_clinton-4214.html">Clinton 45, Cruz 48</a></td>
+				<td class="lp-spread"><font color="black"><span class="rep">Cruz +3</span></font></td>
+			</tr>
+			<tr class="">
+				<td class="lp-race"><a href="/epolls/2016/president/co/colorado_trump_vs_sanders-5753.html">Colorado: Trump vs. Sanders</a></td>
+				<td class="lp-poll"><a href="http://www.quinnipiac.edu/images/polling/co/co11182015_c23tbvm.pdf">Quinnipiac</a></td>
+				<td class="lp-results"><a href="/epolls/2016/president/co/colorado_trump_vs_sanders-5753.html">Trump 46, Sanders 44</a></td>
+				<td class="lp-spread"><font color="black"><span class="rep">Trump +2</span></font></td>
+			</tr>
+			<tr class="alt">
+				<td class="lp-race"><a href="/epolls/2016/president/co/colorado_carson_vs_sanders-5754.html">Colorado: Carson vs. Sanders</a></td>
+				<td class="lp-poll"><a href="http://www.quinnipiac.edu/images/polling/co/co11182015_c23tbvm.pdf">Quinnipiac</a></td>
+				<td class="lp-results"><a href="/epolls/2016/president/co/colorado_carson_vs_sanders-5754.html">Carson 52, Sanders 40</a></td>
+				<td class="lp-spread"><font color="black"><span class="rep">Carson +12</span></font></td>
+			</tr>
+			<tr class="">
+				<td class="lp-race"><a href="/epolls/2016/president/co/colorado_rubio_vs_sanders-5560.html">Colorado: Rubio vs. Sanders</a></td>
+				<td class="lp-poll"><a href="http://www.quinnipiac.edu/images/polling/co/co11182015_c23tbvm.pdf">Quinnipiac</a></td>
+				<td class="lp-results"><a href="/epolls/2016/president/co/colorado_rubio_vs_sanders-5560.html">Rubio 52, Sanders 39</a></td>
+				<td class="lp-spread"><font color="black"><span class="rep">Rubio +13</span></font></td>
+			</tr>
+			<tr class="alt">
+				<td class="lp-race"><a href="/epolls/2016/president/co/colorado_cruz_vs_sanders-5755.html">Colorado: Cruz vs. Sanders</a></td>
+				<td class="lp-poll"><a href="http://www.quinnipiac.edu/images/polling/co/co11182015_c23tbvm.pdf">Quinnipiac</a></td>
+				<td class="lp-results"><a href="/epolls/2016/president/co/colorado_cruz_vs_sanders-5755.html">Cruz 49, Sanders 42</a></td>
+				<td class="lp-spread"><font color="black"><span class="rep">Cruz +7</span></font></td>
+			</tr>
+			<tr class="">
+				<td class="lp-race"><a href="/epolls/other/president_obama_job_approval-1044.html">President Obama Job Approval</a></td>
+				<td class="lp-poll"><a href="https://www.scribd.com/doc/290213526/Bloomberg-Politics-National-Poll-v3-Nov-18-2015">Bloomberg</a></td>
+				<td class="lp-results"><a href="/epolls/other/president_obama_job_approval-1044.html">Approve 44, Disapprove 51</a></td>
+				<td class="lp-spread"><font color="black"><span class="">Disapprove +7</span></font></td>
+			</tr>
+			<tr class="alt">
+				<td class="lp-race"><a href="/epolls/other/direction_of_country-902.html">Direction of Country</a></td>
+				<td class="lp-poll"><a href="https://www.scribd.com/doc/290213526/Bloomberg-Politics-National-Poll-v3-Nov-18-2015">Bloomberg</a></td>
+				<td class="lp-results"><a href="/epolls/other/direction_of_country-902.html">Right Direction 23, Wrong Track 69</a></td>
+				<td class="lp-spread"><font color="black"><span class="">Wrong Track +46</span></font></td>
+			</tr></table>
+				<table cellpadding="2" cellspacing="0">
+					<tr>
+						<td colspan="6" class="date"><b>Tuesday, November 17</b></td>
+					</tr>
+				</table>
+				<table cellpadding="2" cellspacing="0" class="sortable">
+					<tr>
+						<th class="clickable lp-race"><strong>Race/Topic</strong> &nbsp;&nbsp;<span class="click-sort">(Click to Sort)</span></th>
+						<th class="sorttable_nosort lp-poll"><strong>Poll</strong></th>
+						<th class="sorttable_nosort lp-resluts"><strong>Results</strong></th>
+						<th class="sorttable_nosort lp-spread"><strong>Spread</strong></th>
+					</tr>
+			<tr class="">
+				<td class="lp-race"><a href="/epolls/2016/president/us/2016_democratic_presidential_nomination-3824.html">2016 Democratic Presidential Nomination</a></td>
+				<td class="lp-poll"><a href="http://www.rasmussenreports.com/public_content/politics/elections/election_2016/clinton_sanders_run_even_among_democrats_under_40">Rasmussen Reports</a></td>
+				<td class="lp-results"><a href="/epolls/2016/president/us/2016_democratic_presidential_nomination-3824.html">Clinton 50, Sanders 29, O'Malley 6</a></td>
+				<td class="lp-spread"><font color="black"><span class="">Clinton +21</span></font></td>
+			</tr>
+			<tr class="alt">
+				<td class="lp-race"><a href="/epolls/2016/president/va/virginia_republican_presidential_primary-3921.html">Virginia Republican Presidential Primary</a></td>
+				<td class="lp-poll"><a href="https://www.umw.edu/news/wp-content/uploads/sites/7/2015/11/UMW-VA-Survey-2015_Topline-Day-One.pdf">Univ. of Mary Washington</a></td>
+				<td class="lp-results"><a href="/epolls/2016/president/va/virginia_republican_presidential_primary-3921.html">Carson 29, Trump 24, Rubio 11, Cruz 10, Bush 5, Fiorina 5, Paul 4, Huckabee 4, Christie 4, Kasich 1, Graham, Jindal, Santorum</a></td>
+				<td class="lp-spread"><font color="black"><span class="">Carson +5</span></font></td>
+			</tr>
+			<tr class="">
+				<td class="lp-race"><a href="/epolls/2016/president/va/virginia_democratic_presidential_primary-3922.html">Virginia Democratic Presidential Primary</a></td>
+				<td class="lp-poll"><a href="https://www.umw.edu/news/wp-content/uploads/sites/7/2015/11/UMW-VA-Survey-2015_Topline-Day-One.pdf">Univ. of Mary Washington</a></td>
+				<td class="lp-results"><a href="/epolls/2016/president/va/virginia_democratic_presidential_primary-3922.html">Clinton 63, Sanders 27, O'Malley 5</a></td>
+				<td class="lp-spread"><font color="black"><span class="">Clinton +36</span></font></td>
+			</tr>
+			<tr class="alt">
+				<td class="lp-race"><a href="/epolls/2016/president/sc/south_carolina_trump_vs_clinton-5748.html">South Carolina: Trump vs. Clinton</a></td>
+				<td class="lp-poll"><a href="http://www.publicpolicypolling.com/pdf/2015/PPP_Release_SC_111715.pdf">PPP (D)</a></td>
+				<td class="lp-results"><a href="/epolls/2016/president/sc/south_carolina_trump_vs_clinton-5748.html">Trump 47, Clinton 42</a></td>
+				<td class="lp-spread"><font color="black"><span class="rep">Trump +5</span></font></td>
+			</tr>
+			<tr class="">
+				<td class="lp-race"><a href="/epolls/2016/president/sc/south_carolina_carson_vs_clinton-5325.html">South Carolina: Carson vs. Clinton</a></td>
+				<td class="lp-poll"><a href="http://www.publicpolicypolling.com/pdf/2015/PPP_Release_SC_111715.pdf">PPP (D)</a></td>
+				<td class="lp-results"><a href="/epolls/2016/president/sc/south_carolina_carson_vs_clinton-5325.html">Carson 51, Clinton 39</a></td>
+				<td class="lp-spread"><font color="black"><span class="rep">Carson +12</span></font></td>
+			</tr>
+			<tr class="alt">
+				<td class="lp-race"><a href="/epolls/2016/president/sc/south_carolina_rubio_vs_clinton-4149.html">South Carolina: Rubio vs. Clinton</a></td>
+				<td class="lp-poll"><a href="http://www.publicpolicypolling.com/pdf/2015/PPP_Release_SC_111715.pdf">PPP (D)</a></td>
+				<td class="lp-results"><a href="/epolls/2016/president/sc/south_carolina_rubio_vs_clinton-4149.html">Rubio 47, Clinton 42</a></td>
+				<td class="lp-spread"><font color="black"><span class="rep">Rubio +5</span></font></td>
+			</tr>
+			<tr class="">
+				<td class="lp-race"><a href="/epolls/2016/president/sc/south_carolina_bush_vs_clinton-5317.html">South Carolina: Bush vs. Clinton</a></td>
+				<td class="lp-poll"><a href="http://www.publicpolicypolling.com/pdf/2015/PPP_Release_SC_111715.pdf">PPP (D)</a></td>
+				<td class="lp-results"><a href="/epolls/2016/president/sc/south_carolina_bush_vs_clinton-5317.html">Bush 47, Clinton 41</a></td>
+				<td class="lp-spread"><font color="black"><span class="rep">Bush +6</span></font></td>
+			</tr>
+			<tr class="alt">
+				<td class="lp-race"><a href="/epolls/2016/president/sc/south_carolina_cruz_vs_clinton-4148.html">South Carolina: Cruz vs. Clinton</a></td>
+				<td class="lp-poll"><a href="http://www.publicpolicypolling.com/pdf/2015/PPP_Release_SC_111715.pdf">PPP (D)</a></td>
+				<td class="lp-results"><a href="/epolls/2016/president/sc/south_carolina_cruz_vs_clinton-4148.html">Cruz 46, Clinton 43</a></td>
+				<td class="lp-spread"><font color="black"><span class="rep">Cruz +3</span></font></td>
+			</tr></table>
+				<table cellpadding="2" cellspacing="0">
+					<tr>
+						<td colspan="6" class="date"><b>Monday, November 16</b></td>
+					</tr>
+				</table>
+				<table cellpadding="2" cellspacing="0" class="sortable">
+					<tr>
+						<th class="clickable lp-race"><strong>Race/Topic</strong> &nbsp;&nbsp;<span class="click-sort">(Click to Sort)</span></th>
+						<th class="sorttable_nosort lp-poll"><strong>Poll</strong></th>
+						<th class="sorttable_nosort lp-resluts"><strong>Results</strong></th>
+						<th class="sorttable_nosort lp-spread"><strong>Spread</strong></th>
+					</tr>
+			<tr class="">
+				<td class="lp-race"><a href="/epolls/other/president_obama_job_approval-1044.html">President Obama Job Approval</a></td>
+				<td class="lp-poll"><a href="http://ipsos-na.com/download/pr.aspx?id=15085">Reuters/Ipsos</a></td>
+				<td class="lp-results"><a href="/epolls/other/president_obama_job_approval-1044.html">Approve 43, Disapprove 50</a></td>
+				<td class="lp-spread"><font color="black"><span class="">Disapprove +7</span></font></td>
+			</tr>
+			<tr class="alt">
+				<td class="lp-race"><a href="/epolls/other/direction_of_country-902.html">Direction of Country</a></td>
+				<td class="lp-poll"><a href="http://www.rasmussenreports.com/platinum/full_week_crosstabs/crosstabs_full_week_crosstabs_november_8_12_2015">Rasmussen Reports</a></td>
+				<td class="lp-results"><a href="/epolls/other/direction_of_country-902.html">Right Direction 28, Wrong Track 67</a></td>
+				<td class="lp-spread"><font color="black"><span class="">Wrong Track +39</span></font></td>
+			</tr>
+			<tr class="">
+				<td class="lp-race"><a href="/epolls/other/direction_of_country-902.html">Direction of Country</a></td>
+				<td class="lp-poll"><a href="http://ipsos-na.com/download/pr.aspx?id=15085">Reuters/Ipsos</a></td>
+				<td class="lp-results"><a href="/epolls/other/direction_of_country-902.html">Right Direction 26, Wrong Track 59</a></td>
+				<td class="lp-spread"><font color="black"><span class="">Wrong Track +33</span></font></td>
+			</tr></table>
+				<table cellpadding="2" cellspacing="0">
+					<tr>
+						<td colspan="6" class="date"><b>Sunday, November 15</b></td>
+					</tr>
+				</table>
+				<table cellpadding="2" cellspacing="0" class="sortable">
+					<tr>
+						<th class="clickable lp-race"><strong>Race/Topic</strong> &nbsp;&nbsp;<span class="click-sort">(Click to Sort)</span></th>
+						<th class="sorttable_nosort lp-poll"><strong>Poll</strong></th>
+						<th class="sorttable_nosort lp-resluts"><strong>Results</strong></th>
+						<th class="sorttable_nosort lp-spread"><strong>Spread</strong></th>
+					</tr>
+			<tr class="">
+				<td class="lp-race"><a href="/epolls/2016/president/nh/new_hampshire_republican_presidential_primary-3350.html">New Hampshire Republican Presidential Primary</a></td>
+				<td class="lp-poll"><a href="http://gravismarketing.com/polling-and-market-research/current-new-hampshire-polling-2/">Gravis</a></td>
+				<td class="lp-results"><a href="/epolls/2016/president/nh/new_hampshire_republican_presidential_primary-3350.html">Trump 29, Rubio 10, Cruz 12, Carson 7, Kasich 5, Bush 8, Christie 8, Fiorina 4, Paul 5, Huckabee 1, Santorum 0, Graham 0, Pataki 0</a></td>
+				<td class="lp-spread"><font color="black"><span class="">Trump +17</span></font></td>
+			</tr>
+			<tr class="alt">
+				<td class="lp-race"><a href="/epolls/2016/president/nh/new_hampshire_democratic_presidential_primary-3351.html">New Hampshire 2016 Democratic Primary</a></td>
+				<td class="lp-poll"><a href="http://gravismarketing.com/polling-and-market-research/current-new-hampshire-polling-2/">Gravis</a></td>
+				<td class="lp-results"><a href="/epolls/2016/president/nh/new_hampshire_democratic_presidential_primary-3351.html">Sanders 25, Clinton 46, O'Malley 3</a></td>
+				<td class="lp-spread"><font color="black"><span class="">Clinton +21</span></font></td>
+			</tr>
+			<tr class="">
+				<td class="lp-race"><a href="/epolls/other/president_obama_job_approval-1044.html">President Obama Job Approval</a></td>
+				<td class="lp-poll"><a href="http://www.mcclatchydc.com/news/politics-government/election/article44763744.ece/BINARY/Full%20questionnaire%20and%20results,%20Obama,%20November">McClatchy/Marist</a></td>
+				<td class="lp-results"><a href="/epolls/other/president_obama_job_approval-1044.html">Approve 48, Disapprove 48</a></td>
+				<td class="lp-spread"><font color="black"><span class="">Tie</span></font></td>
+			</tr>
+			<tr class="alt">
+				<td class="lp-race"><a href="/epolls/other/direction_of_country-902.html">Direction of Country</a></td>
+				<td class="lp-poll"><a href="http://www.mcclatchydc.com/news/politics-government/election/article44763744.ece/BINARY/Full%20questionnaire%20and%20results,%20Obama,%20November">McClatchy/Marist</a></td>
+				<td class="lp-results"><a href="/epolls/other/direction_of_country-902.html">Right Direction 35, Wrong Track 60</a></td>
+				<td class="lp-spread"><font color="black"><span class="">Wrong Track +25</span></font></td>
+			</tr></table>
+				<table cellpadding="2" cellspacing="0">
+					<tr>
+						<td colspan="6" class="date"><b>Friday, November 13</b></td>
+					</tr>
+				</table>
+				<table cellpadding="2" cellspacing="0" class="sortable">
+					<tr>
+						<th class="clickable lp-race"><strong>Race/Topic</strong> &nbsp;&nbsp;<span class="click-sort">(Click to Sort)</span></th>
+						<th class="sorttable_nosort lp-poll"><strong>Poll</strong></th>
+						<th class="sorttable_nosort lp-resluts"><strong>Results</strong></th>
+						<th class="sorttable_nosort lp-spread"><strong>Spread</strong></th>
+					</tr>
+			<tr class="">
+				<td class="lp-race"><a href="/epolls/2016/president/us/2016_democratic_presidential_nomination-3824.html">2016 Democratic Presidential Nomination</a></td>
+				<td class="lp-poll"><a href="http://maristpoll.marist.edu/wp-content/misc/usapolls/us151029/DEMS_2016/McClatchy_Marist%20Poll_DEM%20Primary%202016_Survey%20Findings_Nature%20of%20the%20Sample%20and%20Tables_November%202015.pdf">McClatchy/Marist</a></td>
+				<td class="lp-results"><a href="/epolls/2016/president/us/2016_democratic_presidential_nomination-3824.html">Clinton 57, Sanders 35, O'Malley 4</a></td>
+				<td class="lp-spread"><font color="black"><span class="">Clinton +22</span></font></td>
+			</tr>
+			<tr class="alt">
+				<td class="lp-race"><a href="/epolls/2016/president/fl/florida_republican_presidential_primary-3555.html">Florida Republican Presidential Primary</a></td>
+				<td class="lp-poll"><a href="http://opinionsavvy.com/wp-content/uploads/2015/11/FL-Prez-11.12.15.pdf">Florida Times-Union</a></td>
+				<td class="lp-results"><a href="/epolls/2016/president/fl/florida_republican_presidential_primary-3555.html">Trump 23, Carson 22, Rubio 18, Cruz 12, Bush 11, Fiorina 5, Kasich 3, Paul 1, Christie 3, Huckabee 1, Graham 0, Jindal 0, Santorum 0, Pataki 0</a></td>
+				<td class="lp-spread"><font color="black"><span class="">Trump +1</span></font></td>
+			</tr>
+			<tr class="">
+				<td class="lp-race"><a href="/epolls/2016/president/ga/georgia_republican_presidential_primary-5471.html">Georgia Republican Presidential Primary</a></td>
+				<td class="lp-poll"><a href="http://savannahnow.com/latest-news/2015-11-12/poll-carson-leads-ga-republicans">FOX 5/Morris News</a></td>
+				<td class="lp-results"><a href="/epolls/2016/president/ga/georgia_republican_presidential_primary-5471.html">Trump 24, Carson 26, Cruz 14, Rubio 9, Fiorina 6, Bush 8, Huckabee 2, Kasich 2, Paul 1, Christie 4, Graham 1, Jindal 0, Santorum 0, Pataki 0</a></td>
+				<td class="lp-spread"><font color="black"><span class="">Carson +2</span></font></td>
+			</tr>
+			<tr class="alt">
+				<td class="lp-race"><a href="/epolls/2015/governor/la/louisiana_governor_vitter_vs_edwards-4314.html">Louisiana Governor - Vitter vs. Edwards</a></td>
+				<td class="lp-poll"><a href="http://ftpcontent.worldnow.com/wvue/documents/VerneKennedyPoll.pdf">Market Research Insight</a></td>
+				<td class="lp-results"><a href="/epolls/2015/governor/la/louisiana_governor_vitter_vs_edwards-4314.html">Edwards 52, Vitter 38</a></td>
+				<td class="lp-spread"><font color="black"><span class="dem">Edwards +14</span></font></td>
+			</tr></table>
+				<table cellpadding="2" cellspacing="0">
+					<tr>
+						<td colspan="6" class="date"><b>Thursday, November 12</b></td>
+					</tr>
+				</table>
+				<table cellpadding="2" cellspacing="0" class="sortable">
+					<tr>
+						<th class="clickable lp-race"><strong>Race/Topic</strong> &nbsp;&nbsp;<span class="click-sort">(Click to Sort)</span></th>
+						<th class="sorttable_nosort lp-poll"><strong>Poll</strong></th>
+						<th class="sorttable_nosort lp-resluts"><strong>Results</strong></th>
+						<th class="sorttable_nosort lp-spread"><strong>Spread</strong></th>
+					</tr>
+			<tr class="">
+				<td class="lp-race"><a href="/epolls/2016/president/us/2016_democratic_presidential_nomination-3824.html">2016 Democratic Presidential Nomination</a></td>
+				<td class="lp-poll"><a href="http://www.nytimes.com/politics/first-draft/2015/11/12/poll-shows-hillary-clinton-maintaining-lead-over-bernie-sanders/">CBS News/NYT</a></td>
+				<td class="lp-results"><a href="/epolls/2016/president/us/2016_democratic_presidential_nomination-3824.html">Clinton 52, Sanders 33, O'Malley 5</a></td>
+				<td class="lp-spread"><font color="black"><span class="">Clinton +19</span></font></td>
+			</tr>
+			<tr class="alt">
+				<td class="lp-race"><a href="/epolls/2016/president/tx/texas_republican_presidential_primary-3622.html">Texas Republican Presidential Primary</a></td>
+				<td class="lp-poll"><a href="http://static.texastribune.org/media/documents/ut-tt-1115-summary-1.pdf">UT/Texas Tribune</a></td>
+				<td class="lp-results"><a href="/epolls/2016/president/tx/texas_republican_presidential_primary-3622.html">Trump 27, Cruz 27, Carson 13, Bush 4, Rubio 9, Fiorina 4, Huckabee 2, Paul 4, Christie 1, Kasich 1, Santorum 1, Jindal 0, Pataki 0</a></td>
+				<td class="lp-spread"><font color="black"><span class="">Tie</span></font></td>
+			</tr>
+			<tr class="">
+				<td class="lp-race"><a href="/epolls/2016/president/tx/texas_democratic_presidential_primary-4158.html">Texas Democratic Presidential Primary</a></td>
+				<td class="lp-poll"><a href="http://static.texastribune.org/media/documents/ut-tt-1115-summary-1.pdf">UT/Texas Tribune</a></td>
+				<td class="lp-results"><a href="/epolls/2016/president/tx/texas_democratic_presidential_primary-4158.html">Clinton 61, Sanders 30, O'Malley 1</a></td>
+				<td class="lp-spread"><font color="black"><span class="">Clinton +31</span></font></td>
+			</tr>
+			<tr class="alt">
+				<td class="lp-race"><a href="/epolls/2015/governor/la/louisiana_governor_vitter_vs_edwards-4314.html">Louisiana Governor - Vitter vs. Edwards</a></td>
+				<td class="lp-poll"><a href="http://www.uno.edu/cola/political-science/documents/2015LouisianaGubernatorialRunoffSurvey.pdf">University of New Orleans</a></td>
+				<td class="lp-results"><a href="/epolls/2015/governor/la/louisiana_governor_vitter_vs_edwards-4314.html">Edwards 56, Vitter 34</a></td>
+				<td class="lp-spread"><font color="black"><span class="dem">Edwards +22</span></font></td>
+			</tr>
+			<tr class="">
+				<td class="lp-race"><a href="/epolls/other/president_obama_job_approval-1044.html">President Obama Job Approval</a></td>
+				<td class="lp-poll"><a href="http://www.nytimes.com/interactive/2015/11/12/us/politics/document-poll.html">CBS News/NYT</a></td>
+				<td class="lp-results"><a href="/epolls/other/president_obama_job_approval-1044.html">Approve 45, Disapprove 48</a></td>
+				<td class="lp-spread"><font color="black"><span class="">Disapprove +3</span></font></td>
+			</tr>
+			<tr class="alt">
+				<td class="lp-race"><a href="/epolls/other/direction_of_country-902.html">Direction of Country</a></td>
+				<td class="lp-poll"><a href="http://www.nytimes.com/interactive/2015/11/12/us/politics/document-poll.html">CBS News/NYT</a></td>
+				<td class="lp-results"><a href="/epolls/other/direction_of_country-902.html">Right Direction 33, Wrong Track 62</a></td>
+				<td class="lp-spread"><font color="black"><span class="">Wrong Track +29</span></font></td>
+			</tr></table>
+				<table cellpadding="2" cellspacing="0">
+					<tr>
+						<td colspan="6" class="date"><b>Wednesday, November 11</b></td>
+					</tr>
+				</table>
+				<table cellpadding="2" cellspacing="0" class="sortable">
+					<tr>
+						<th class="clickable lp-race"><strong>Race/Topic</strong> &nbsp;&nbsp;<span class="click-sort">(Click to Sort)</span></th>
+						<th class="sorttable_nosort lp-poll"><strong>Poll</strong></th>
+						<th class="sorttable_nosort lp-resluts"><strong>Results</strong></th>
+						<th class="sorttable_nosort lp-spread"><strong>Spread</strong></th>
+					</tr>
+			<tr class="">
+				<td class="lp-race"><a href="/epolls/2016/president/az/arizona_republican_presidential_primary-4368.html">Arizona Republican Presidential Primary</a></td>
+				<td class="lp-poll"><a href="http://www.brcpolls.com/15/RMP%202015-IV-02.pdf">Behavior Research Center</a></td>
+				<td class="lp-results"><a href="/epolls/2016/president/az/arizona_republican_presidential_primary-4368.html">Carson 23, Trump 21, Rubio 15, Bush 8, Cruz 5, Fiorina 2, Paul 1, Kasich 1, Huckabee 1, Christie 1, Jindal 0, Santorum 0, Graham 0</a></td>
+				<td class="lp-spread"><font color="black"><span class="">Carson +2</span></font></td>
+			</tr>
+			<tr class="alt">
+				<td class="lp-race"><a href="/epolls/other/president_obama_job_approval-1044.html">President Obama Job Approval</a></td>
+				<td class="lp-poll"><a href="https://d25d2506sfb94s.cloudfront.net/cumulus_uploads/document/m3prcy1s9a/trackingreport.pdf">The Economist/YouGov</a></td>
+				<td class="lp-results"><a href="/epolls/other/president_obama_job_approval-1044.html">Approve 45, Disapprove 53</a></td>
+				<td class="lp-spread"><font color="black"><span class="">Disapprove +8</span></font></td>
+			</tr>
+			<tr class="">
+				<td class="lp-race"><a href="/epolls/other/congressional_job_approval-903.html">Congressional Job Approval</a></td>
+				<td class="lp-poll"><a href="http://www.gallup.com/poll/186581/congress-job-approval-rating-slips.aspx">Gallup</a></td>
+				<td class="lp-results"><a href="/epolls/other/congressional_job_approval-903.html">Approve 11, Disapprove 86</a></td>
+				<td class="lp-spread"><font color="black"><span class="">Disapprove +75</span></font></td>
+			</tr>
+			<tr class="alt">
+				<td class="lp-race"><a href="/epolls/other/congressional_job_approval-903.html">Congressional Job Approval</a></td>
+				<td class="lp-poll"><a href="https://d25d2506sfb94s.cloudfront.net/cumulus_uploads/document/m3prcy1s9a/trackingreport.pdf">The Economist/YouGov</a></td>
+				<td class="lp-results"><a href="/epolls/other/congressional_job_approval-903.html">Approve 10, Disapprove 69</a></td>
+				<td class="lp-spread"><font color="black"><span class="">Disapprove +59</span></font></td>
+			</tr>
+			<tr class="">
+				<td class="lp-race"><a href="/epolls/other/direction_of_country-902.html">Direction of Country</a></td>
+				<td class="lp-poll"><a href="https://d25d2506sfb94s.cloudfront.net/cumulus_uploads/document/m3prcy1s9a/trackingreport.pdf">The Economist/YouGov</a></td>
+				<td class="lp-results"><a href="/epolls/other/direction_of_country-902.html">Right Direction 28, Wrong Track 65</a></td>
+				<td class="lp-spread"><font color="black"><span class="">Wrong Track +37</span></font></td>
+			</tr></table></div><div id="table-3" class="table-races hide">
+				<table cellpadding="2" cellspacing="0">
+					<tr>
+						<td colspan="6" class="date"><b>Tuesday, November 10</b></td>
+					</tr>
+				</table>
+				<table cellpadding="2" cellspacing="0" class="sortable">
+					<tr>
+						<th class="clickable lp-race"><strong>Race/Topic</strong> &nbsp;&nbsp;<span class="click-sort">(Click to Sort)</span></th>
+						<th class="sorttable_nosort lp-poll"><strong>Poll</strong></th>
+						<th class="sorttable_nosort lp-resluts"><strong>Results</strong></th>
+						<th class="sorttable_nosort lp-spread"><strong>Spread</strong></th>
+					</tr>
+			<tr class="">
+				<td class="lp-race"><a href="/epolls/2016/president/sc/south_carolina_democratic_presidential_primary-4167.html">South Carolina Democratic Presidential Primary</a></td>
+				<td class="lp-poll"><a href="http://www.monmouth.edu/assets/0/32212254770/32212254991/32212254992/32212254994/32212254995/30064771087/6389574d-14ad-4ba1-8039-840c16a248a7.pdf">Monmouth</a></td>
+				<td class="lp-results"><a href="/epolls/2016/president/sc/south_carolina_democratic_presidential_primary-4167.html">Clinton 69, Sanders 21, O'Malley 1</a></td>
+				<td class="lp-spread"><font color="black"><span class="">Clinton +48</span></font></td>
+			</tr>
+			<tr class="alt">
+				<td class="lp-race"><a href="/epolls/2016/president/sc/south_carolina_republican_presidential_primary-4151.html">South Carolina Republican Presidential Primary</a></td>
+				<td class="lp-poll"><a href="http://www.publicpolicypolling.com/pdf/2015/PPP_Release_SC_111015.pdf">PPP (D)</a></td>
+				<td class="lp-results"><a href="/epolls/2016/president/sc/south_carolina_republican_presidential_primary-4151.html">Trump 25, Carson 21, Rubio 13, Cruz 15, Bush 8, Fiorina 5, Kasich 3, Huckabee 2, Graham 2, Paul 2, Christie 1, Santorum 1, Jindal 0, Pataki 0</a></td>
+				<td class="lp-spread"><font color="black"><span class="">Trump +4</span></font></td>
+			</tr>
+			<tr class="">
+				<td class="lp-race"><a href="/epolls/2016/president/sc/south_carolina_democratic_presidential_primary-4167.html">South Carolina Democratic Presidential Primary</a></td>
+				<td class="lp-poll"><a href="http://www.publicpolicypolling.com/pdf/2015/PPP_Release_SC_111015.pdf">PPP (D)</a></td>
+				<td class="lp-results"><a href="/epolls/2016/president/sc/south_carolina_democratic_presidential_primary-4167.html">Clinton 72, Sanders 18, O'Malley 5</a></td>
+				<td class="lp-spread"><font color="black"><span class="">Clinton +54</span></font></td>
+			</tr>
+			<tr class="alt">
+				<td class="lp-race"><a href="/epolls/2016/president/nj/new_jersey_republican_presidential_primary-3444.html">New Jersey Republican Presidential Primary</a></td>
+				<td class="lp-poll"><a href="http://www.quinnipiac.edu/images/polling/nj/nj11102015_n52atbc.pdf">Quinnipiac</a></td>
+				<td class="lp-results"><a href="/epolls/2016/president/nj/new_jersey_republican_presidential_primary-3444.html">Trump 31, Rubio 15, Carson 16, Christie 8, Cruz 7, Bush 4, Fiorina 4, Kasich 3, Paul 1, Huckabee 0, Santorum 1, Graham 0, Pataki 0</a></td>
+				<td class="lp-spread"><font color="black"><span class="">Trump +15</span></font></td>
+			</tr>
+			<tr class="">
+				<td class="lp-race"><a href="/epolls/2016/president/nj/new_jersey_democratic_presidential_primary-3443.html">New Jersey Democratic Presidential Primary</a></td>
+				<td class="lp-poll"><a href="http://www.quinnipiac.edu/images/polling/nj/nj11102015_n52atbc.pdf">Quinnipiac</a></td>
+				<td class="lp-results"><a href="/epolls/2016/president/nj/new_jersey_democratic_presidential_primary-3443.html">Clinton 56, Sanders 23, O'Malley 2</a></td>
+				<td class="lp-spread"><font color="black"><span class="">Clinton +33</span></font></td>
+			</tr></table>
+				<table cellpadding="2" cellspacing="0">
+					<tr>
+						<td colspan="6" class="date"><b>Monday, November 9</b></td>
+					</tr>
+				</table>
+				<table cellpadding="2" cellspacing="0" class="sortable">
+					<tr>
+						<th class="clickable lp-race"><strong>Race/Topic</strong> &nbsp;&nbsp;<span class="click-sort">(Click to Sort)</span></th>
+						<th class="sorttable_nosort lp-poll"><strong>Poll</strong></th>
+						<th class="sorttable_nosort lp-resluts"><strong>Results</strong></th>
+						<th class="sorttable_nosort lp-spread"><strong>Spread</strong></th>
+					</tr>
+			<tr class="">
+				<td class="lp-race"><a href="/epolls/2016/president/us/2016_republican_presidential_nomination-3823.html">2016 Republican Presidential Nomination</a></td>
+				<td class="lp-poll"><a href="http://www.mcclatchydc.com/news/politics-government/election/article43495575.html">McClatchy/Marist</a></td>
+				<td class="lp-results"><a href="/epolls/2016/president/us/2016_republican_presidential_nomination-3823.html">Trump 23, Carson 24, Cruz 8, Rubio 12, Bush 8, Fiorina 3, Christie 2, Kasich 4, Huckabee 3, Paul 5, Graham 0, Pataki 1, Santorum 1</a></td>
+				<td class="lp-spread"><font color="black"><span class="">Carson +1</span></font></td>
+			</tr>
+			<tr class="alt">
+				<td class="lp-race"><a href="/epolls/2016/president/sc/south_carolina_republican_presidential_primary-4151.html">South Carolina Republican Presidential Primary</a></td>
+				<td class="lp-poll"><a href="http://www.monmouth.edu/assets/0/32212254770/32212254991/32212254992/32212254994/32212254995/30064771087/4a550497-98dc-48f6-9e62-fd4549f38b12.pdf">Monmouth</a></td>
+				<td class="lp-results"><a href="/epolls/2016/president/sc/south_carolina_republican_presidential_primary-4151.html">Trump 27, Carson 28, Rubio 11, Cruz 9, Bush 7, Fiorina 2, Kasich 1, Huckabee 2, Graham 1, Paul 1, Christie 1, Santorum 0, Jindal 0, Pataki 0</a></td>
+				<td class="lp-spread"><font color="black"><span class="">Carson +1</span></font></td>
+			</tr>
+			<tr class="">
+				<td class="lp-race"><a href="/epolls/2016/president/us/general_election_trump_vs_clinton-5491.html">General Election: Trump vs. Clinton</a></td>
+				<td class="lp-poll"><a href="http://www.mcclatchydc.com/news/politics-government/election/article43727049.ece/BINARY/Poll%20details">McClatchy/Marist</a></td>
+				<td class="lp-results"><a href="/epolls/2016/president/us/general_election_trump_vs_clinton-5491.html">Clinton 56, Trump 41</a></td>
+				<td class="lp-spread"><font color="black"><span class="dem">Clinton +15</span></font></td>
+			</tr>
+			<tr class="alt">
+				<td class="lp-race"><a href="/epolls/2016/president/us/general_election_carson_vs_clinton-5119.html">General Election: Carson vs. Clinton</a></td>
+				<td class="lp-poll"><a href="http://www.mcclatchydc.com/news/politics-government/election/article43727049.ece/BINARY/Poll%20details">McClatchy/Marist</a></td>
+				<td class="lp-results"><a href="/epolls/2016/president/us/general_election_carson_vs_clinton-5119.html">Carson 48, Clinton 50</a></td>
+				<td class="lp-spread"><font color="black"><span class="dem">Clinton +2</span></font></td>
+			</tr>
+			<tr class="">
+				<td class="lp-race"><a href="/epolls/2016/president/us/general_election_rubio_vs_clinton-3767.html">General Election: Rubio vs. Clinton</a></td>
+				<td class="lp-poll"><a href="http://www.mcclatchydc.com/news/politics-government/election/article43727049.ece/BINARY/Poll%20details">McClatchy/Marist</a></td>
+				<td class="lp-results"><a href="/epolls/2016/president/us/general_election_rubio_vs_clinton-3767.html">Rubio 45, Clinton 50</a></td>
+				<td class="lp-spread"><font color="black"><span class="dem">Clinton +5</span></font></td>
+			</tr>
+			<tr class="alt">
+				<td class="lp-race"><a href="/epolls/2016/president/us/general_election_bush_vs_clinton-3827.html">General Election: Bush vs. Clinton</a></td>
+				<td class="lp-poll"><a href="http://www.mcclatchydc.com/news/politics-government/election/article43727049.ece/BINARY/Poll%20details">McClatchy/Marist</a></td>
+				<td class="lp-results"><a href="/epolls/2016/president/us/general_election_bush_vs_clinton-3827.html">Clinton 52, Bush 44</a></td>
+				<td class="lp-spread"><font color="black"><span class="dem">Clinton +8</span></font></td>
+			</tr>
+			<tr class="">
+				<td class="lp-race"><a href="/epolls/2016/president/us/general_election_cruz_vs_clinton-4034.html">General Election: Cruz vs. Clinton</a></td>
+				<td class="lp-poll"><a href="http://www.mcclatchydc.com/news/politics-government/election/article43727049.ece/BINARY/Poll%20details">McClatchy/Marist</a></td>
+				<td class="lp-results"><a href="/epolls/2016/president/us/general_election_cruz_vs_clinton-4034.html">Clinton 53, Cruz 43</a></td>
+				<td class="lp-spread"><font color="black"><span class="dem">Clinton +10</span></font></td>
+			</tr>
+			<tr class="alt">
+				<td class="lp-race"><a href="/epolls/2016/president/us/general_election_fiorina_vs_clinton-5470.html">General Election: Fiorina vs. Clinton</a></td>
+				<td class="lp-poll"><a href="http://www.mcclatchydc.com/news/politics-government/election/article43727049.ece/BINARY/Poll%20details">McClatchy/Marist</a></td>
+				<td class="lp-results"><a href="/epolls/2016/president/us/general_election_fiorina_vs_clinton-5470.html">Clinton 53, Fiorina 43</a></td>
+				<td class="lp-spread"><font color="black"><span class="dem">Clinton +10</span></font></td>
+			</tr>
+			<tr class="">
+				<td class="lp-race"><a href="/epolls/2016/president/mn/minnesota_trump_vs_clinton-5591.html">Minnesota: Trump vs. Clinton</a></td>
+				<td class="lp-poll"><a href="http://kstp.com/article/stories/s3956994.shtml">KSTP/SurveyUSA</a></td>
+				<td class="lp-results"><a href="/epolls/2016/president/mn/minnesota_trump_vs_clinton-5591.html">Clinton 42, Trump 45</a></td>
+				<td class="lp-spread"><font color="black"><span class="rep">Trump +3</span></font></td>
+			</tr>
+			<tr class="alt">
+				<td class="lp-race"><a href="/epolls/2016/president/mn/minnesota_carson_vs_clinton-5589.html">Minnesota: Carson vs. Clinton</a></td>
+				<td class="lp-poll"><a href="http://kstp.com/article/stories/s3956994.shtml">KSTP/SurveyUSA</a></td>
+				<td class="lp-results"><a href="/epolls/2016/president/mn/minnesota_carson_vs_clinton-5589.html">Carson 50, Clinton 41</a></td>
+				<td class="lp-spread"><font color="black"><span class="rep">Carson +9</span></font></td>
+			</tr>
+			<tr class="">
+				<td class="lp-race"><a href="/epolls/2016/president/mn/minnesota_rubio_vs_clinton-3588.html">Minnesota: Rubio vs. Clinton</a></td>
+				<td class="lp-poll"><a href="http://kstp.com/article/stories/s3956994.shtml">KSTP/SurveyUSA</a></td>
+				<td class="lp-results"><a href="/epolls/2016/president/mn/minnesota_rubio_vs_clinton-3588.html">Rubio 47, Clinton 41</a></td>
+				<td class="lp-spread"><font color="black"><span class="rep">Rubio +6</span></font></td>
+			</tr>
+			<tr class="alt">
+				<td class="lp-race"><a href="/epolls/2016/president/mn/minnesota_cruz_vs_clinton-5112.html">Minnesota: Cruz vs. Clinton</a></td>
+				<td class="lp-poll"><a href="http://kstp.com/article/stories/s3956994.shtml">KSTP/SurveyUSA</a></td>
+				<td class="lp-results"><a href="/epolls/2016/president/mn/minnesota_cruz_vs_clinton-5112.html">Clinton 46, Cruz 41</a></td>
+				<td class="lp-spread"><font color="black"><span class="dem">Clinton +5</span></font></td>
+			</tr>
+			<tr class="">
+				<td class="lp-race"><a href="/epolls/2016/president/mn/minnesota_bush_vs_clinton-5111.html">Minnesota: Bush vs. Clinton</a></td>
+				<td class="lp-poll"><a href="http://kstp.com/article/stories/s3956994.shtml">KSTP/SurveyUSA</a></td>
+				<td class="lp-results"><a href="/epolls/2016/president/mn/minnesota_bush_vs_clinton-5111.html">Clinton 43, Bush 44</a></td>
+				<td class="lp-spread"><font color="black"><span class="rep">Bush +1</span></font></td>
+			</tr>
+			<tr class="alt">
+				<td class="lp-race"><a href="/epolls/2016/president/mn/minnesota_fiorina_vs_clinton-5590.html">Minnesota: Fiorina vs. Clinton</a></td>
+				<td class="lp-poll"><a href="http://kstp.com/article/stories/s3956994.shtml">KSTP/SurveyUSA</a></td>
+				<td class="lp-results"><a href="/epolls/2016/president/mn/minnesota_fiorina_vs_clinton-5590.html">Clinton 41, Fiorina 45</a></td>
+				<td class="lp-spread"><font color="black"><span class="rep">Fiorina +4</span></font></td>
+			</tr>
+			<tr class="">
+				<td class="lp-race"><a href="/epolls/2016/president/us/general_election_trump_vs_sanders-5565.html">General Election: Trump vs. Sanders</a></td>
+				<td class="lp-poll"><a href="http://www.mcclatchydc.com/news/politics-government/election/article43727049.ece/BINARY/Poll%20details">McClatchy/Marist</a></td>
+				<td class="lp-results"><a href="/epolls/2016/president/us/general_election_trump_vs_sanders-5565.html">Sanders 53, Trump 41</a></td>
+				<td class="lp-spread"><font color="black"><span class="dem">Sanders +12</span></font></td>
+			</tr>
+			<tr class="alt">
+				<td class="lp-race"><a href="/epolls/2016/president/us/general_election_carson_vs_sanders-5677.html">General Election: Carson vs. Sanders</a></td>
+				<td class="lp-poll"><a href="http://www.mcclatchydc.com/news/politics-government/election/article43727049.ece/BINARY/Poll%20details">McClatchy/Marist</a></td>
+				<td class="lp-results"><a href="/epolls/2016/president/us/general_election_carson_vs_sanders-5677.html">Carson 47, Sanders 45</a></td>
+				<td class="lp-spread"><font color="black"><span class="rep">Carson +2</span></font></td>
+			</tr>
+			<tr class="">
+				<td class="lp-race"><a href="/epolls/2016/president/us/general_election_rubio_vs_sanders-5564.html">General Election: Rubio vs. Sanders</a></td>
+				<td class="lp-poll"><a href="http://www.mcclatchydc.com/news/politics-government/election/article43727049.ece/BINARY/Poll%20details">McClatchy/Marist</a></td>
+				<td class="lp-results"><a href="/epolls/2016/president/us/general_election_rubio_vs_sanders-5564.html">Sanders 48, Rubio 45</a></td>
+				<td class="lp-spread"><font color="black"><span class="dem">Sanders +3</span></font></td>
+			</tr>
+			<tr class="alt">
+				<td class="lp-race"><a href="/epolls/2016/president/us/general_election_bush_vs_sanders-5563.html">General Election: Bush vs. Sanders</a></td>
+				<td class="lp-poll"><a href="http://www.mcclatchydc.com/news/politics-government/election/article43727049.ece/BINARY/Poll%20details">McClatchy/Marist</a></td>
+				<td class="lp-results"><a href="/epolls/2016/president/us/general_election_bush_vs_sanders-5563.html">Sanders 51, Bush 41</a></td>
+				<td class="lp-spread"><font color="black"><span class="dem">Sanders +10</span></font></td>
+			</tr>
+			<tr class="">
+				<td class="lp-race"><a href="/epolls/2016/president/us/general_election_cruz_vs_sanders-5742.html">General Election: Cruz vs. Sanders</a></td>
+				<td class="lp-poll"><a href="http://www.mcclatchydc.com/news/politics-government/election/article43727049.ece/BINARY/Poll%20details">McClatchy/Marist</a></td>
+				<td class="lp-results"><a href="/epolls/2016/president/us/general_election_cruz_vs_sanders-5742.html">Sanders 51, Cruz 39</a></td>
+				<td class="lp-spread"><font color="black"><span class="dem">Sanders +12</span></font></td>
+			</tr>
+			<tr class="alt">
+				<td class="lp-race"><a href="/epolls/2016/president/us/general_election_sanders_vs_fiorina-5678.html">General Election: Fiorina vs. Sanders</a></td>
+				<td class="lp-poll"><a href="http://www.mcclatchydc.com/news/politics-government/election/article43727049.ece/BINARY/Poll%20details">McClatchy/Marist</a></td>
+				<td class="lp-results"><a href="/epolls/2016/president/us/general_election_sanders_vs_fiorina-5678.html">Sanders 53, Fiorina 39</a></td>
+				<td class="lp-spread"><font color="black"><span class="dem">Sanders +14</span></font></td>
+			</tr>
+			<tr class="">
+				<td class="lp-race"><a href="/epolls/other/direction_of_country-902.html">Direction of Country</a></td>
+				<td class="lp-poll"><a href="http://www.rasmussenreports.com/public_content/archive/mood_of_america_archive/right_direction_or_wrong_track/november_2015/27_say_u_s_heading_in_right_direction">Rasmussen Reports</a></td>
+				<td class="lp-results"><a href="/epolls/other/direction_of_country-902.html">Right Direction 27, Wrong Track 66</a></td>
+				<td class="lp-spread"><font color="black"><span class="">Wrong Track +39</span></font></td>
+			</tr></table>
+				<table cellpadding="2" cellspacing="0">
+					<tr>
+						<td colspan="6" class="date"><b>Saturday, November 7</b></td>
+					</tr>
+				</table>
+				<table cellpadding="2" cellspacing="0" class="sortable">
+					<tr>
+						<th class="clickable lp-race"><strong>Race/Topic</strong> &nbsp;&nbsp;<span class="click-sort">(Click to Sort)</span></th>
+						<th class="sorttable_nosort lp-poll"><strong>Poll</strong></th>
+						<th class="sorttable_nosort lp-resluts"><strong>Results</strong></th>
+						<th class="sorttable_nosort lp-spread"><strong>Spread</strong></th>
+					</tr>
+			<tr class="">
+				<td class="lp-race"><a href="/epolls/other/president_obama_job_approval-1044.html">President Obama Job Approval</a></td>
+				<td class="lp-poll"><a href="http://www.foxnews.com/politics/interactive/2015/11/05/fox-news-poll-obama-and-syria/">FOX News</a></td>
+				<td class="lp-results"><a href="/epolls/other/president_obama_job_approval-1044.html">Approve 45, Disapprove 50</a></td>
+				<td class="lp-spread"><font color="black"><span class="">Disapprove +5</span></font></td>
+			</tr></table>
+				<table cellpadding="2" cellspacing="0">
+					<tr>
+						<td colspan="6" class="date"><b>Friday, November 6</b></td>
+					</tr>
+				</table>
+				<table cellpadding="2" cellspacing="0" class="sortable">
+					<tr>
+						<th class="clickable lp-race"><strong>Race/Topic</strong> &nbsp;&nbsp;<span class="click-sort">(Click to Sort)</span></th>
+						<th class="sorttable_nosort lp-poll"><strong>Poll</strong></th>
+						<th class="sorttable_nosort lp-resluts"><strong>Results</strong></th>
+						<th class="sorttable_nosort lp-spread"><strong>Spread</strong></th>
+					</tr>
+			<tr class="">
+				<td class="lp-race"><a href="/epolls/2016/president/ia/iowa_republican_presidential_caucus-3194.html">Iowa Republican Presidential Caucus</a></td>
+				<td class="lp-poll"><a href="http://i2.cdn.turner.com/cnn/2015/images/11/05/relia2.pdf">CNN/ORC</a></td>
+				<td class="lp-results"><a href="/epolls/2016/president/ia/iowa_republican_presidential_caucus-3194.html">Trump 25, Carson 23, Cruz 11, Rubio 13, Bush 5, Fiorina 4, Paul 2, Jindal 4, Christie 3, Huckabee 2, Santorum 0, Kasich 2, Graham 2, Pataki 0</a></td>
+				<td class="lp-spread"><font color="black"><span class="">Trump +2</span></font></td>
+			</tr>
+			<tr class="alt">
+				<td class="lp-race"><a href="/epolls/2016/president/ia/iowa_democratic_presidential_caucus-3195.html">Iowa Democratic Presidential Caucus</a></td>
+				<td class="lp-poll"><a href="http://i2.cdn.turner.com/cnn/2015/images/11/05/relia2.pdf">CNN/ORC</a></td>
+				<td class="lp-results"><a href="/epolls/2016/president/ia/iowa_democratic_presidential_caucus-3195.html">Clinton 55, Sanders 37, O'Malley 3</a></td>
+				<td class="lp-spread"><font color="black"><span class="">Clinton +18</span></font></td>
+			</tr></table>
+				<table cellpadding="2" cellspacing="0">
+					<tr>
+						<td colspan="6" class="date"><b>Thursday, November 5</b></td>
+					</tr>
+				</table>
+				<table cellpadding="2" cellspacing="0" class="sortable">
+					<tr>
+						<th class="clickable lp-race"><strong>Race/Topic</strong> &nbsp;&nbsp;<span class="click-sort">(Click to Sort)</span></th>
+						<th class="sorttable_nosort lp-poll"><strong>Poll</strong></th>
+						<th class="sorttable_nosort lp-resluts"><strong>Results</strong></th>
+						<th class="sorttable_nosort lp-spread"><strong>Spread</strong></th>
+					</tr>
+			<tr class="">
+				<td class="lp-race"><a href="/epolls/2016/president/nc/north_carolina_republican_presidential_primary-3491.html">North Carolina Republican Presidential Primary</a></td>
+				<td class="lp-poll"><a href="http://elon.edu/images/e-web/elonpoll/11_5_15_ElonPollEXEC.pdf">Elon University</a></td>
+				<td class="lp-results"><a href="/epolls/2016/president/nc/north_carolina_republican_presidential_primary-3491.html">Carson 31, Trump 19, Rubio 10, Cruz 10, Bush 5, Fiorina 3, Huckabee 3, Kasich 1, Christie 2, Paul 2, Santorum 0, Graham 1, Jindal 0, Walker, Perry</a></td>
+				<td class="lp-spread"><font color="black"><span class="">Carson +12</span></font></td>
+			</tr>
+			<tr class="alt">
+				<td class="lp-race"><a href="/epolls/2016/president/nc/north_carolina_democratic_presidential_primary-5175.html">North Carolina Democratic Presidential Primary</a></td>
+				<td class="lp-poll"><a href="http://elon.edu/images/e-web/elonpoll/11_5_15_ElonPollEXEC.pdf">Elon University</a></td>
+				<td class="lp-results"><a href="/epolls/2016/president/nc/north_carolina_democratic_presidential_primary-5175.html">Clinton 57, Sanders 24, O'Malley 3</a></td>
+				<td class="lp-spread"><font color="black"><span class="">Clinton +33</span></font></td>
+			</tr>
+			<tr class="">
+				<td class="lp-race"><a href="/epolls/2016/president/nc/north_carolina_trump_vs_clinton-5538.html">North Carolina: Trump vs. Clinton</a></td>
+				<td class="lp-poll"><a href="http://elon.edu/images/e-web/elonpoll/11_5_15_ElonPollEXEC.pdf">Elon University</a></td>
+				<td class="lp-results"><a href="/epolls/2016/president/nc/north_carolina_trump_vs_clinton-5538.html">Clinton 50, Trump 40</a></td>
+				<td class="lp-spread"><font color="black"><span class="dem">Clinton +10</span></font></td>
+			</tr>
+			<tr class="alt">
+				<td class="lp-race"><a href="/epolls/2016/president/nc/north_carolina_carson_vs_clinton-5292.html">North Carolina: Carson vs. Clinton</a></td>
+				<td class="lp-poll"><a href="http://elon.edu/images/e-web/elonpoll/11_5_15_ElonPollEXEC.pdf">Elon University</a></td>
+				<td class="lp-results"><a href="/epolls/2016/president/nc/north_carolina_carson_vs_clinton-5292.html">Carson 48, Clinton 44</a></td>
+				<td class="lp-spread"><font color="black"><span class="rep">Carson +4</span></font></td>
+			</tr>
+			<tr class="">
+				<td class="lp-race"><a href="/epolls/2016/president/nc/north_carolina_rubio_vs_clinton-3849.html">North Carolina: Rubio vs. Clinton</a></td>
+				<td class="lp-poll"><a href="http://elon.edu/images/e-web/elonpoll/11_5_15_ElonPollEXEC.pdf">Elon University</a></td>
+				<td class="lp-results"><a href="/epolls/2016/president/nc/north_carolina_rubio_vs_clinton-3849.html">Rubio 46, Clinton 45</a></td>
+				<td class="lp-spread"><font color="black"><span class="rep">Rubio +1</span></font></td>
+			</tr>
+			<tr class="alt">
+				<td class="lp-race"><a href="/epolls/2016/president/nc/north_carolina_bush_vs_clinton-4173.html">North Carolina: Bush vs. Clinton</a></td>
+				<td class="lp-poll"><a href="http://elon.edu/images/e-web/elonpoll/11_5_15_ElonPollEXEC.pdf">Elon University</a></td>
+				<td class="lp-results"><a href="/epolls/2016/president/nc/north_carolina_bush_vs_clinton-4173.html">Clinton 47, Bush 43</a></td>
+				<td class="lp-spread"><font color="black"><span class="dem">Clinton +4</span></font></td>
+			</tr>
+			<tr class="">
+				<td class="lp-race"><a href="/epolls/2016/president/nc/north_carolina_fiorina_vs_clinton-5499.html">North Carolina: Fiorina vs. Clinton</a></td>
+				<td class="lp-poll"><a href="http://elon.edu/images/e-web/elonpoll/11_5_15_ElonPollEXEC.pdf">Elon University</a></td>
+				<td class="lp-results"><a href="/epolls/2016/president/nc/north_carolina_fiorina_vs_clinton-5499.html">Clinton 48, Fiorina 42</a></td>
+				<td class="lp-spread"><font color="black"><span class="dem">Clinton +6</span></font></td>
+			</tr>
+			<tr class="alt">
+				<td class="lp-race"><a href="/epolls/2016/president/mi/michigan_trump_vs_clinton-5533.html">Michigan: Trump vs. Clinton</a></td>
+				<td class="lp-poll"><a href="http://www.wxyz.com/news/political/exclusive-poll-gops-dr-ben-carson-has-leading-presidential-race-prescription-in-mi">WXYZ-TV/Detroit Free Press</a></td>
+				<td class="lp-results"><a href="/epolls/2016/president/mi/michigan_trump_vs_clinton-5533.html">Clinton 46, Trump 38</a></td>
+				<td class="lp-spread"><font color="black"><span class="dem">Clinton +8</span></font></td>
+			</tr>
+			<tr class="">
+				<td class="lp-race"><a href="/epolls/2016/president/mi/michigan_carson_vs_clinton-5531.html">Michigan: Carson vs. Clinton</a></td>
+				<td class="lp-poll"><a href="http://www.wxyz.com/news/political/exclusive-poll-gops-dr-ben-carson-has-leading-presidential-race-prescription-in-mi">WXYZ-TV/Detroit Free Press</a></td>
+				<td class="lp-results"><a href="/epolls/2016/president/mi/michigan_carson_vs_clinton-5531.html">Carson 46, Clinton 40</a></td>
+				<td class="lp-spread"><font color="black"><span class="rep">Carson +6</span></font></td>
+			</tr>
+			<tr class="alt">
+				<td class="lp-race"><a href="/epolls/2016/president/mi/michigan_trump_vs_sanders-5744.html">Michigan: Trump vs. Sanders</a></td>
+				<td class="lp-poll"><a href="http://www.wxyz.com/news/political/exclusive-poll-gops-dr-ben-carson-has-leading-presidential-race-prescription-in-mi">WXYZ-TV/Detroit Free Press</a></td>
+				<td class="lp-results"><a href="/epolls/2016/president/mi/michigan_trump_vs_sanders-5744.html">Sanders 48, Trump 36</a></td>
+				<td class="lp-spread"><font color="black"><span class="dem">Sanders +12</span></font></td>
+			</tr>
+			<tr class="">
+				<td class="lp-race"><a href="/epolls/2016/president/mi/michigan_carson_vs_sanders-5745.html">Michigan: Carson vs. Sanders</a></td>
+				<td class="lp-poll"><a href="http://www.wxyz.com/news/political/exclusive-poll-gops-dr-ben-carson-has-leading-presidential-race-prescription-in-mi">WXYZ-TV/Detroit Free Press</a></td>
+				<td class="lp-results"><a href="/epolls/2016/president/mi/michigan_carson_vs_sanders-5745.html">Carson 45, Sanders 36</a></td>
+				<td class="lp-spread"><font color="black"><span class="rep">Carson +9</span></font></td>
+			</tr>
+			<tr class="alt">
+				<td class="lp-race"><a href="/epolls/other/president_obama_job_approval-1044.html">President Obama Job Approval</a></td>
+				<td class="lp-poll"><a href="http://www.quinnipiac.edu/images/polling/us/us11052015_ujmb76p.pdf">Quinnipiac</a></td>
+				<td class="lp-results"><a href="/epolls/other/president_obama_job_approval-1044.html">Approve 42, Disapprove 54</a></td>
+				<td class="lp-spread"><font color="black"><span class="">Disapprove +12</span></font></td>
+			</tr>
+			<tr class="">
+				<td class="lp-race"><a href="/epolls/other/president_obama_job_approval-1044.html">President Obama Job Approval</a></td>
+				<td class="lp-poll"><a href="http://www.monmouth.edu/assets/0/32212254770/32212254991/32212254992/32212254994/32212254995/30064771087/9c68cc25-f064-4fd8-aca9-24df1ff47b1a.pdf">Monmouth</a></td>
+				<td class="lp-results"><a href="/epolls/other/president_obama_job_approval-1044.html">Approve 44, Disapprove 48</a></td>
+				<td class="lp-spread"><font color="black"><span class="">Disapprove +4</span></font></td>
+			</tr>
+			<tr class="alt">
+				<td class="lp-race"><a href="/epolls/other/president_obama_job_approval-1044.html">President Obama Job Approval</a></td>
+				<td class="lp-poll"><a href="http://www.ipsos-na.com/download/pr.aspx?id=15026">Reuters/Ipsos</a></td>
+				<td class="lp-results"><a href="/epolls/other/president_obama_job_approval-1044.html">Approve 42, Disapprove 52</a></td>
+				<td class="lp-spread"><font color="black"><span class="">Disapprove +10</span></font></td>
+			</tr>
+			<tr class="">
+				<td class="lp-race"><a href="/epolls/other/congressional_job_approval-903.html">Congressional Job Approval</a></td>
+				<td class="lp-poll"><a href="http://www.monmouth.edu/assets/0/32212254770/32212254991/32212254992/32212254994/32212254995/30064771087/9c68cc25-f064-4fd8-aca9-24df1ff47b1a.pdf">Monmouth</a></td>
+				<td class="lp-results"><a href="/epolls/other/congressional_job_approval-903.html">Approve 13, Disapprove 77</a></td>
+				<td class="lp-spread"><font color="black"><span class="">Disapprove +64</span></font></td>
+			</tr>
+			<tr class="alt">
+				<td class="lp-race"><a href="/epolls/other/direction_of_country-902.html">Direction of Country</a></td>
+				<td class="lp-poll"><a href="http://www.monmouth.edu/assets/0/32212254770/32212254991/32212254992/32212254994/32212254995/30064771087/9c68cc25-f064-4fd8-aca9-24df1ff47b1a.pdf">Monmouth</a></td>
+				<td class="lp-results"><a href="/epolls/other/direction_of_country-902.html">Right Direction 21, Wrong Track 68</a></td>
+				<td class="lp-spread"><font color="black"><span class="">Wrong Track +47</span></font></td>
+			</tr>
+			<tr class="">
+				<td class="lp-race"><a href="/epolls/other/direction_of_country-902.html">Direction of Country</a></td>
+				<td class="lp-poll"><a href="http://www.ipsos-na.com/download/pr.aspx?id=15026">Reuters/Ipsos</a></td>
+				<td class="lp-results"><a href="/epolls/other/direction_of_country-902.html">Right Direction 27, Wrong Track 58</a></td>
+				<td class="lp-spread"><font color="black"><span class="">Wrong Track +31</span></font></td>
+			</tr></table>
+				<table cellpadding="2" cellspacing="0">
+					<tr>
+						<td colspan="6" class="date"><b>Wednesday, November 4</b></td>
+					</tr>
+				</table>
+				<table cellpadding="2" cellspacing="0" class="sortable">
+					<tr>
+						<th class="clickable lp-race"><strong>Race/Topic</strong> &nbsp;&nbsp;<span class="click-sort">(Click to Sort)</span></th>
+						<th class="sorttable_nosort lp-poll"><strong>Poll</strong></th>
+						<th class="sorttable_nosort lp-resluts"><strong>Results</strong></th>
+						<th class="sorttable_nosort lp-spread"><strong>Spread</strong></th>
+					</tr>
+			<tr class="">
+				<td class="lp-race"><a href="/epolls/2016/president/us/2016_republican_presidential_nomination-3823.html">2016 Republican Presidential Nomination</a></td>
+				<td class="lp-poll"><a href="http://www.foxnews.com/politics/interactive/2015/11/04/fox-poll-gop-nomination-race-coming-into-focus/">FOX News</a></td>
+				<td class="lp-results"><a href="/epolls/2016/president/us/2016_republican_presidential_nomination-3823.html">Trump 26, Carson 23, Cruz 11, Rubio 11, Bush 4, Fiorina 3, Christie 2, Kasich 4, Huckabee 4, Paul 4, Graham 0, Pataki 0, Santorum 0</a></td>
+				<td class="lp-spread"><font color="black"><span class="">Trump +3</span></font></td>
+			</tr>
+			<tr class="alt">
+				<td class="lp-race"><a href="/epolls/2016/president/us/2016_democratic_presidential_nomination-3824.html">2016 Democratic Presidential Nomination</a></td>
+				<td class="lp-poll"><a href="http://www.foxnews.com/politics/interactive/2015/11/04/fox-poll-gop-nomination-race-coming-into-focus/">FOX News</a></td>
+				<td class="lp-results"><a href="/epolls/2016/president/us/2016_democratic_presidential_nomination-3824.html">Clinton 56, Sanders 31, O'Malley 2</a></td>
+				<td class="lp-spread"><font color="black"><span class="">Clinton +25</span></font></td>
+			</tr>
+			<tr class="">
+				<td class="lp-race"><a href="/epolls/2016/president/us/2016_republican_presidential_nomination-3823.html">2016 Republican Presidential Nomination</a></td>
+				<td class="lp-poll"><a href="http://www.quinnipiac.edu/images/polling/us/us11042015_xsq33a.pdf">Quinnipiac</a></td>
+				<td class="lp-results"><a href="/epolls/2016/president/us/2016_republican_presidential_nomination-3823.html">Trump 24, Carson 23, Cruz 13, Rubio 14, Bush 4, Fiorina 3, Christie 3, Kasich 3, Huckabee 1, Paul 2, Graham 0, Pataki 0, Santorum 1</a></td>
+				<td class="lp-spread"><font color="black"><span class="">Trump +1</span></font></td>
+			</tr>
+			<tr class="alt">
+				<td class="lp-race"><a href="/epolls/2016/president/us/2016_democratic_presidential_nomination-3824.html">2016 Democratic Presidential Nomination</a></td>
+				<td class="lp-poll"><a href="http://www.quinnipiac.edu/images/polling/us/us11042015_xsq33a.pdf">Quinnipiac</a></td>
+				<td class="lp-results"><a href="/epolls/2016/president/us/2016_democratic_presidential_nomination-3824.html">Clinton 53, Sanders 35, O'Malley 0</a></td>
+				<td class="lp-spread"><font color="black"><span class="">Clinton +18</span></font></td>
+			</tr>
+			<tr class="">
+				<td class="lp-race"><a href="/epolls/2016/president/nh/new_hampshire_republican_presidential_primary-3350.html">New Hampshire Republican Presidential Primary</a></td>
+				<td class="lp-poll"><a href="http://www.realclearpolitics.com/docs/2016/WBUR_NH_Nov_2015.pdf">WBUR/MassINC</a></td>
+				<td class="lp-results"><a href="/epolls/2016/president/nh/new_hampshire_republican_presidential_primary-3350.html">Trump 18, Rubio 11, Cruz 6, Carson 16, Kasich 10, Bush 7, Christie 8, Fiorina 6, Paul 3, Huckabee 0, Santorum 0, Graham 0, Pataki 1</a></td>
+				<td class="lp-spread"><font color="black"><span class="">Trump +2</span></font></td>
+			</tr>
+			<tr class="alt">
+				<td class="lp-race"><a href="/epolls/2016/president/sc/south_carolina_democratic_presidential_primary-4167.html">South Carolina Democratic Presidential Primary</a></td>
+				<td class="lp-poll"><a href="http://www.winthrop.edu/winthroppoll/default.aspx?id=9804">Winthrop</a></td>
+				<td class="lp-results"><a href="/epolls/2016/president/sc/south_carolina_democratic_presidential_primary-4167.html">Clinton 71, Sanders 15, O'Malley 2</a></td>
+				<td class="lp-spread"><font color="black"><span class="">Clinton +56</span></font></td>
+			</tr>
+			<tr class="">
+				<td class="lp-race"><a href="/epolls/2016/president/us/general_election_trump_vs_clinton-5491.html">General Election: Trump vs. Clinton</a></td>
+				<td class="lp-poll"><a href="http://www.quinnipiac.edu/images/polling/us/us11042015_xsq33a.pdf">Quinnipiac</a></td>
+				<td class="lp-results"><a href="/epolls/2016/president/us/general_election_trump_vs_clinton-5491.html">Clinton 46, Trump 43</a></td>
+				<td class="lp-spread"><font color="black"><span class="dem">Clinton +3</span></font></td>
+			</tr>
+			<tr class="alt">
+				<td class="lp-race"><a href="/epolls/2016/president/us/general_election_carson_vs_clinton-5119.html">General Election: Carson vs. Clinton</a></td>
+				<td class="lp-poll"><a href="http://www.quinnipiac.edu/images/polling/us/us11042015_xsq33a.pdf">Quinnipiac</a></td>
+				<td class="lp-results"><a href="/epolls/2016/president/us/general_election_carson_vs_clinton-5119.html">Carson 50, Clinton 40</a></td>
+				<td class="lp-spread"><font color="black"><span class="rep">Carson +10</span></font></td>
+			</tr>
+			<tr class="">
+				<td class="lp-race"><a href="/epolls/2016/president/us/general_election_rubio_vs_clinton-3767.html">General Election: Rubio vs. Clinton</a></td>
+				<td class="lp-poll"><a href="http://www.quinnipiac.edu/images/polling/us/us11042015_xsq33a.pdf">Quinnipiac</a></td>
+				<td class="lp-results"><a href="/epolls/2016/president/us/general_election_rubio_vs_clinton-3767.html">Rubio 46, Clinton 41</a></td>
+				<td class="lp-spread"><font color="black"><span class="rep">Rubio +5</span></font></td>
+			</tr>
+			<tr class="alt">
+				<td class="lp-race"><a href="/epolls/2016/president/us/general_election_cruz_vs_clinton-4034.html">General Election: Cruz vs. Clinton</a></td>
+				<td class="lp-poll"><a href="http://www.quinnipiac.edu/images/polling/us/us11042015_xsq33a.pdf">Quinnipiac</a></td>
+				<td class="lp-results"><a href="/epolls/2016/president/us/general_election_cruz_vs_clinton-4034.html">Clinton 43, Cruz 46</a></td>
+				<td class="lp-spread"><font color="black"><span class="rep">Cruz +3</span></font></td>
+			</tr>
+			<tr class="">
+				<td class="lp-race"><a href="/epolls/2016/president/us/general_election_christie_vs_clinton-3766.html">General Election: Christie vs. Clinton</a></td>
+				<td class="lp-poll"><a href="http://www.quinnipiac.edu/images/polling/us/us11042015_xsq33a.pdf">Quinnipiac</a></td>
+				<td class="lp-results"><a href="/epolls/2016/president/us/general_election_christie_vs_clinton-3766.html">Clinton 41, Christie 46</a></td>
+				<td class="lp-spread"><font color="black"><span class="rep">Christie +5</span></font></td>
+			</tr>
+			<tr class="alt">
+				<td class="lp-race"><a href="/epolls/2016/president/us/general_election_trump_vs_sanders-5565.html">General Election: Trump vs. Sanders</a></td>
+				<td class="lp-poll"><a href="http://www.quinnipiac.edu/images/polling/us/us11042015_xsq33a.pdf">Quinnipiac</a></td>
+				<td class="lp-results"><a href="/epolls/2016/president/us/general_election_trump_vs_sanders-5565.html">Sanders 46, Trump 44</a></td>
+				<td class="lp-spread"><font color="black"><span class="dem">Sanders +2</span></font></td>
+			</tr>
+			<tr class="">
+				<td class="lp-race"><a href="/epolls/2016/president/us/general_election_carson_vs_sanders-5677.html">General Election: Carson vs. Sanders</a></td>
+				<td class="lp-poll"><a href="http://www.quinnipiac.edu/images/polling/us/us11042015_xsq33a.pdf">Quinnipiac</a></td>
+				<td class="lp-results"><a href="/epolls/2016/president/us/general_election_carson_vs_sanders-5677.html">Carson 51, Sanders 39</a></td>
+				<td class="lp-spread"><font color="black"><span class="rep">Carson +12</span></font></td>
+			</tr>
+			<tr class="alt">
+				<td class="lp-race"><a href="/epolls/2016/president/us/general_election_rubio_vs_sanders-5564.html">General Election: Rubio vs. Sanders</a></td>
+				<td class="lp-poll"><a href="http://www.quinnipiac.edu/images/polling/us/us11042015_xsq33a.pdf">Quinnipiac</a></td>
+				<td class="lp-results"><a href="/epolls/2016/president/us/general_election_rubio_vs_sanders-5564.html">Sanders 41, Rubio 47</a></td>
+				<td class="lp-spread"><font color="black"><span class="rep">Rubio +6</span></font></td>
+			</tr>
+			<tr class="">
+				<td class="lp-race"><a href="/epolls/2016/president/us/general_election_cruz_vs_sanders-5742.html">General Election: Cruz vs. Sanders</a></td>
+				<td class="lp-poll"><a href="http://www.quinnipiac.edu/images/polling/us/us11042015_xsq33a.pdf">Quinnipiac</a></td>
+				<td class="lp-results"><a href="/epolls/2016/president/us/general_election_cruz_vs_sanders-5742.html">Sanders 44, Cruz 45</a></td>
+				<td class="lp-spread"><font color="black"><span class="rep">Cruz +1</span></font></td>
+			</tr>
+			<tr class="alt">
+				<td class="lp-race"><a href="/epolls/2016/president/us/general_election_christie_vs_sanders-5743.html">General Election: Christie vs. Sanders</a></td>
+				<td class="lp-poll"><a href="http://www.quinnipiac.edu/images/polling/us/us11042015_xsq33a.pdf">Quinnipiac</a></td>
+				<td class="lp-results"><a href="/epolls/2016/president/us/general_election_christie_vs_sanders-5743.html">Christie 45, Sanders 42</a></td>
+				<td class="lp-spread"><font color="black"><span class="rep">Christie +3</span></font></td>
+			</tr>
+			<tr class="">
+				<td class="lp-race"><a href="/epolls/2016/president/us/general_election_trump_vs_clinton-5491.html">General Election: Trump vs. Clinton</a></td>
+				<td class="lp-poll"><a href="http://msnbcmedia.msn.com/i/MSNBC/Sections/A_Politics/15463%20NBCWSJ%20Late%20October%20Poll%20(4).pdf">NBC News/Wall St. Jrnl</a></td>
+				<td class="lp-results"><a href="/epolls/2016/president/us/general_election_trump_vs_clinton-5491.html">Clinton 50, Trump 42</a></td>
+				<td class="lp-spread"><font color="black"><span class="dem">Clinton +8</span></font></td>
+			</tr>
+			<tr class="alt">
+				<td class="lp-race"><a href="/epolls/2016/president/us/general_election_carson_vs_clinton-5119.html">General Election: Carson vs. Clinton</a></td>
+				<td class="lp-poll"><a href="http://msnbcmedia.msn.com/i/MSNBC/Sections/A_Politics/15463%20NBCWSJ%20Late%20October%20Poll%20(4).pdf">NBC News/Wall St. Jrnl</a></td>
+				<td class="lp-results"><a href="/epolls/2016/president/us/general_election_carson_vs_clinton-5119.html">Carson 47, Clinton 47</a></td>
+				<td class="lp-spread"><font color="black"><span class="">Tie</span></font></td>
+			</tr>
+			<tr class="">
+				<td class="lp-race"><a href="/epolls/2016/president/us/general_election_rubio_vs_clinton-3767.html">General Election: Rubio vs. Clinton</a></td>
+				<td class="lp-poll"><a href="http://msnbcmedia.msn.com/i/MSNBC/Sections/A_Politics/15463%20NBCWSJ%20Late%20October%20Poll%20(4).pdf">NBC News/Wall St. Jrnl</a></td>
+				<td class="lp-results"><a href="/epolls/2016/president/us/general_election_rubio_vs_clinton-3767.html">Rubio 44, Clinton 47</a></td>
+				<td class="lp-spread"><font color="black"><span class="dem">Clinton +3</span></font></td>
+			</tr>
+			<tr class="alt">
+				<td class="lp-race"><a href="/epolls/2016/president/us/general_election_bush_vs_clinton-3827.html">General Election: Bush vs. Clinton</a></td>
+				<td class="lp-poll"><a href="http://msnbcmedia.msn.com/i/MSNBC/Sections/A_Politics/15463%20NBCWSJ%20Late%20October%20Poll%20(4).pdf">NBC News/Wall St. Jrnl</a></td>
+				<td class="lp-results"><a href="/epolls/2016/president/us/general_election_bush_vs_clinton-3827.html">Clinton 47, Bush 43</a></td>
+				<td class="lp-spread"><font color="black"><span class="dem">Clinton +4</span></font></td>
+			</tr>
+			<tr class="">
+				<td class="lp-race"><a href="/epolls/2016/president/us/general_election_trump_vs_sanders-5565.html">General Election: Trump vs. Sanders</a></td>
+				<td class="lp-poll"><a href="http://msnbcmedia.msn.com/i/MSNBC/Sections/A_Politics/15463%20NBCWSJ%20Late%20October%20Poll%20(4).pdf">NBC News/Wall St. Jrnl</a></td>
+				<td class="lp-results"><a href="/epolls/2016/president/us/general_election_trump_vs_sanders-5565.html">Sanders 50, Trump 41</a></td>
+				<td class="lp-spread"><font color="black"><span class="dem">Sanders +9</span></font></td>
+			</tr>
+			<tr class="alt">
+				<td class="lp-race"><a href="/epolls/2016/president/us/general_election_rubio_vs_sanders-5564.html">General Election: Rubio vs. Sanders</a></td>
+				<td class="lp-poll"><a href="http://msnbcmedia.msn.com/i/MSNBC/Sections/A_Politics/15463%20NBCWSJ%20Late%20October%20Poll%20(4).pdf">NBC News/Wall St. Jrnl</a></td>
+				<td class="lp-results"><a href="/epolls/2016/president/us/general_election_rubio_vs_sanders-5564.html">Sanders 46, Rubio 41</a></td>
+				<td class="lp-spread"><font color="black"><span class="dem">Sanders +5</span></font></td>
+			</tr>
+			<tr class="">
+				<td class="lp-race"><a href="/epolls/2016/president/ia/iowa_trump_vs_clinton-5597.html">Iowa: Trump vs. Clinton</a></td>
+				<td class="lp-poll"><a href="http://www.publicpolicypolling.com/pdf/2015/PPP_Release_IA_110415.pdf">PPP (D)</a></td>
+				<td class="lp-results"><a href="/epolls/2016/president/ia/iowa_trump_vs_clinton-5597.html">Trump 44, Clinton 44</a></td>
+				<td class="lp-spread"><font color="black"><span class="">Tie</span></font></td>
+			</tr>
+			<tr class="alt">
+				<td class="lp-race"><a href="/epolls/2016/president/ia/iowa_carson_vs_clinton-5442.html">Iowa: Carson vs. Clinton</a></td>
+				<td class="lp-poll"><a href="http://www.publicpolicypolling.com/pdf/2015/PPP_Release_IA_110415.pdf">PPP (D)</a></td>
+				<td class="lp-results"><a href="/epolls/2016/president/ia/iowa_carson_vs_clinton-5442.html">Carson 47, Clinton 43</a></td>
+				<td class="lp-spread"><font color="black"><span class="rep">Carson +4</span></font></td>
+			</tr>
+			<tr class="">
+				<td class="lp-race"><a href="/epolls/2016/president/ia/iowa_rubio_vs_clinton-3916.html">Iowa: Rubio vs. Clinton</a></td>
+				<td class="lp-poll"><a href="http://www.publicpolicypolling.com/pdf/2015/PPP_Release_IA_110415.pdf">PPP (D)</a></td>
+				<td class="lp-results"><a href="/epolls/2016/president/ia/iowa_rubio_vs_clinton-3916.html">Rubio 45, Clinton 43</a></td>
+				<td class="lp-spread"><font color="black"><span class="rep">Rubio +2</span></font></td>
+			</tr>
+			<tr class="alt">
+				<td class="lp-race"><a href="/epolls/2016/president/ia/iowa_bush_vs_clinton-3996.html">Iowa: Bush vs. Clinton</a></td>
+				<td class="lp-poll"><a href="http://www.publicpolicypolling.com/pdf/2015/PPP_Release_IA_110415.pdf">PPP (D)</a></td>
+				<td class="lp-results"><a href="/epolls/2016/president/ia/iowa_bush_vs_clinton-3996.html">Bush 40, Clinton 45</a></td>
+				<td class="lp-spread"><font color="black"><span class="dem">Clinton +5</span></font></td>
+			</tr>
+			<tr class="">
+				<td class="lp-race"><a href="/epolls/2016/president/ia/iowa_cruz_vs_clinton-4235.html">Iowa: Cruz vs. Clinton</a></td>
+				<td class="lp-poll"><a href="http://www.publicpolicypolling.com/pdf/2015/PPP_Release_IA_110415.pdf">PPP (D)</a></td>
+				<td class="lp-results"><a href="/epolls/2016/president/ia/iowa_cruz_vs_clinton-4235.html">Clinton 46, Cruz 44</a></td>
+				<td class="lp-spread"><font color="black"><span class="dem">Clinton +2</span></font></td>
+			</tr>
+			<tr class="alt">
+				<td class="lp-race"><a href="/epolls/2016/president/ia/iowa_fiorina_vs_clinton-5598.html">Iowa: Fiorina vs. Clinton</a></td>
+				<td class="lp-poll"><a href="http://www.publicpolicypolling.com/pdf/2015/PPP_Release_IA_110415.pdf">PPP (D)</a></td>
+				<td class="lp-results"><a href="/epolls/2016/president/ia/iowa_fiorina_vs_clinton-5598.html">Fiorina 43, Clinton 44</a></td>
+				<td class="lp-spread"><font color="black"><span class="dem">Clinton +1</span></font></td>
+			</tr>
+			<tr class="">
+				<td class="lp-race"><a href="/epolls/2016/president/ia/iowa_trump_vs_sanders-5600.html">Iowa: Trump vs. Sanders</a></td>
+				<td class="lp-poll"><a href="http://www.publicpolicypolling.com/pdf/2015/PPP_Release_IA_110415.pdf">PPP (D)</a></td>
+				<td class="lp-results"><a href="/epolls/2016/president/ia/iowa_trump_vs_sanders-5600.html">Sanders 43, Trump 44</a></td>
+				<td class="lp-spread"><font color="black"><span class="rep">Trump +1</span></font></td>
+			</tr>
+			<tr class="alt">
+				<td class="lp-race"><a href="/epolls/2016/president/ia/iowa_carson_vs_sanders-5746.html">Iowa: Carson vs. Sanders</a></td>
+				<td class="lp-poll"><a href="http://www.publicpolicypolling.com/pdf/2015/PPP_Release_IA_110415.pdf">PPP (D)</a></td>
+				<td class="lp-results"><a href="/epolls/2016/president/ia/iowa_carson_vs_sanders-5746.html">Carson 47, Sanders 37</a></td>
+				<td class="lp-spread"><font color="black"><span class="rep">Carson +10</span></font></td>
+			</tr>
+			<tr class="">
+				<td class="lp-race"><a href="/epolls/2016/president/ia/iowa_rubio_vs_sanders-5562.html">Iowa: Rubio vs. Sanders</a></td>
+				<td class="lp-poll"><a href="http://www.publicpolicypolling.com/pdf/2015/PPP_Release_IA_110415.pdf">PPP (D)</a></td>
+				<td class="lp-results"><a href="/epolls/2016/president/ia/iowa_rubio_vs_sanders-5562.html">Rubio 45, Sanders 38</a></td>
+				<td class="lp-spread"><font color="black"><span class="rep">Rubio +7</span></font></td>
+			</tr>
+			<tr class="alt">
+				<td class="lp-race"><a href="/epolls/2016/president/ia/iowa_bush_vs_sanders-5561.html">Iowa: Bush vs. Sanders</a></td>
+				<td class="lp-poll"><a href="http://www.publicpolicypolling.com/pdf/2015/PPP_Release_IA_110415.pdf">PPP (D)</a></td>
+				<td class="lp-results"><a href="/epolls/2016/president/ia/iowa_bush_vs_sanders-5561.html">Bush 41, Sanders 41</a></td>
+				<td class="lp-spread"><font color="black"><span class="">Tie</span></font></td>
+			</tr>
+			<tr class="">
+				<td class="lp-race"><a href="/epolls/2016/president/ia/iowa_cruz_vs_sanders-5747.html">Iowa: Cruz vs. Sanders</a></td>
+				<td class="lp-poll"><a href="http://www.publicpolicypolling.com/pdf/2015/PPP_Release_IA_110415.pdf">PPP (D)</a></td>
+				<td class="lp-results"><a href="/epolls/2016/president/ia/iowa_cruz_vs_sanders-5747.html">Cruz 43, Sanders 42</a></td>
+				<td class="lp-spread"><font color="black"><span class="rep">Cruz +1</span></font></td>
+			</tr>
+			<tr class="alt">
+				<td class="lp-race"><a href="/epolls/other/2016_generic_congressional_vote-5279.html">2016 Generic Congressional Vote</a></td>
+				<td class="lp-poll"><a href="http://msnbcmedia.msn.com/i/MSNBC/Sections/A_Politics/15463%20NBCWSJ%20Late%20October%20Poll%2011-3-15%20Release.pdf">NBC News/Wall St. Jrnl</a></td>
+				<td class="lp-results"><a href="/epolls/other/2016_generic_congressional_vote-5279.html">Republicans 45, Democrats 45</a></td>
+				<td class="lp-spread"><font color="black"><span class="">Tie</span></font></td>
+			</tr></table>
+				<table cellpadding="2" cellspacing="0">
+					<tr>
+						<td colspan="6" class="date"><b>Tuesday, November 3</b></td>
+					</tr>
+				</table>
+				<table cellpadding="2" cellspacing="0" class="sortable">
+					<tr>
+						<th class="clickable lp-race"><strong>Race/Topic</strong> &nbsp;&nbsp;<span class="click-sort">(Click to Sort)</span></th>
+						<th class="sorttable_nosort lp-poll"><strong>Poll</strong></th>
+						<th class="sorttable_nosort lp-resluts"><strong>Results</strong></th>
+						<th class="sorttable_nosort lp-spread"><strong>Spread</strong></th>
+					</tr>
+			<tr class="">
+				<td class="lp-race"><a href="/epolls/2016/president/us/2016_republican_presidential_nomination-3823.html">2016 Republican Presidential Nomination</a></td>
+				<td class="lp-poll"><a href="http://msnbcmedia.msn.com/i/MSNBC/Sections/A_Politics/15463%20NBCWSJ%20Late%20October%20Poll%2011-3-15%20Release.pdf">NBC/WSJ</a></td>
+				<td class="lp-results"><a href="/epolls/2016/president/us/2016_republican_presidential_nomination-3823.html">Trump 23, Carson 29, Cruz 10, Rubio 11, Bush 8, Fiorina 3, Christie 3, Kasich 3, Huckabee 3, Paul 2, Graham, Pataki, Santorum</a></td>
+				<td class="lp-spread"><font color="black"><span class="">Carson +6</span></font></td>
+			</tr>
+			<tr class="alt">
+				<td class="lp-race"><a href="/epolls/2016/president/us/2016_democratic_presidential_nomination-3824.html">2016 Democratic Presidential Nomination</a></td>
+				<td class="lp-poll"><a href="http://msnbcmedia.msn.com/i/MSNBC/Sections/A_Politics/15463%20NBCWSJ%20Late%20October%20Poll%2011-3-15%20Release.pdf">NBC/WSJ</a></td>
+				<td class="lp-results"><a href="/epolls/2016/president/us/2016_democratic_presidential_nomination-3824.html">Clinton 62, Sanders 31, O'Malley 3</a></td>
+				<td class="lp-spread"><font color="black"><span class="">Clinton +31</span></font></td>
+			</tr>
+			<tr class="">
+				<td class="lp-race"><a href="/epolls/2016/president/ia/iowa_republican_presidential_caucus-3194.html">Iowa Republican Presidential Caucus</a></td>
+				<td class="lp-poll"><a href="http://www.kbur.com/wp-content/uploads/2015/11/Iowa-Rep-Caucus-Report-October-Survey.pdf">KBUR</a></td>
+				<td class="lp-results"><a href="/epolls/2016/president/ia/iowa_republican_presidential_caucus-3194.html">Trump 20, Carson 28, Cruz 15, Rubio 10, Bush 9, Fiorina 4, Paul 2, Jindal 1, Christie 2, Huckabee 2, Santorum 1, Kasich 2, Graham 0, Pataki 0</a></td>
+				<td class="lp-spread"><font color="black"><span class="">Carson +8</span></font></td>
+			</tr>
+			<tr class="alt">
+				<td class="lp-race"><a href="/epolls/2016/president/ia/iowa_republican_presidential_caucus-3194.html">Iowa Republican Presidential Caucus</a></td>
+				<td class="lp-poll"><a href="http://www.realclearpolitics.com/docs/2016/Gravis_Iowa_Nov_2015.pdf">Gravis</a></td>
+				<td class="lp-results"><a href="/epolls/2016/president/ia/iowa_republican_presidential_caucus-3194.html">Trump 29, Carson 22, Cruz 9, Rubio 18, Bush 6, Fiorina 5, Paul 2, Jindal 2, Christie 2, Huckabee 1, Santorum 0, Kasich 3, Graham 0, Pataki</a></td>
+				<td class="lp-spread"><font color="black"><span class="">Trump +7</span></font></td>
+			</tr>
+			<tr class="">
+				<td class="lp-race"><a href="/epolls/2016/president/ia/iowa_democratic_presidential_caucus-3195.html">Iowa Democratic Presidential Caucus</a></td>
+				<td class="lp-poll"><a href="http://www.kbur.com/wp-content/uploads/2015/11/Democratic-Poll-KBUR-Monmouth-College.pdf">KBUR</a></td>
+				<td class="lp-results"><a href="/epolls/2016/president/ia/iowa_democratic_presidential_caucus-3195.html">Clinton 46, Sanders 32, O'Malley 5</a></td>
+				<td class="lp-spread"><font color="black"><span class="">Clinton +14</span></font></td>
+			</tr>
+			<tr class="alt">
+				<td class="lp-race"><a href="/epolls/2016/president/ia/iowa_democratic_presidential_caucus-3195.html">Iowa Democratic Presidential Caucus</a></td>
+				<td class="lp-poll"><a href="http://www.realclearpolitics.com/docs/2016/Gravis_Iowa_Nov_2015.pdf">Gravis Marketing</a></td>
+				<td class="lp-results"><a href="/epolls/2016/president/ia/iowa_democratic_presidential_caucus-3195.html">Clinton 57, Sanders 25, O'Malley 3</a></td>
+				<td class="lp-spread"><font color="black"><span class="">Clinton +32</span></font></td>
+			</tr>
+			<tr class="">
+				<td class="lp-race"><a href="/epolls/2016/president/nh/new_hampshire_democratic_presidential_primary-3351.html">New Hampshire 2016 Democratic Primary</a></td>
+				<td class="lp-poll"><a href="http://www.monmouth.edu/assets/0/32212254770/32212254991/32212254992/32212254994/32212254995/30064771087/ab385337-2d62-493e-b695-f4350bd8f4d1.pdf">Monmouth</a></td>
+				<td class="lp-results"><a href="/epolls/2016/president/nh/new_hampshire_democratic_presidential_primary-3351.html">Sanders 45, Clinton 48, O'Malley 3</a></td>
+				<td class="lp-spread"><font color="black"><span class="">Clinton +3</span></font></td>
+			</tr>
+			<tr class="alt">
+				<td class="lp-race"><a href="/epolls/2016/president/fl/florida_republican_presidential_primary-3555.html">Florida Republican Presidential Primary</a></td>
+				<td class="lp-poll"><a href="http://www.baynews9.com/content/news/baynews9/news/article.html/content/news/articles/cfn/2015/11/3/florida_decides_poll_2016_election.html">Bay News 9/News 13</a></td>
+				<td class="lp-results"><a href="/epolls/2016/president/fl/florida_republican_presidential_primary-3555.html">Trump 37, Carson 17, Rubio 16, Cruz 10, Bush 7, Fiorina 3, Kasich 3, Paul, Christie, Huckabee 1, Graham, Jindal, Santorum, Pataki</a></td>
+				<td class="lp-spread"><font color="black"><span class="">Trump +20</span></font></td>
+			</tr>
+			<tr class="">
+				<td class="lp-race"><a href="/epolls/2016/president/fl/florida_democratic_presidential_primary-3556.html">Florida Democratic Presidential Primary</a></td>
+				<td class="lp-poll"><a href="http://www.baynews9.com/content/news/baynews9/news/article.html/content/news/articles/cfn/2015/11/3/florida_decides_poll_2016_election.html">Bay News 9/News 13</a></td>
+				<td class="lp-results"><a href="/epolls/2016/president/fl/florida_democratic_presidential_primary-3556.html">Clinton 66, Sanders 24, O'Malley 3</a></td>
+				<td class="lp-spread"><font color="black"><span class="">Clinton +42</span></font></td>
+			</tr>
+			<tr class="alt">
+				<td class="lp-race"><a href="/epolls/2016/president/ga/georgia_republican_presidential_primary-5471.html">Georgia Republican Presidential Primary</a></td>
+				<td class="lp-poll"><a href="http://www.11alive.com/story/news/politics/2015/11/02/exclusive-poll-georgia-wants-trump-president/74819370/">WXIA-TV/SurveyUSA</a></td>
+				<td class="lp-results"><a href="/epolls/2016/president/ga/georgia_republican_presidential_primary-5471.html">Trump 35, Carson 28, Cruz 8, Rubio 12, Fiorina 3, Bush 4, Huckabee 3, Kasich 2, Paul, Christie, Graham, Jindal, Santorum, Pataki</a></td>
+				<td class="lp-spread"><font color="black"><span class="">Trump +7</span></font></td>
+			</tr>
+			<tr class="">
+				<td class="lp-race"><a href="/epolls/2016/president/ga/georgia_democratic_presidential_primary-5623.html">Georgia Democratic Presidential Primary</a></td>
+				<td class="lp-poll"><a href="http://www.11alive.com/story/news/politics/2015/11/02/exclusive-poll-georgia-wants-trump-president/74819370/">WXIA-TV/SurveyUSA</a></td>
+				<td class="lp-results"><a href="/epolls/2016/president/ga/georgia_democratic_presidential_primary-5623.html">Clinton 73, Sanders 16, O'Malley 4</a></td>
+				<td class="lp-spread"><font color="black"><span class="">Clinton +57</span></font></td>
+			</tr>
+			<tr class="alt">
+				<td class="lp-race"><a href="/epolls/2016/president/fl/florida_trump_vs_clinton-5635.html">Florida: Trump vs. Clinton</a></td>
+				<td class="lp-poll"><a href="http://www.baynews9.com/content/news/baynews9/news/article.html/content/news/articles/cfn/2015/11/3/florida_decides_poll_2016_election.html#results">Bay News 9/News 13</a></td>
+				<td class="lp-results"><a href="/epolls/2016/president/fl/florida_trump_vs_clinton-5635.html">Trump 47, Clinton 43</a></td>
+				<td class="lp-spread"><font color="black"><span class="rep">Trump +4</span></font></td>
+			</tr>
+			<tr class="">
+				<td class="lp-race"><a href="/epolls/2016/president/fl/florida_carson_vs_clinton-5363.html">Florida: Carson vs. Clinton</a></td>
+				<td class="lp-poll"><a href="http://www.baynews9.com/content/news/baynews9/news/article.html/content/news/articles/cfn/2015/11/3/florida_decides_poll_2016_election.html#results">Bay News 9/News 13</a></td>
+				<td class="lp-results"><a href="/epolls/2016/president/fl/florida_carson_vs_clinton-5363.html">Carson 47, Clinton 44</a></td>
+				<td class="lp-spread"><font color="black"><span class="rep">Carson +3</span></font></td>
+			</tr>
+			<tr class="alt">
+				<td class="lp-race"><a href="/epolls/2016/president/fl/florida_rubio_vs_clinton-3553.html">Florida: Rubio vs. Clinton</a></td>
+				<td class="lp-poll"><a href="http://www.baynews9.com/content/news/baynews9/news/article.html/content/news/articles/cfn/2015/11/3/florida_decides_poll_2016_election.html#results">Bay News 9/News 13</a></td>
+				<td class="lp-results"><a href="/epolls/2016/president/fl/florida_rubio_vs_clinton-3553.html">Rubio 45, Clinton 46</a></td>
+				<td class="lp-spread"><font color="black"><span class="dem">Clinton +1</span></font></td>
+			</tr>
+			<tr class="">
+				<td class="lp-race"><a href="/epolls/2016/president/fl/florida_bush_vs_clinton-3554.html">Florida: Bush vs. Clinton</a></td>
+				<td class="lp-poll"><a href="http://www.baynews9.com/content/news/baynews9/news/article.html/content/news/articles/cfn/2015/11/3/florida_decides_poll_2016_election.html#results">Bay News 9/News 13</a></td>
+				<td class="lp-results"><a href="/epolls/2016/president/fl/florida_bush_vs_clinton-3554.html">Bush 44, Clinton 46</a></td>
+				<td class="lp-spread"><font color="black"><span class="dem">Clinton +2</span></font></td>
+			</tr>
+			<tr class="alt">
+				<td class="lp-race"><a href="/epolls/2016/president/fl/florida_fiorina_vs_clinton-5684.html">Florida: Fiorina vs. Clinton</a></td>
+				<td class="lp-poll"><a href="http://www.baynews9.com/content/news/baynews9/news/article.html/content/news/articles/cfn/2015/11/3/florida_decides_poll_2016_election.html#results">Bay News 9/News 13</a></td>
+				<td class="lp-results"><a href="/epolls/2016/president/fl/florida_fiorina_vs_clinton-5684.html">Clinton 48, Fiorina 42</a></td>
+				<td class="lp-spread"><font color="black"><span class="dem">Clinton +6</span></font></td>
+			</tr>
+			<tr class="">
+				<td class="lp-race"><a href="/epolls/2016/president/fl/florida_trump_vs_sanders-5642.html">Florida: Trump vs. Sanders</a></td>
+				<td class="lp-poll"><a href="http://www.baynews9.com/content/news/baynews9/news/article.html/content/news/articles/cfn/2015/11/3/florida_decides_poll_2016_election.html#results">Bay News 9/News 13</a></td>
+				<td class="lp-results"><a href="/epolls/2016/president/fl/florida_trump_vs_sanders-5642.html">Trump 50, Sanders 41</a></td>
+				<td class="lp-spread"><font color="black"><span class="rep">Trump +9</span></font></td>
+			</tr>
+			<tr class="alt">
+				<td class="lp-race"><a href="/epolls/2016/president/fl/florida_carson_vs_sanders-5702.html">Florida: Carson vs. Sanders</a></td>
+				<td class="lp-poll"><a href="http://www.baynews9.com/content/news/baynews9/news/article.html/content/news/articles/cfn/2015/11/3/florida_decides_poll_2016_election.html#results">Bay News 9/News 13</a></td>
+				<td class="lp-results"><a href="/epolls/2016/president/fl/florida_carson_vs_sanders-5702.html">Carson 48, Sanders 40</a></td>
+				<td class="lp-spread"><font color="black"><span class="rep">Carson +8</span></font></td>
+			</tr>
+			<tr class="">
+				<td class="lp-race"><a href="/epolls/2016/president/fl/florida_rubio_vs_sanders-5644.html">Florida: Rubio vs. Sanders</a></td>
+				<td class="lp-poll"><a href="http://www.baynews9.com/content/news/baynews9/news/article.html/content/news/articles/cfn/2015/11/3/florida_decides_poll_2016_election.html#results">Bay News 9/News 13</a></td>
+				<td class="lp-results"><a href="/epolls/2016/president/fl/florida_rubio_vs_sanders-5644.html">Rubio 46, Sanders 44</a></td>
+				<td class="lp-spread"><font color="black"><span class="rep">Rubio +2</span></font></td>
+			</tr>
+			<tr class="alt">
+				<td class="lp-race"><a href="/epolls/2016/president/fl/florida_bush_vs_sanders-5643.html">Florida: Bush vs. Sanders</a></td>
+				<td class="lp-poll"><a href="http://www.baynews9.com/content/news/baynews9/news/article.html/content/news/articles/cfn/2015/11/3/florida_decides_poll_2016_election.html#results">Bay News 9/News 13</a></td>
+				<td class="lp-results"><a href="/epolls/2016/president/fl/florida_bush_vs_sanders-5643.html">Bush 46, Sanders 44</a></td>
+				<td class="lp-spread"><font color="black"><span class="rep">Bush +2</span></font></td>
+			</tr>
+			<tr class="">
+				<td class="lp-race"><a href="/epolls/2016/president/fl/florida_fiorina_vs_sanders-5701.html">Florida: Fiorina vs. Sanders</a></td>
+				<td class="lp-poll"><a href="http://www.baynews9.com/content/news/baynews9/news/article.html/content/news/articles/cfn/2015/11/3/florida_decides_poll_2016_election.html#results">Bay News 9/News 13</a></td>
+				<td class="lp-results"><a href="/epolls/2016/president/fl/florida_fiorina_vs_sanders-5701.html">Sanders 46, Fiorina 43</a></td>
+				<td class="lp-spread"><font color="black"><span class="dem">Sanders +3</span></font></td>
+			</tr>
+			<tr class="alt">
+				<td class="lp-race"><a href="/epolls/2016/president/ga/georgia_trump_vs_clinton-5741.html">Georgia: Trump vs. Clinton</a></td>
+				<td class="lp-poll"><a href="http://www.11alive.com/story/news/politics/2015/11/02/exclusive-poll-georgia-wants-trump-president/74819370/">WXIA-TV/SurveyUSA</a></td>
+				<td class="lp-results"><a href="/epolls/2016/president/ga/georgia_trump_vs_clinton-5741.html">Trump 46, Clinton 37</a></td>
+				<td class="lp-spread"><font color="black"><span class="rep">Trump +9</span></font></td>
+			</tr>
+			<tr class="">
+				<td class="lp-race"><a href="/epolls/other/president_obama_job_approval-1044.html">President Obama Job Approval</a></td>
+				<td class="lp-poll"><a href="http://msnbcmedia.msn.com/i/MSNBC/Sections/A_Politics/15463%20NBCWSJ%20Late%20October%20Poll%2011-3-15%20Release.pdf">NBC News/Wall St. Jrnl</a></td>
+				<td class="lp-results"><a href="/epolls/other/president_obama_job_approval-1044.html">Approve 45, Disapprove 49</a></td>
+				<td class="lp-spread"><font color="black"><span class="">Disapprove +4</span></font></td>
+			</tr>
+			<tr class="alt">
+				<td class="lp-race"><a href="/epolls/other/direction_of_country-902.html">Direction of Country</a></td>
+				<td class="lp-poll"><a href="http://msnbcmedia.msn.com/i/MSNBC/Sections/A_Politics/15463%20NBCWSJ%20Late%20October%20Poll%2011-3-15%20Release.pdf">NBC News/Wall St. Jrnl</a></td>
+				<td class="lp-results"><a href="/epolls/other/direction_of_country-902.html">Right Direction 27, Wrong Track 64</a></td>
+				<td class="lp-spread"><font color="black"><span class="">Wrong Track +37</span></font></td>
+			</tr></table>
+				<table cellpadding="2" cellspacing="0">
+					<tr>
+						<td colspan="6" class="date"><b>Monday, November 2</b></td>
+					</tr>
+				</table>
+				<table cellpadding="2" cellspacing="0" class="sortable">
+					<tr>
+						<th class="clickable lp-race"><strong>Race/Topic</strong> &nbsp;&nbsp;<span class="click-sort">(Click to Sort)</span></th>
+						<th class="sorttable_nosort lp-poll"><strong>Poll</strong></th>
+						<th class="sorttable_nosort lp-resluts"><strong>Results</strong></th>
+						<th class="sorttable_nosort lp-spread"><strong>Spread</strong></th>
+					</tr>
+			<tr class="">
+				<td class="lp-race"><a href="/epolls/2016/president/ia/iowa_republican_presidential_caucus-3194.html">Iowa Republican Presidential Caucus</a></td>
+				<td class="lp-poll"><a href="http://www.publicpolicypolling.com/pdf/2015/PPP_Release_IA_110215.pdf">PPP (D)</a></td>
+				<td class="lp-results"><a href="/epolls/2016/president/ia/iowa_republican_presidential_caucus-3194.html">Trump 22, Carson 21, Cruz 14, Rubio 10, Bush 5, Fiorina 5, Paul 2, Jindal 6, Christie 3, Huckabee 6, Santorum 2, Kasich 2, Graham 0, Pataki 0</a></td>
+				<td class="lp-spread"><font color="black"><span class="">Trump +1</span></font></td>
+			</tr>
+			<tr class="alt">
+				<td class="lp-race"><a href="/epolls/2016/president/ia/iowa_democratic_presidential_caucus-3195.html">Iowa Democratic Presidential Caucus</a></td>
+				<td class="lp-poll"><a href="http://www.publicpolicypolling.com/pdf/2015/PPP_Release_IA_110215.pdf">PPP (D)</a></td>
+				<td class="lp-results"><a href="/epolls/2016/president/ia/iowa_democratic_presidential_caucus-3195.html">Clinton 57, Sanders 25, O'Malley 7</a></td>
+				<td class="lp-spread"><font color="black"><span class="">Clinton +32</span></font></td>
+			</tr>
+			<tr class="">
+				<td class="lp-race"><a href="/epolls/2016/president/nh/new_hampshire_republican_presidential_primary-3350.html">New Hampshire Republican Presidential Primary</a></td>
+				<td class="lp-poll"><a href="http://www.monmouth.edu/assets/0/32212254770/32212254991/32212254992/32212254994/32212254995/30064771087/5713f5c9-e6a9-4f65-a09a-2f678233a44a.pdf">Monmouth</a></td>
+				<td class="lp-results"><a href="/epolls/2016/president/nh/new_hampshire_republican_presidential_primary-3350.html">Trump 26, Rubio 13, Cruz 9, Carson 16, Kasich 11, Bush 7, Christie 5, Fiorina 5, Paul 3, Huckabee 1, Santorum 0, Graham 0, Pataki 0</a></td>
+				<td class="lp-spread"><font color="black"><span class="">Trump +10</span></font></td>
+			</tr>
+			<tr class="alt">
+				<td class="lp-race"><a href="/epolls/other/direction_of_country-902.html">Direction of Country</a></td>
+				<td class="lp-poll"><a href="http://www.rasmussenreports.com/public_content/archive/mood_of_america_archive/right_direction_or_wrong_track/october_2015/27_say_u_s_heading_in_right_direction2">Rasmussen Reports</a></td>
+				<td class="lp-results"><a href="/epolls/other/direction_of_country-902.html">Right Direction 27, Wrong Track 65</a></td>
+				<td class="lp-spread"><font color="black"><span class="">Wrong Track +38</span></font></td>
+			</tr></table>
+				<table cellpadding="2" cellspacing="0">
+					<tr>
+						<td colspan="6" class="date"><b>Saturday, October 31</b></td>
+					</tr>
+				</table>
+				<table cellpadding="2" cellspacing="0" class="sortable">
+					<tr>
+						<th class="clickable lp-race"><strong>Race/Topic</strong> &nbsp;&nbsp;<span class="click-sort">(Click to Sort)</span></th>
+						<th class="sorttable_nosort lp-poll"><strong>Poll</strong></th>
+						<th class="sorttable_nosort lp-resluts"><strong>Results</strong></th>
+						<th class="sorttable_nosort lp-spread"><strong>Spread</strong></th>
+					</tr>
+			<tr class="">
+				<td class="lp-race"><a href="/epolls/2016/president/us/2016_republican_presidential_nomination-3823.html">2016 Republican Presidential Nomination</a></td>
+				<td class="lp-poll"><a href="http://news.investors.com/ibd-editorials-polls/103015-778378-donald-trump-leads-ben-carson-second-in-ibd-tipp-poll.htm?ref=HPLNews">IBD/TIPP</a></td>
+				<td class="lp-results"><a href="/epolls/2016/president/us/2016_republican_presidential_nomination-3823.html">Trump 28, Carson 23, Cruz 6, Rubio 11, Bush 6, Fiorina 3, Christie 1, Kasich 1, Huckabee 1, Paul 2, Graham 0, Pataki 0, Santorum 1</a></td>
+				<td class="lp-spread"><font color="black"><span class="">Trump +5</span></font></td>
+			</tr>
+			<tr class="alt">
+				<td class="lp-race"><a href="/epolls/2016/president/us/2016_democratic_presidential_nomination-3824.html">2016 Democratic Presidential Nomination</a></td>
+				<td class="lp-poll"><a href="http://news.investors.com/ibd-editorials-polls/103015-778378-donald-trump-leads-ben-carson-second-in-ibd-tipp-poll.htm?ref=HPLNews">IBD/TIPP</a></td>
+				<td class="lp-results"><a href="/epolls/2016/president/us/2016_democratic_presidential_nomination-3824.html">Clinton 48, Sanders 33, O'Malley 2</a></td>
+				<td class="lp-spread"><font color="black"><span class="">Clinton +15</span></font></td>
+			</tr>
+			<tr class="">
+				<td class="lp-race"><a href="/epolls/2015/governor/la/louisiana_governor_vitter_vs_edwards-4314.html">Louisiana Governor - Vitter vs. Edwards</a></td>
+				<td class="lp-poll"><a href="http://blogs.theadvocate.com/politicsblog/files/2015/11/mripoll.pdf">Market Research Insight</a></td>
+				<td class="lp-results"><a href="/epolls/2015/governor/la/louisiana_governor_vitter_vs_edwards-4314.html">Edwards 54, Vitter 38</a></td>
+				<td class="lp-spread"><font color="black"><span class="dem">Edwards +16</span></font></td>
+			</tr></table>
+				<table cellpadding="2" cellspacing="0">
+					<tr>
+						<td colspan="6" class="date"><b>Friday, October 30</b></td>
+					</tr>
+				</table>
+				<table cellpadding="2" cellspacing="0" class="sortable">
+					<tr>
+						<th class="clickable lp-race"><strong>Race/Topic</strong> &nbsp;&nbsp;<span class="click-sort">(Click to Sort)</span></th>
+						<th class="sorttable_nosort lp-poll"><strong>Poll</strong></th>
+						<th class="sorttable_nosort lp-resluts"><strong>Results</strong></th>
+						<th class="sorttable_nosort lp-spread"><strong>Spread</strong></th>
+					</tr>
+			<tr class="">
+				<td class="lp-race"><a href="/epolls/2015/governor/ky/kentucky_governor_bevin_vs_conway_vs_curtis-5692.html">Kentucky Governor - Bevin vs. Conway vs. Curtis</a></td>
+				<td class="lp-poll"><a href="http://www.realclearpolitics.com/docs/2015/Vox_Populi_KY_Gov_Oct_30_2015.pdf">Vox Populi (R)</a></td>
+				<td class="lp-results"><a href="/epolls/2015/governor/ky/kentucky_governor_bevin_vs_conway_vs_curtis-5692.html">Conway 44, Bevin 44, Curtis 6</a></td>
+				<td class="lp-spread"><font color="black"><span class="">Tie</span></font></td>
+			</tr></table></div>
+			<p id="my-nav">
+				<a href="#" class="hide" id="previous">&laquo; Previous</a>
+				<a href="#" class="on my-links" id="link-1">1</a>
+				<a href="#" class="my-links" id="link-2">2</a><a href="#" class="my-links" id="link-3">3</a>
+				<a href="#" id="next">Next &raquo;</a>
+				<input type="hidden" id="counter" value="0" />
+			</p>
+
+		<a name="short-news"></a>
+		<div id="short_news">
+			<!-- <script src="/epolls/includes/epoll_news.js" type="text/javascript"></script> -->
+		</div>
+
+		<div class="RC-AD RC-AD-BOTTOM-BANNER"></div>
+		<div class="RC-AD RC-AD-BOX-BOTTOM"></div>
+
+	</div><!-- end alpha div -->
+</div><!-- end alpha-container div -->
+
+<div class="beta-container">
+	<div class="beta">
+
+		<div class="widget_slot init"></div>
+
+		<div class="RC-AD RC-AD-BOX-TOP"></div>
+
+		<div class="widget_slot init"></div>
+
+		<div class="RC-AD RC-AD-BOX-MIDDLE"></div>
+
+		<div class="widget_slot init"></div>
+
+		<div class="RC-AD RC-AD-BOX-BOTTOM-600"></div>
+
+	</div>
+</div><!-- end beta div -->
+</div><!-- end container div --><div class="footer-wrapper">
+    <div class="footer">
+        <div class="footer-logo">
+            <span class="site-tab"></span>
+            <img src="/asset/img/rcp-logo-footer.png" />
+        </div>
+
+        <div class="footer-social">
+            <div class="socialBar" data-style="site" data-dialog="share"><div class="left toolset"></div></div>
+        </div>
+
+        <div class="clear"></div>
+
+        <div class="footer-links">
+            <!-- <script type="text/javascript" src="/include/footer_links.js"></script> -->
+        </div>
+
+        <div class="footer-info">
+            <div class="info-links">
+                <!-- <script type="text/javascript" src="/include/footer_info_links.js"></script> -->
+            </div>
+        </div>
+
+        <div class="mobile-footer">
+            <div class="mobile-copyright">&copy;2015 RealClearPolitics | <a onClick="loadDesktop();" class="view-desktop">Go to full site</a></div>
+        </div>
+
+    </div>
+</div>
+<script>
+	window.onLoad = function() {
+		var el = document.getElementsByTagName("tr");
+		console.log("el");
+	};
+</script>
+<!-- <script type="text/javascript" src="/include/internal.js?v=1"></script>
+<script type="text/javascript" src="/include/footer_includes_before_body.js?v=1"></script> -->
+			</body>
+			</html>

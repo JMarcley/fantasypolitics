@@ -7,6 +7,26 @@ block content
   h2 Filter
   #filterBy
       form(action='/polls/query', method='post')
+          span Region:
+          =" "
+          select(name="region")
+            each region, i in polldata.regionSelect
+              option(value = region) #{region}
+          <br />
+          <br />
+          span Party:
+          =" "
+          select(name="party")
+            each party, i in polldata.partySelect
+              option(value = party) #{party}
+          <br />
+          <br />
+          span Topic:
+          =" "
+          select(name="topic")
+            each topic, i in polldata.topicSelect
+              option(value = topic) #{topic}
+          p or by text
           input(type='text', name='query', placeholder='filter by')
           br
           button(type='submit') Find
@@ -15,7 +35,8 @@ block content
     each poll, i in polldata
       li
         |#{poll.date} <br />
-        |#{poll.race}
+        |#{poll.race} <br />
+        |#{poll.poll}
         ul
           each result, i in poll.results
             li #{result[0]}: #{result[1]}
