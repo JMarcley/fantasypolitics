@@ -16,6 +16,7 @@ var polls = require('./routes/polls');
 
 var app = express();
 
+// app.listen(80);
 app.set('port', process.env.PORT || 80);
 
 console.log('Starting!');
@@ -45,8 +46,7 @@ app.use('/users', users);
 app.use('/polls', polls);
 
 var job = new CronJob({
-  // cronTime: '00 12 04 * * *',
-  cronTime: '00 59 21 * * *',
+  cronTime: '00 12 04 * * *',
   onTick: function() {
     crawler.pullData(function(data) {
       storePolls.store(data,db);
