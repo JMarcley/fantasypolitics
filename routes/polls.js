@@ -29,7 +29,7 @@ router.post('/query', function(req, res){
   var collection = db.get('polldata');
   // console.log(req.body);
   if (req.body.query !== '') {
-    collection.find({"region":req.body.region.toLowerCase(), "party":requestBody.party.toLowerCase()},
+    collection.find({"race":{$regex:requestBody.query, $options: "i"}},
                     {"sort": {"date" : -1}},
                     function(e,docs){
                       docs = FormatForQuery(docs);

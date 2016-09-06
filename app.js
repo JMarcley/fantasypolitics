@@ -11,6 +11,7 @@ var crawler = require('./controllers/crawler');
 var storePolls = require("./controllers/storePolls.js");
 
 var routes = require('./routes/index');
+var signup = require('./routes/signup');
 var users = require('./routes/users');
 var polls = require('./routes/polls');
 
@@ -42,11 +43,15 @@ app.use(function(req,res,next){
 });
 
 app.use('/', routes);
+app.use('/success', routes);
+app.use('/duplicate', routes);
+app.post('/', signup);
 app.use('/users', users);
 app.use('/polls', polls);
 
 var job = new CronJob({
   cronTime: '00 12 04 * * *',
+  // cronTime: '00 * * * * *',
   onTick: function() {
     crawler.pullData(function(data) {
       storePolls.store(data,db);
