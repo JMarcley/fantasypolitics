@@ -1,0 +1,35 @@
+
+#grad {
+  background: #F8F0EB; /* For browsers that do not support gradients */
+  background: -webkit-linear-gradient(#F6DED1, #F6CFCF, #F7BEA3); /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(#F6DED1, #F6CFCF, #F7BEA3); /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(#F6DED1, #F6CFCF, #F7BEA3); /* For Firefox 3.6 to 15 */
+  background: linear-gradient(#F8F0EB, #F6CFCF, #F7BEA3); /* Standard syntax */
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+html {
+  height: 100%;
+}
+
+body {
+  background: none;
+}
+
+.mono1 {
+  font-family: 'Baloo Da', sans-serif;
+}
+
+.mono2 {
+  font-family: 'Nunito', sans-serif;;
+}
+
+.description {
+  line-height: 125%;
+  font-size: 125%;
+}
+
+.form-style {
+  font-family: sans-serif;
+}
