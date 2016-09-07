@@ -33,3 +33,11 @@ body {
 .form-style {
   font-family: sans-serif;
 }
+
+.bottom-right {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  padding: 25px;
+  height: 70%;
+}
